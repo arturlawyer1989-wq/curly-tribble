@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+/* ===== Дизайн-система из прототипа prototype-v8.html ===== */
+@theme {
+  --color-petrol: #0b3b52;
+  --color-petrol-dark: #072b3c;
+  --color-petrol-light: #0e4a66;
+  --color-ink: #0f1418;
+  --color-steel: #5d6b77;
+  --color-steel-2: #8a97a2;
+  --color-line: #e3e9ee;
+  --color-line-2: #eff3f6;
+  --color-surface: #f4f7f9;
+  --color-paper: #ffffff;
+  --color-accent: #f04e23;
+  --color-accent-dark: #d33f18;
+  --color-accent-soft: #fff3ef;
+  --color-ok: #0e7a56;
+  --color-ok-bg: #e7f5ef;
+  --color-warn: #b45309;
+  --color-warn-bg: #fdf4e7;
+  --color-gold: #c9871f;
+  --color-admin: #0d1216;
+
+  --font-sans: "Golos Text", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Unbounded", "Golos Text", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --shadow-1: 0 1px 2px rgba(11, 59, 82, 0.06);
+  --shadow-2: 0 2px 8px rgba(11, 59, 82, 0.07), 0 12px 32px rgba(11, 59, 82, 0.07);
+
+  /* Единственный порог прототипа: до 900px мобильная раскладка, после десктопная */
+  --breakpoint-lg: 900px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--color-surface);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  @media (min-width: 900px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+    color: inherit;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  @media (prefers-contrast: more) {
+    :root {
+      --color-line: #b9c6d0;
+      --color-steel: #3c4954;
+    }
+  }
+}
+
+@layer components {
+  /* Контейнер страницы: 1200px по центру, отступ 16px по краям на любой ширине */
+  .wrap {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 16px;
+  }
+  /* Кнопка действия из прототипа: не ниже 48px */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--color-accent);
+    color: #fff;
+    border: 0;
+    border-radius: var(--radius-sm);
+    padding: 13px 20px;
+    font-weight: 600;
+    cursor: pointer;
+    min-height: 48px;
+    transition: background 0.15s;
+  }
+  .btn:hover {
+    background: var(--color-accent-dark);
+  }
+  .btn-ghost {
+    background: #fff;
+    color: var(--color-ink);
+    border: 1.5px solid var(--color-line);
+  }
+  .btn-ghost:hover {
+    background: var(--color-surface);
+    border-color: var(--color-steel-2);
+  }
+  /* Квадратная кнопка-иконка в шапке: 44px, чтобы удобно нажимать пальцем */
+  .icon-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.06);
+    display: grid;
+    place-items: center;
+    flex: none;
+  }
+  .icon-btn:hover {
+    background: rgba(255, 255, 255, 0.14);
+  }
+  .icon-btn svg {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+    fill: none;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+/* ===== Главный экран: фон с сеткой и оранжевым свечением ===== */
+.hero {
+  position: relative;
+  background: linear-gradient(158deg, #0e4a66 0%, #0b3b52 42%, #07293a 100%);
+  color: #fff;
+  overflow: hidden;
+  isolation: isolate;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px);
+  background-size: 40px 40px;
+  -webkit-mask-image: radial-gradient(120% 90% at 15% 10%, #000 0%, transparent 72%);
+  mask-image: radial-gradient(120% 90% at 15% 10%, #000 0%, transparent 72%);
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  right: -14%;
+  top: -32%;
+  width: 76%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(240, 78, 35, 0.3) 0%, rgba(240, 78, 35, 0.09) 42%, transparent 68%);
+}
+.hero-art {
+  position: absolute;
+  z-index: -1;
+  right: -90px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 420px;
+  opacity: 0.16;
+  pointer-events: none;
+}
+.hero-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (min-width: 900px) {
+  .hero-art {
+    width: 620px;
+    right: -120px;
+    opacity: 0.2;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .hero-art svg {
+    animation: hero-spin 90s linear infinite;
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes hero-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,66 @@
+# Сайт магазина: /api уходит на бэкенд, всё остальное на фронтенд.
+# Переменные ${D24_*} подставляются при старте контейнера из docker-compose.yml.
+upstream backend_upstream {
+    server ${D24_BACKEND_UPSTREAM};
+}
+upstream frontend_upstream {
+    server ${D24_FRONTEND_UPSTREAM};
+}
+
+server {
+    listen 80;
+    server_name _;
+    client_max_body_size 20m;
+
+    add_header X-Content-Type-Options nosniff always;
+    add_header X-Frame-Options SAMEORIGIN always;
+    add_header Referrer-Policy strict-origin-when-cross-origin always;
+
+    # Ответ при превышении частоты запросов: JSON с русским текстом
+    error_page 429 = @too_many_requests;
+    location @too_many_requests {
+        default_type application/json;
+        return 429 '{"error":{"code":"too_many_requests","message":"Слишком много запросов. Подождите минуту и попробуйте снова."}}';
+    }
+
+    # Быстрая проверка, что nginx жив (используется скриптом первого запуска)
+    location = /healthz {
+        access_log off;
+        default_type text/plain;
+        return 200 "ok\n";
+    }
+
+    location /api/ {
+        limit_req zone=api burst=20 nodelay;
+        proxy_pass http://backend_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 60s;
+    }
+
+    # Статика Next.js: имена файлов содержат хеш, поэтому кешируем надолго
+    location /_next/static/ {
+        proxy_pass http://frontend_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        expires 30d;
+        add_header Cache-Control "public, immutable";
+        add_header X-Content-Type-Options nosniff always;
+        add_header X-Frame-Options SAMEORIGIN always;
+        add_header Referrer-Policy strict-origin-when-cross-origin always;
+    }
+
+    location / {
+        limit_req zone=site burst=60 nodelay;
+        proxy_pass http://frontend_upstream;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_read_timeout 60s;
+    }
+}

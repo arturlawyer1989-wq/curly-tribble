@@ -28,6 +28,26 @@ docker compose up -d --build
 
 Состояние сервисов: http://localhost/health (приложение, база данных, Redis и фоновый воркер).
 
+## Панель управления
+
+Адрес: http://localhost/admin (на сервере: https://ваш-домен/admin).
+
+Первый владелец создаётся автоматически при первом запуске из `.env`: логин `ADMIN_LOGIN`, пароль `ADMIN_PASSWORD`.
+Если при первом запуске пароль был пустым, создайте владельца командой (магазин должен быть запущен):
+
+```bash
+docker compose exec backend python scripts/create_admin.py --login owner --name "Ваше имя" --role owner
+```
+
+Сменить забытый пароль:
+
+```bash
+docker compose exec backend python scripts/create_admin.py --login owner --reset-password
+```
+
+Добавить менеджера с ограниченными правами: та же команда с `--role manager`.
+На Linux и macOS есть короткая форма: `./scripts/create_admin.sh --login owner --reset-password`.
+
 ## Повседневные команды
 
 | Что сделать | Команда |
@@ -38,6 +58,7 @@ docker compose up -d --build
 | Смотреть логи одного сервиса вживую (например, backend) | `docker compose logs -f backend` |
 | Состояние контейнеров | `docker compose ps` |
 | Автотесты бэкенда | `docker compose exec backend pytest` |
+| Проверить, что миграции базы применены | `docker compose exec backend alembic current` |
 | Сквозные тесты в браузере | `cd frontend && npm ci && npx playwright install chromium && npx playwright test` |
 
 Те же команды доступны через `make up`, `make down`, `make logs`, `make test-backend`.

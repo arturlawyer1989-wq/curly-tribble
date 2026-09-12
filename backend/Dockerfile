@@ -1,7 +1,8 @@
 # Образ бэкенда: FastAPI и Celery на Python 3.12. Сборка в два этапа:
 # на первом ставятся зависимости, во второй попадает только готовое, без кеша pip.
 FROM python:3.12-slim AS builder
-ENV PIP_DISABLE_PIP_VERSION_CHECK=1 PIP_NO_CACHE_DIR=1
+# Таймаут побольше: PyPI из России бывает медленным
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1 PIP_NO_CACHE_DIR=1 PIP_DEFAULT_TIMEOUT=60
 WORKDIR /build
 COPY requirements.txt ./
 # Секрет proxy_ca нужен только при сборке в закрытой сети через прокси; при обычной сборке его нет и шаг идёт как есть.

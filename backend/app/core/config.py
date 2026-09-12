@@ -28,6 +28,18 @@ class Settings(BaseSettings):
     # Очередь Celery; если не задана, используется тот же Redis
     celery_broker_url: str = ""
 
+    # Секрет для подписи токенов входа в панель управления. Обязателен, задаётся в .env
+    secret_key: str = Field(min_length=32)
+    # Сроки жизни токена доступа и сессии обновления
+    access_token_minutes: int = Field(default=15, ge=1)
+    refresh_token_days: int = Field(default=14, ge=1)
+    # Защита от перебора пароля: попыток входа в минуту на один логин
+    login_attempts_per_minute: int = Field(default=5, ge=1)
+    # Первый владелец панели: создаётся при первом запуске, если сотрудников ещё нет
+    admin_login: str = ""
+    admin_password: str = ""
+    admin_name: str = "Владелец"
+
     # Как часто фоновый воркер отмечается «живым» и через сколько секунд считать его пропавшим
     worker_heartbeat_interval_seconds: int = Field(default=60, ge=5)
     worker_heartbeat_stale_after_seconds: int = Field(default=180, ge=10)

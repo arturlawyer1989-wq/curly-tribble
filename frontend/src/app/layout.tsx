@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 
 import "@fontsource/golos-text/400.css";
 import "@fontsource/golos-text/500.css";
@@ -40,6 +41,15 @@ export const viewport = {
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  // Панель управления живёт в своей оболочке без витринной шапки и подвала (заголовок ставит proxy.ts)
+  const area = (await headers()).get("x-d24-area");
+  if (area === "admin") {
+    return (
+      <html lang="ru">
+        <body className="min-h-dvh">{children}</body>
+      </html>
+    );
+  }
   const { shop, ok } = await getShop();
   return (
     <html lang="ru">

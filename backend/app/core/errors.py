@@ -64,8 +64,13 @@ def register_error_handlers(app: FastAPI) -> None:
             english_phrase = HTTPStatus(exc.status_code).phrase
         except ValueError:
             english_phrase = ""
-        custom = isinstance(exc.detail, str) and exc.detail and exc.detail != english_phrase and exc.status_code < 500
-        message = exc.detail if custom else default_message
+        if isinstance(exc.detail, dict) and "message" in exc.detail:
+            # Код и сообщение заданы явно, например {"code": "session_expired", "message": "..."}
+            code = str(exc.detail.get("code", code))
+            message = str(exc.detail["message"])
+        else:
+            custom = isinstance(exc.detail, str) and exc.detail and exc.detail != english_phrase and exc.status_code < 500
+            message = exc.detail if custom else default_message
         return JSONResponse(status_code=exc.status_code, content=error_body(code, message), headers=exc.headers)
 
     @app.exception_handler(RequestValidationError)

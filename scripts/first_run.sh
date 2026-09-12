@@ -15,6 +15,17 @@ if grep -qE '^POSTGRES_PASSWORD=$' .env; then
   echo "В .env записан случайный пароль базы данных"
 fi
 
+if grep -qE '^SECRET_KEY=$' .env; then
+  secret=$(python3 -c 'import secrets; print(secrets.token_hex(32))' 2>/dev/null || openssl rand -hex 32)
+  sed -i.bak "s/^SECRET_KEY=$/SECRET_KEY=${secret}/" .env && rm -f .env.bak
+  echo "В .env записан случайный секретный ключ панели управления"
+fi
+
+if grep -qE '^ADMIN_PASSWORD=$' .env; then
+  echo "Внимание: ADMIN_PASSWORD в .env пустой, владелец панели не будет создан."
+  echo "Впишите пароль и запустите скрипт снова, либо создайте владельца: ./scripts/create_admin.sh --login owner --name \"Имя\""
+fi
+
 docker compose up -d --build
 
 port=$(grep -E '^HTTP_PORT=' .env | cut -d= -f2 | tr -d '[:space:]')

@@ -20,6 +20,9 @@ for (const width of WIDTHS) {
     await expect(page.getByRole("heading", { level: 1 })).toContainText("Запчасти для иномарок");
     await expect(page.getByText("Оплата при получении")).toBeVisible();
     await expect(page.getByRole("contentinfo")).toContainText("Наличными при получении");
+    // Блок этапа каркаса: слова «проект запущен» и живое состояние сервисов
+    await expect(page.getByRole("heading", { level: 2, name: /проект запущен/ })).toBeVisible();
+    await expect(page.getByText("База данных:", { exact: false })).toBeVisible();
 
     // Ни один запрос страницы не закончился ошибкой (шрифты, стили, скрипты)
     expect(failed).toEqual([]);

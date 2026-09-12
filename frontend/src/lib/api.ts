@@ -55,3 +55,35 @@ export const getShop = cache(async (): Promise<ShopResult> => {
     return { shop: DEFAULT_SHOP, ok: false };
   }
 });
+
+export type ComponentStatus = { status: "ok" | "error" | "stale" | "unknown"; message: string };
+export type Health = {
+  status: "ok" | "degraded" | "error";
+  app: ComponentStatus;
+  db: ComponentStatus;
+  redis: ComponentStatus;
+  worker: ComponentStatus;
+  version: string;
+  time: string;
+};
+
+export type HealthResult = { health: Health | null; ok: boolean };
+
+// Состояние сервисов для блока «проект запущен». Ответ 503 тоже содержит подробности, поэтому читаем его.
+export const getHealth = cache(async (): Promise<HealthResult> => {
+  try {
+    const response = await fetch(`${BACKEND_URL}/api/v1/health`, {
+      cache: "no-store",
+      signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+    });
+    if (response.status !== 200 && response.status !== 503) {
+      console.error(`Бэкенд ответил кодом ${response.status} на запрос состояния`);
+      return { health: null, ok: false };
+    }
+    return { health: (await response.json()) as Health, ok: true };
+  } catch (error) {
+    unstable_rethrow(error);
+    console.error("Не удалось получить состояние сервисов:", error instanceof Error ? error.message : error);
+    return { health: null, ok: false };
+  }
+});

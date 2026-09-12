@@ -1,4 +1,7 @@
-"""Проверка состояния: база, Redis, фоновый воркер."""
+"""Проверка состояния: приложение, база, Redis, фоновый воркер.
+
+Доступна по двум адресам: /health (для мониторинга) и /api/v1/health (для сайта).
+"""
 
 import asyncio
 import logging
@@ -58,7 +61,8 @@ async def health() -> JSONResponse:
 
     body = HealthResponse(
         status=overall,
-        database=database,
+        app=ComponentStatus(status="ok", message="Приложение работает."),
+        db=database,
         redis=redis_state,
         worker=worker,
         version=__version__,

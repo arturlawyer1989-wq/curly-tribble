@@ -17,7 +17,8 @@ async def test_health_without_worker_is_degraded(client: AsyncClient) -> None:
     assert response.status_code == 200
     body = response.json()
     assert body["status"] == "degraded"
-    assert body["database"]["status"] == "ok"
+    assert body["app"]["status"] == "ok"
+    assert body["db"]["status"] == "ok"
     assert body["redis"]["status"] == "ok"
     assert body["worker"]["status"] == "unknown"
     assert "воркер" in body["worker"]["message"]
@@ -65,5 +66,14 @@ async def test_health_reports_database_failure(client: AsyncClient, monkeypatch:
     await broken.dispose()
     assert response.status_code == 503
     body = response.json()
-    assert body["database"]["status"] == "error"
-    assert body["database"]["message"] == "База данных недоступна."
+    assert body["db"]["status"] == "error"
+    assert body["db"]["message"] == "База данных недоступна."
+
+
+async def test_health_is_available_at_root_path(client: AsyncClient) -> None:
+    """Короткий адрес /health отдаёт тот же ответ, что и /api/v1/health."""
+    root = (await client.get("/health")).json()
+    api = (await client.get("/api/v1/health")).json()
+    assert set(root) == set(api) == {"status", "app", "db", "redis", "worker", "version", "time"}
+    assert root["app"]["status"] == "ok"
+    assert root["db"]["status"] == api["db"]["status"] == "ok"

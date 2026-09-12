@@ -15,7 +15,8 @@ class ComponentStatus(BaseModel):
 
 class HealthResponse(BaseModel):
     status: Literal["ok", "degraded", "error"]
-    database: ComponentStatus
+    app: ComponentStatus
+    db: ComponentStatus
     redis: ComponentStatus
     worker: ComponentStatus
     version: str

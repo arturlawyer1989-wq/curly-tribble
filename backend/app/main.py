@@ -7,6 +7,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from app import __version__
+from app.api.public import health
 from app.api.router import api_router
 from app.core.config import get_settings
 from app.core.db import dispose_engine
@@ -41,6 +42,8 @@ def create_app() -> FastAPI:
     )
     register_error_handlers(app)
     app.include_router(api_router)
+    # Короткий адрес /health для мониторинга и скриптов
+    app.include_router(health.router)
     return app
 
 

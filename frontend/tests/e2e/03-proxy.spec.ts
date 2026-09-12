@@ -2,14 +2,17 @@ import { expect, test } from "@playwright/test";
 
 // Проверки nginx: маршрутизация к бэкенду и ограничение частоты запросов
 
-test("состояние сервисов доступно через nginx", async ({ request }) => {
-  const response = await request.get("/api/v1/health");
-  expect(response.status()).toBe(200);
-  const body = await response.json();
-  expect(["ok", "degraded"]).toContain(body.status);
-  expect(body.database.status).toBe("ok");
-  expect(body.redis.status).toBe("ok");
-});
+for (const path of ["/health", "/api/v1/health"]) {
+  test(`состояние сервисов доступно через nginx по адресу ${path}`, async ({ request }) => {
+    const response = await request.get(path);
+    expect(response.status()).toBe(200);
+    const body = await response.json();
+    expect(["ok", "degraded"]).toContain(body.status);
+    expect(body.app.status).toBe("ok");
+    expect(body.db.status).toBe("ok");
+    expect(body.redis.status).toBe("ok");
+  });
+}
 
 test("robots.txt отдаётся и запрещает индексацию API", async ({ request }) => {
   const response = await request.get("/robots.txt");

@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
 
     # Подключение к PostgreSQL (драйвер asyncpg для приложения)
-    database_url: str = "postgresql+asyncpg://detal24:detal24@postgres:5432/detal24"
+    database_url: str = "postgresql+asyncpg://detal24:detal24@db:5432/detal24"
     # Подключение к Redis: коды подтверждения, лимиты, кеш, очередь фоновых задач
     redis_url: str = "redis://redis:6379/0"
     # Очередь Celery; если не задана, используется тот же Redis

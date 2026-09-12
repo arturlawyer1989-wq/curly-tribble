@@ -26,7 +26,7 @@ docker compose up -d --build
 
 Через одну-две минуты сайт открывается по адресу http://localhost (или http://localhost:ПОРТ, если меняли `HTTP_PORT`).
 
-Состояние сервисов: http://localhost/api/v1/health
+Состояние сервисов: http://localhost/health (приложение, база данных, Redis и фоновый воркер).
 
 ## Повседневные команды
 
@@ -34,7 +34,8 @@ docker compose up -d --build
 |---|---|
 | Запустить или обновить после изменений | `docker compose up -d --build` |
 | Остановить (данные сохраняются) | `docker compose down` |
-| Посмотреть логи | `docker compose logs -f --tail=200` |
+| Посмотреть логи всех сервисов | `docker compose logs --tail=200` |
+| Смотреть логи одного сервиса вживую (например, backend) | `docker compose logs -f backend` |
 | Состояние контейнеров | `docker compose ps` |
 | Автотесты бэкенда | `docker compose exec backend pytest` |
 | Сквозные тесты в браузере | `cd frontend && npm ci && npx playwright install chromium && npx playwright test` |
@@ -46,14 +47,14 @@ docker compose up -d --build
 - `backend/` — API на FastAPI, фоновые задачи Celery, миграции базы, тесты pytest.
 - `frontend/` — сайт на Next.js, дизайн-система из прототипа, тесты Playwright.
 - `nginx/` — веб-сервер: маршрутизация, ограничение частоты запросов.
-- `postgres/init/` — создание тестовой базы при первом запуске PostgreSQL.
+- `postgres/init/` — создание тестовой базы при первом запуске сервиса `db` (PostgreSQL).
 - `docs/` — прототип-эталон `prototype-v8.html` и описание архитектуры.
 - `scripts/` — скрипт первого запуска.
 - `.env.example` — все настройки с пояснениями; рабочий файл `.env` в git не попадает.
 
 ## Если что-то не так
 
-- Сайт не открывается: `docker compose ps` покажет, какой контейнер не поднялся, `docker compose logs имя_контейнера` покажет причину.
+- Сайт не открывается: `docker compose ps` покажет, какой сервис не поднялся (frontend, backend, db, redis, nginx, worker, beat), а `docker compose logs имя_сервиса` покажет причину.
 - Docker не может скачать образы (в России Docker Hub бывает недоступен): добавьте зеркало в
   `/etc/docker/daemon.json`, например `{"registry-mirrors": ["https://mirror.gcr.io"]}`, и перезапустите Docker.
 - Порт 80 занят: поменяйте `HTTP_PORT` в `.env` и выполните `docker compose up -d`.

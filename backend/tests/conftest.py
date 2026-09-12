@@ -7,7 +7,7 @@ from pathlib import Path
 # Переменные окружения задаются до импорта приложения: настройки читаются один раз
 os.environ["APP_ENV"] = "test"
 os.environ["DATABASE_URL"] = os.environ.get(
-    "TEST_DATABASE_URL", "postgresql+asyncpg://detal24:detal24@postgres:5432/detal24_test"
+    "TEST_DATABASE_URL", "postgresql+asyncpg://detal24:detal24@db:5432/detal24_test"
 )
 os.environ["REDIS_URL"] = os.environ.get("TEST_REDIS_URL", "redis://redis:6379/1")
 os.environ["CELERY_BROKER_URL"] = ""

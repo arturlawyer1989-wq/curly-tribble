@@ -9,13 +9,13 @@ x-backend-common: &backend-common
   restart: unless-stopped
   env_file: .env
   environment:
-    DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-detal24}:${POSTGRES_PASSWORD:?Задайте POSTGRES_PASSWORD в файле .env}@postgres:5432/${POSTGRES_DB:-detal24}
-    TEST_DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-detal24}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-detal24}_test
+    DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-detal24}:${POSTGRES_PASSWORD:?Задайте POSTGRES_PASSWORD в файле .env}@db:5432/${POSTGRES_DB:-detal24}
+    TEST_DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-detal24}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-detal24}_test
     REDIS_URL: redis://redis:6379/0
     TEST_REDIS_URL: redis://redis:6379/1
 
 services:
-  postgres:
+  db:
     image: postgres:16-alpine
     restart: unless-stopped
     environment:
@@ -46,7 +46,7 @@ services:
   backend:
     <<: *backend-common
     depends_on:
-      postgres:
+      db:
         condition: service_healthy
       redis:
         condition: service_healthy
@@ -71,7 +71,12 @@ services:
       backend:
         condition: service_healthy
     healthcheck:
-      disable: true
+      # Планировщик не принимает запросов, поэтому проверяем, что его процесс жив
+      test: ["CMD-SHELL", "kill -0 $$(cat /tmp/celerybeat.pid)"]
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
 
   frontend:
     build:

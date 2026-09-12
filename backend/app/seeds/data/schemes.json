@@ -1,0 +1,1860 @@
+{
+ "systems": [
+  {
+   "slug": "brakes",
+   "title": "Тормозная система",
+   "sort_order": 0,
+   "schemes": [
+    {
+     "slug": "brake-front",
+     "title": "Передний тормозной механизм",
+     "description": "Диски, колодки, суппорт и всё, что стоит на передней ступице.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Диск тормозной передний",
+       "short_name": "Диск тормозной передний",
+       "shape_key": "disc",
+       "oem_number": "96 549 782"
+      },
+      {
+       "number": 2,
+       "name": "Колодки тормозные передние",
+       "short_name": "Колодки тормозные передние",
+       "shape_key": "pad",
+       "oem_number": "96 405 129"
+      },
+      {
+       "number": 3,
+       "name": "Суппорт тормозной",
+       "short_name": "Суппорт тормозной",
+       "shape_key": "caliper",
+       "oem_number": "96 549 790"
+      },
+      {
+       "number": 4,
+       "name": "Шланг тормозной передний",
+       "short_name": "Шланг тормозной передний",
+       "shape_key": "hose",
+       "oem_number": "96 549 801"
+      },
+      {
+       "number": 5,
+       "name": "Датчик износа колодок",
+       "short_name": "Датчик износа колодок",
+       "shape_key": "sensor",
+       "oem_number": "96 549 812"
+      },
+      {
+       "number": 6,
+       "name": "Направляющая суппорта, ремкомплект",
+       "short_name": "Направляющая суппорта",
+       "shape_key": "bolt",
+       "oem_number": "96 549 823"
+      },
+      {
+       "number": 7,
+       "name": "Пыльник тормозного диска",
+       "short_name": "Пыльник тормозного диска",
+       "shape_key": "shield",
+       "oem_number": "96 549 834"
+      }
+     ]
+    },
+    {
+     "slug": "brake-rear-disc",
+     "title": "Задний тормозной механизм, дисковый",
+     "description": "Задняя ось с дисковыми тормозами.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Диск тормозной задний",
+       "short_name": "Диск тормозной задний",
+       "shape_key": "disc",
+       "oem_number": "96 549 845"
+      },
+      {
+       "number": 2,
+       "name": "Колодки тормозные задние",
+       "short_name": "Колодки тормозные задние",
+       "shape_key": "pad",
+       "oem_number": "96 405 136"
+      },
+      {
+       "number": 3,
+       "name": "Суппорт задний",
+       "short_name": "Суппорт задний",
+       "shape_key": "caliper",
+       "oem_number": "96 549 852"
+      },
+      {
+       "number": 4,
+       "name": "Шланг тормозной задний",
+       "short_name": "Шланг тормозной задний",
+       "shape_key": "hose",
+       "oem_number": "96 549 869"
+      },
+      {
+       "number": 5,
+       "name": "Трос стояночного тормоза",
+       "short_name": "Трос стояночного тормоза",
+       "shape_key": "cable",
+       "oem_number": "96 549 876"
+      }
+     ]
+    },
+    {
+     "slug": "brake-rear-drum",
+     "title": "Задний тормозной механизм, барабанный",
+     "description": "Барабан, колодки, цилиндр и пружины.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Барабан тормозной",
+       "short_name": "Барабан тормозной",
+       "shape_key": "drum",
+       "oem_number": "96 549 883"
+      },
+      {
+       "number": 2,
+       "name": "Колодки барабанные, комплект",
+       "short_name": "Колодки барабанные",
+       "shape_key": "pad",
+       "oem_number": "96 405 143"
+      },
+      {
+       "number": 3,
+       "name": "Цилиндр тормозной рабочий",
+       "short_name": "Цилиндр тормозной рабочий",
+       "shape_key": "cylinder",
+       "oem_number": "96 549 890"
+      },
+      {
+       "number": 4,
+       "name": "Комплект пружин и планок",
+       "short_name": "Комплект пружин и",
+       "shape_key": "spring",
+       "oem_number": "96 549 906"
+      },
+      {
+       "number": 5,
+       "name": "Пыльник и ремкомплект цилиндра",
+       "short_name": "Пыльник и ремкомплект",
+       "shape_key": "shield",
+       "oem_number": "96 549 913"
+      }
+     ]
+    },
+    {
+     "slug": "brake-hydro",
+     "title": "Гидравлика тормозов",
+     "description": "Главный цилиндр, вакуумник, трубки, жидкость.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Главный тормозной цилиндр",
+       "short_name": "Главный тормозной цилиндр",
+       "shape_key": "cylinder",
+       "oem_number": "96 549 920"
+      },
+      {
+       "number": 2,
+       "name": "Вакуумный усилитель",
+       "short_name": "Вакуумный усилитель",
+       "shape_key": "booster",
+       "oem_number": "96 549 937"
+      },
+      {
+       "number": 3,
+       "name": "Бачок тормозной жидкости",
+       "short_name": "Бачок тормозной жидкости",
+       "shape_key": "tank",
+       "oem_number": "96 549 944"
+      },
+      {
+       "number": 4,
+       "name": "Трубка тормозная",
+       "short_name": "Трубка тормозная",
+       "shape_key": "pipe",
+       "oem_number": "96 549 951"
+      },
+      {
+       "number": 5,
+       "name": "Жидкость тормозная DOT-4, 1 л",
+       "short_name": "Жидкость тормозная DOT-4",
+       "shape_key": "can",
+       "oem_number": ""
+      }
+     ]
+    },
+    {
+     "slug": "brake-abs",
+     "title": "ABS и датчики",
+     "description": "Блок ABS и датчики скорости колёс.",
+     "sort_order": 4,
+     "points": [
+      {
+       "number": 1,
+       "name": "Блок ABS",
+       "short_name": "Блок ABS",
+       "shape_key": "ecu",
+       "oem_number": "96 549 968"
+      },
+      {
+       "number": 2,
+       "name": "Датчик ABS передний",
+       "short_name": "Датчик ABS передний",
+       "shape_key": "sensor",
+       "oem_number": "96 549 975"
+      },
+      {
+       "number": 3,
+       "name": "Датчик ABS задний",
+       "short_name": "Датчик ABS задний",
+       "shape_key": "sensor",
+       "oem_number": "96 549 982"
+      },
+      {
+       "number": 4,
+       "name": "Кольцо ABS ступицы",
+       "short_name": "Кольцо ABS ступицы",
+       "shape_key": "ring",
+       "oem_number": "96 549 999"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "suspension",
+   "title": "Подвеска и рулевое",
+   "sort_order": 1,
+   "schemes": [
+    {
+     "slug": "susp-front",
+     "title": "Передняя подвеска МакФерсон",
+     "description": "Стойка собирается сверху вниз: опора, пружина, амортизатор.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Опора стойки амортизатора",
+       "short_name": "Опора стойки амортизатора",
+       "shape_key": "mount",
+       "oem_number": "96 653 234"
+      },
+      {
+       "number": 2,
+       "name": "Пружина передняя",
+       "short_name": "Пружина передняя",
+       "shape_key": "spring",
+       "oem_number": "96 653 241"
+      },
+      {
+       "number": 3,
+       "name": "Амортизатор передний",
+       "short_name": "Амортизатор передний",
+       "shape_key": "shock",
+       "oem_number": "96 653 258"
+      },
+      {
+       "number": 4,
+       "name": "Кулак поворотный",
+       "short_name": "Кулак поворотный",
+       "shape_key": "knuckle",
+       "oem_number": "96 653 265"
+      },
+      {
+       "number": 5,
+       "name": "Опора шаровая",
+       "short_name": "Опора шаровая",
+       "shape_key": "balljoint",
+       "oem_number": "96 653 272"
+      },
+      {
+       "number": 6,
+       "name": "Сайлентблок рычага",
+       "short_name": "Сайлентблок рычага",
+       "shape_key": "bushing",
+       "oem_number": "96 653 289"
+      },
+      {
+       "number": 7,
+       "name": "Рычаг передний нижний",
+       "short_name": "Рычаг передний нижний",
+       "shape_key": "arm",
+       "oem_number": "96 653 296"
+      },
+      {
+       "number": 8,
+       "name": "Стойка стабилизатора",
+       "short_name": "Стойка стабилизатора",
+       "shape_key": "link",
+       "oem_number": "96 653 303"
+      }
+     ]
+    },
+    {
+     "slug": "susp-rear",
+     "title": "Задняя подвеска",
+     "description": "Балка или многорычажка, амортизаторы и пружины.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Амортизатор задний",
+       "short_name": "Амортизатор задний",
+       "shape_key": "shock",
+       "oem_number": "96 653 310"
+      },
+      {
+       "number": 2,
+       "name": "Пружина задняя",
+       "short_name": "Пружина задняя",
+       "shape_key": "spring",
+       "oem_number": "96 653 327"
+      },
+      {
+       "number": 3,
+       "name": "Сайлентблок балки",
+       "short_name": "Сайлентблок балки",
+       "shape_key": "bushing",
+       "oem_number": "96 653 334"
+      },
+      {
+       "number": 4,
+       "name": "Рычаг задний поперечный",
+       "short_name": "Рычаг задний поперечный",
+       "shape_key": "arm",
+       "oem_number": "96 653 341"
+      },
+      {
+       "number": 5,
+       "name": "Отбойник и пыльник",
+       "short_name": "Отбойник и пыльник",
+       "shape_key": "shield",
+       "oem_number": "96 653 358"
+      }
+     ]
+    },
+    {
+     "slug": "hub",
+     "title": "Ступицы и подшипники",
+     "description": "Подшипник, ступица, гайка, кольцо ABS.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Ступица в сборе передняя",
+       "short_name": "Ступица передняя",
+       "shape_key": "hub",
+       "oem_number": "96 653 365"
+      },
+      {
+       "number": 2,
+       "name": "Подшипник ступицы",
+       "short_name": "Подшипник ступицы",
+       "shape_key": "bearing",
+       "oem_number": "96 653 372"
+      },
+      {
+       "number": 3,
+       "name": "Гайка ступицы",
+       "short_name": "Гайка ступицы",
+       "shape_key": "bolt",
+       "oem_number": "96 653 389"
+      },
+      {
+       "number": 4,
+       "name": "Ступица задняя",
+       "short_name": "Ступица задняя",
+       "shape_key": "hub",
+       "oem_number": "96 653 396"
+      }
+     ]
+    },
+    {
+     "slug": "steering",
+     "title": "Рулевое управление",
+     "description": "Рейка, тяги, наконечники, пыльники.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Рейка рулевая",
+       "short_name": "Рейка рулевая",
+       "shape_key": "rack",
+       "oem_number": "96 653 402"
+      },
+      {
+       "number": 2,
+       "name": "Тяга рулевая",
+       "short_name": "Тяга рулевая",
+       "shape_key": "tierod",
+       "oem_number": "96 653 419"
+      },
+      {
+       "number": 3,
+       "name": "Наконечник рулевой",
+       "short_name": "Наконечник рулевой",
+       "shape_key": "balljoint",
+       "oem_number": "96 653 426"
+      },
+      {
+       "number": 4,
+       "name": "Пыльник рейки",
+       "short_name": "Пыльник рейки",
+       "shape_key": "shield",
+       "oem_number": "96 653 433"
+      },
+      {
+       "number": 5,
+       "name": "Насос ГУР",
+       "short_name": "Насос ГУР",
+       "shape_key": "pump",
+       "oem_number": "96 653 440"
+      },
+      {
+       "number": 6,
+       "name": "Жидкость ГУР, 1 л",
+       "short_name": "Жидкость ГУР",
+       "shape_key": "can",
+       "oem_number": ""
+      }
+     ]
+    },
+    {
+     "slug": "stabilizer",
+     "title": "Стабилизатор поперечной устойчивости",
+     "description": "Штанга, втулки, стойки.",
+     "sort_order": 4,
+     "points": [
+      {
+       "number": 1,
+       "name": "Штанга стабилизатора",
+       "short_name": "Штанга стабилизатора",
+       "shape_key": "link",
+       "oem_number": "96 653 457"
+      },
+      {
+       "number": 2,
+       "name": "Втулка стабилизатора",
+       "short_name": "Втулка стабилизатора",
+       "shape_key": "bushing",
+       "oem_number": "96 653 464"
+      },
+      {
+       "number": 3,
+       "name": "Стойка стабилизатора",
+       "short_name": "Стойка стабилизатора",
+       "shape_key": "link",
+       "oem_number": "96 653 471"
+      },
+      {
+       "number": 4,
+       "name": "Скоба крепления",
+       "short_name": "Скоба крепления",
+       "shape_key": "bolt",
+       "oem_number": "96 653 488"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "engine",
+   "title": "Двигатель",
+   "sort_order": 2,
+   "schemes": [
+    {
+     "slug": "timing-belt",
+     "title": "Привод ГРМ, ремень",
+     "description": "Ремень идёт по шкивам коленвала и распредвалов, натягивается роликом.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Ремень ГРМ",
+       "short_name": "Ремень ГРМ",
+       "shape_key": "belt",
+       "oem_number": "96 725 041"
+      },
+      {
+       "number": 2,
+       "name": "Ролик натяжной",
+       "short_name": "Ролик натяжной",
+       "shape_key": "roller",
+       "oem_number": "96 725 058"
+      },
+      {
+       "number": 3,
+       "name": "Ролик обводной",
+       "short_name": "Ролик обводной",
+       "shape_key": "roller",
+       "oem_number": "96 725 065"
+      },
+      {
+       "number": 4,
+       "name": "Помпа водяная",
+       "short_name": "Помпа водяная",
+       "shape_key": "pump",
+       "oem_number": "96 725 072"
+      },
+      {
+       "number": 5,
+       "name": "Сальник коленвала",
+       "short_name": "Сальник коленвала",
+       "shape_key": "seal",
+       "oem_number": "96 725 089"
+      },
+      {
+       "number": 6,
+       "name": "Комплект ГРМ с помпой",
+       "short_name": "Комплект ГРМ с",
+       "shape_key": "kit",
+       "oem_number": "K015603XS"
+      }
+     ]
+    },
+    {
+     "slug": "timing-chain",
+     "title": "Привод ГРМ, цепь",
+     "description": "Цепь, успокоители, натяжитель, звёзды.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Цепь ГРМ",
+       "short_name": "Цепь ГРМ",
+       "shape_key": "chain",
+       "oem_number": "96 725 096"
+      },
+      {
+       "number": 2,
+       "name": "Натяжитель цепи",
+       "short_name": "Натяжитель цепи",
+       "shape_key": "tensioner",
+       "oem_number": "96 725 102"
+      },
+      {
+       "number": 3,
+       "name": "Успокоитель цепи",
+       "short_name": "Успокоитель цепи",
+       "shape_key": "guide",
+       "oem_number": "96 725 119"
+      },
+      {
+       "number": 4,
+       "name": "Звезда распредвала",
+       "short_name": "Звезда распредвала",
+       "shape_key": "sprocket",
+       "oem_number": "96 725 126"
+      }
+     ]
+    },
+    {
+     "slug": "head",
+     "title": "Головка блока и клапаны",
+     "description": "ГБЦ, прокладка, клапаны, сальники, крышка.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Прокладка ГБЦ",
+       "short_name": "Прокладка ГБЦ",
+       "shape_key": "gasket",
+       "oem_number": "96 725 133"
+      },
+      {
+       "number": 2,
+       "name": "Клапан впускной",
+       "short_name": "Клапан впускной",
+       "shape_key": "valve",
+       "oem_number": "96 725 140"
+      },
+      {
+       "number": 3,
+       "name": "Клапан выпускной",
+       "short_name": "Клапан выпускной",
+       "shape_key": "valve",
+       "oem_number": "96 725 157"
+      },
+      {
+       "number": 4,
+       "name": "Маслосъёмный колпачок",
+       "short_name": "Маслосъёмный колпачок",
+       "shape_key": "seal",
+       "oem_number": "96 725 164"
+      },
+      {
+       "number": 5,
+       "name": "Прокладка клапанной крышки",
+       "short_name": "Прокладка клапанной крышки",
+       "shape_key": "gasket",
+       "oem_number": "96 725 171"
+      },
+      {
+       "number": 6,
+       "name": "Болт ГБЦ, комплект",
+       "short_name": "Болт ГБЦ",
+       "shape_key": "bolt",
+       "oem_number": "96 725 188"
+      }
+     ]
+    },
+    {
+     "slug": "piston",
+     "title": "Поршневая группа",
+     "description": "Поршни, кольца, вкладыши, шатуны.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Поршень",
+       "short_name": "Поршень",
+       "shape_key": "piston",
+       "oem_number": "96 725 195"
+      },
+      {
+       "number": 2,
+       "name": "Кольца поршневые, комплект",
+       "short_name": "Кольца поршневые",
+       "shape_key": "ring",
+       "oem_number": "96 725 201"
+      },
+      {
+       "number": 3,
+       "name": "Вкладыш коренной",
+       "short_name": "Вкладыш коренной",
+       "shape_key": "bearing",
+       "oem_number": "96 725 218"
+      },
+      {
+       "number": 4,
+       "name": "Вкладыш шатунный",
+       "short_name": "Вкладыш шатунный",
+       "shape_key": "bearing",
+       "oem_number": "96 725 225"
+      },
+      {
+       "number": 5,
+       "name": "Прокладка поддона",
+       "short_name": "Прокладка поддона",
+       "shape_key": "gasket",
+       "oem_number": "96 725 232"
+      }
+     ]
+    },
+    {
+     "slug": "lubrication",
+     "title": "Система смазки",
+     "description": "Насос, поддон, фильтр, датчик давления.",
+     "sort_order": 4,
+     "points": [
+      {
+       "number": 1,
+       "name": "Насос масляный",
+       "short_name": "Насос масляный",
+       "shape_key": "pump",
+       "oem_number": "96 725 249"
+      },
+      {
+       "number": 2,
+       "name": "Поддон картера",
+       "short_name": "Поддон картера",
+       "shape_key": "pan",
+       "oem_number": "96 725 256"
+      },
+      {
+       "number": 3,
+       "name": "Фильтр масляный",
+       "short_name": "Фильтр масляный",
+       "shape_key": "filter",
+       "oem_number": "W 712/94"
+      },
+      {
+       "number": 4,
+       "name": "Датчик давления масла",
+       "short_name": "Датчик давления масла",
+       "shape_key": "sensor",
+       "oem_number": "96 725 263"
+      },
+      {
+       "number": 5,
+       "name": "Пробка сливная с шайбой",
+       "short_name": "Пробка сливная с",
+       "shape_key": "bolt",
+       "oem_number": "96 812 152"
+      }
+     ]
+    },
+    {
+     "slug": "mounts",
+     "title": "Опоры двигателя и КПП",
+     "description": "Подушки, кронштейны.",
+     "sort_order": 5,
+     "points": [
+      {
+       "number": 1,
+       "name": "Опора двигателя правая",
+       "short_name": "Опора двигателя правая",
+       "shape_key": "mount",
+       "oem_number": "96 725 270"
+      },
+      {
+       "number": 2,
+       "name": "Опора двигателя левая",
+       "short_name": "Опора двигателя левая",
+       "shape_key": "mount",
+       "oem_number": "96 725 287"
+      },
+      {
+       "number": 3,
+       "name": "Опора КПП задняя",
+       "short_name": "Опора КПП задняя",
+       "shape_key": "mount",
+       "oem_number": "96 725 294"
+      },
+      {
+       "number": 4,
+       "name": "Кронштейн опоры",
+       "short_name": "Кронштейн опоры",
+       "shape_key": "bolt",
+       "oem_number": "96 725 300"
+      }
+     ]
+    },
+    {
+     "slug": "accessory-belt",
+     "title": "Ремень навесного оборудования",
+     "description": "Поликлиновой ремень, ролики, натяжитель.",
+     "sort_order": 6,
+     "points": [
+      {
+       "number": 1,
+       "name": "Ремень поликлиновой",
+       "short_name": "Ремень поликлиновой",
+       "shape_key": "belt",
+       "oem_number": "6PK1080"
+      },
+      {
+       "number": 2,
+       "name": "Ролик натяжной навесного",
+       "short_name": "Ролик натяжной навесного",
+       "shape_key": "roller",
+       "oem_number": "96 725 317"
+      },
+      {
+       "number": 3,
+       "name": "Ролик обводной навесного",
+       "short_name": "Ролик обводной навесного",
+       "shape_key": "roller",
+       "oem_number": "96 725 324"
+      },
+      {
+       "number": 4,
+       "name": "Натяжитель ремня",
+       "short_name": "Натяжитель ремня",
+       "shape_key": "tensioner",
+       "oem_number": "96 725 331"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cooling",
+   "title": "Охлаждение и климат",
+   "sort_order": 3,
+   "schemes": [
+    {
+     "slug": "radiator",
+     "title": "Радиатор и охлаждение",
+     "description": "Радиатор, вентилятор, бачок, патрубки.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Радиатор охлаждения",
+       "short_name": "Радиатор охлаждения",
+       "shape_key": "radiator",
+       "oem_number": "96 890 112"
+      },
+      {
+       "number": 2,
+       "name": "Вентилятор радиатора",
+       "short_name": "Вентилятор радиатора",
+       "shape_key": "fan",
+       "oem_number": "96 890 129"
+      },
+      {
+       "number": 3,
+       "name": "Бачок расширительный",
+       "short_name": "Бачок расширительный",
+       "shape_key": "tank",
+       "oem_number": "96 890 136"
+      },
+      {
+       "number": 4,
+       "name": "Крышка бачка",
+       "short_name": "Крышка бачка",
+       "shape_key": "cap",
+       "oem_number": "96 890 143"
+      },
+      {
+       "number": 5,
+       "name": "Патрубок радиатора верхний",
+       "short_name": "Патрубок радиатора верхний",
+       "shape_key": "hose",
+       "oem_number": "96 890 150"
+      },
+      {
+       "number": 6,
+       "name": "Антифриз, 5 л",
+       "short_name": "Антифриз",
+       "shape_key": "can",
+       "oem_number": ""
+      }
+     ]
+    },
+    {
+     "slug": "thermostat",
+     "title": "Термостат и помпа",
+     "description": "Термостат, корпус, помпа, датчик температуры.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Термостат",
+       "short_name": "Термостат",
+       "shape_key": "thermostat",
+       "oem_number": "96 890 167"
+      },
+      {
+       "number": 2,
+       "name": "Корпус термостата",
+       "short_name": "Корпус термостата",
+       "shape_key": "housing",
+       "oem_number": "96 890 174"
+      },
+      {
+       "number": 3,
+       "name": "Помпа водяная",
+       "short_name": "Помпа водяная",
+       "shape_key": "pump",
+       "oem_number": "96 890 181"
+      },
+      {
+       "number": 4,
+       "name": "Датчик температуры",
+       "short_name": "Датчик температуры",
+       "shape_key": "sensor",
+       "oem_number": "96 890 198"
+      }
+     ]
+    },
+    {
+     "slug": "heater",
+     "title": "Отопитель салона",
+     "description": "Радиатор печки, моторчик, кран, фильтр.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Радиатор отопителя",
+       "short_name": "Радиатор отопителя",
+       "shape_key": "radiator",
+       "oem_number": "96 890 204"
+      },
+      {
+       "number": 2,
+       "name": "Моторчик вентилятора печки",
+       "short_name": "Моторчик вентилятора печки",
+       "shape_key": "blower",
+       "oem_number": "96 890 211"
+      },
+      {
+       "number": 3,
+       "name": "Резистор вентилятора",
+       "short_name": "Резистор вентилятора",
+       "shape_key": "resistor",
+       "oem_number": "96 890 228"
+      },
+      {
+       "number": 4,
+       "name": "Фильтр салонный",
+       "short_name": "Фильтр салонный",
+       "shape_key": "panel",
+       "oem_number": "96 812 145"
+      }
+     ]
+    },
+    {
+     "slug": "ac",
+     "title": "Кондиционер",
+     "description": "Компрессор, радиатор, осушитель, трубки.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Компрессор кондиционера",
+       "short_name": "Компрессор кондиционера",
+       "shape_key": "compressor",
+       "oem_number": "96 890 235"
+      },
+      {
+       "number": 2,
+       "name": "Радиатор кондиционера",
+       "short_name": "Радиатор кондиционера",
+       "shape_key": "radiator",
+       "oem_number": "96 890 242"
+      },
+      {
+       "number": 3,
+       "name": "Осушитель",
+       "short_name": "Осушитель",
+       "shape_key": "tank",
+       "oem_number": "96 890 259"
+      },
+      {
+       "number": 4,
+       "name": "Датчик давления хладагента",
+       "short_name": "Датчик давления хладагента",
+       "shape_key": "sensor",
+       "oem_number": "96 890 266"
+      },
+      {
+       "number": 5,
+       "name": "Трубка кондиционера",
+       "short_name": "Трубка кондиционера",
+       "shape_key": "pipe",
+       "oem_number": "96 890 273"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "fuel",
+   "title": "Топливо, впуск и выпуск",
+   "sort_order": 4,
+   "schemes": [
+    {
+     "slug": "fuel-supply",
+     "title": "Топливная система",
+     "description": "Насос, фильтр, форсунки, регулятор.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Насос топливный",
+       "short_name": "Насос топливный",
+       "shape_key": "pump",
+       "oem_number": "96 934 118"
+      },
+      {
+       "number": 2,
+       "name": "Фильтр топливный",
+       "short_name": "Фильтр топливный",
+       "shape_key": "filter",
+       "oem_number": "96 934 125"
+      },
+      {
+       "number": 3,
+       "name": "Форсунка топливная",
+       "short_name": "Форсунка топливная",
+       "shape_key": "injector",
+       "oem_number": "96 934 132"
+      },
+      {
+       "number": 4,
+       "name": "Регулятор давления",
+       "short_name": "Регулятор давления",
+       "shape_key": "valve",
+       "oem_number": "96 934 149"
+      },
+      {
+       "number": 5,
+       "name": "Датчик уровня топлива",
+       "short_name": "Датчик уровня топлива",
+       "shape_key": "sensor",
+       "oem_number": "96 934 156"
+      }
+     ]
+    },
+    {
+     "slug": "intake",
+     "title": "Впуск и дроссель",
+     "description": "Коллектор, дроссельная заслонка, ДМРВ, воздушный фильтр.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Дроссельная заслонка",
+       "short_name": "Дроссельная заслонка",
+       "shape_key": "throttle",
+       "oem_number": "96 934 163"
+      },
+      {
+       "number": 2,
+       "name": "Датчик массового расхода воздуха",
+       "short_name": "Датчик массового расхода",
+       "shape_key": "sensor",
+       "oem_number": "96 934 170"
+      },
+      {
+       "number": 3,
+       "name": "Фильтр воздушный",
+       "short_name": "Фильтр воздушный",
+       "shape_key": "panel",
+       "oem_number": "C 25 108"
+      },
+      {
+       "number": 4,
+       "name": "Патрубок воздушный",
+       "short_name": "Патрубок воздушный",
+       "shape_key": "hose",
+       "oem_number": "96 934 187"
+      },
+      {
+       "number": 5,
+       "name": "Прокладка впускного коллектора",
+       "short_name": "Прокладка впускного коллектора",
+       "shape_key": "gasket",
+       "oem_number": "96 934 194"
+      }
+     ]
+    },
+    {
+     "slug": "exhaust",
+     "title": "Выпускная система",
+     "description": "Приёмная труба, катализатор, резонатор, глушитель.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Катализатор",
+       "short_name": "Катализатор",
+       "shape_key": "catalyst",
+       "oem_number": "96 934 200"
+      },
+      {
+       "number": 2,
+       "name": "Датчик кислорода (лямбда)",
+       "short_name": "Датчик кислорода (лямбда)",
+       "shape_key": "sensor",
+       "oem_number": "0 258 006 537"
+      },
+      {
+       "number": 3,
+       "name": "Резонатор",
+       "short_name": "Резонатор",
+       "shape_key": "muffler",
+       "oem_number": "96 934 217"
+      },
+      {
+       "number": 4,
+       "name": "Глушитель задний",
+       "short_name": "Глушитель задний",
+       "shape_key": "muffler",
+       "oem_number": "96 934 224"
+      },
+      {
+       "number": 5,
+       "name": "Гофра приёмной трубы",
+       "short_name": "Гофра приёмной трубы",
+       "shape_key": "pipe",
+       "oem_number": "96 934 231"
+      },
+      {
+       "number": 6,
+       "name": "Прокладка выпускного коллектора",
+       "short_name": "Прокладка выпускного коллектора",
+       "shape_key": "gasket",
+       "oem_number": "96 934 248"
+      }
+     ]
+    },
+    {
+     "slug": "egr",
+     "title": "Рециркуляция и вентиляция",
+     "description": "Клапан EGR, клапан вентиляции картера.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Клапан EGR",
+       "short_name": "Клапан EGR",
+       "shape_key": "valve",
+       "oem_number": "96 934 255"
+      },
+      {
+       "number": 2,
+       "name": "Прокладка EGR",
+       "short_name": "Прокладка EGR",
+       "shape_key": "gasket",
+       "oem_number": "96 934 262"
+      },
+      {
+       "number": 3,
+       "name": "Клапан вентиляции картера",
+       "short_name": "Клапан вентиляции картера",
+       "shape_key": "valve",
+       "oem_number": "96 934 279"
+      },
+      {
+       "number": 4,
+       "name": "Патрубок вентиляции",
+       "short_name": "Патрубок вентиляции",
+       "shape_key": "hose",
+       "oem_number": "96 934 286"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "transmission",
+   "title": "Трансмиссия",
+   "sort_order": 5,
+   "schemes": [
+    {
+     "slug": "clutch",
+     "title": "Сцепление",
+     "description": "Диск, корзина, выжимной, рабочий цилиндр.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Диск сцепления",
+       "short_name": "Диск сцепления",
+       "shape_key": "clutch",
+       "oem_number": "96 018 114"
+      },
+      {
+       "number": 2,
+       "name": "Корзина сцепления",
+       "short_name": "Корзина сцепления",
+       "shape_key": "clutch",
+       "oem_number": "96 018 121"
+      },
+      {
+       "number": 3,
+       "name": "Подшипник выжимной",
+       "short_name": "Подшипник выжимной",
+       "shape_key": "bearing",
+       "oem_number": "96 018 138"
+      },
+      {
+       "number": 4,
+       "name": "Цилиндр сцепления рабочий",
+       "short_name": "Цилиндр сцепления рабочий",
+       "shape_key": "cylinder",
+       "oem_number": "96 018 145"
+      },
+      {
+       "number": 5,
+       "name": "Комплект сцепления",
+       "short_name": "Комплект сцепления",
+       "shape_key": "kit",
+       "oem_number": "96 018 152"
+      }
+     ]
+    },
+    {
+     "slug": "gearbox-mt",
+     "title": "Механическая коробка передач",
+     "description": "Синхронизаторы, сальники, кулиса, масло.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Сальник привода КПП",
+       "short_name": "Сальник привода КПП",
+       "shape_key": "seal",
+       "oem_number": "96 018 169"
+      },
+      {
+       "number": 2,
+       "name": "Синхронизатор",
+       "short_name": "Синхронизатор",
+       "shape_key": "sprocket",
+       "oem_number": "96 018 176"
+      },
+      {
+       "number": 3,
+       "name": "Кулиса переключения",
+       "short_name": "Кулиса переключения",
+       "shape_key": "link",
+       "oem_number": "96 018 183"
+      },
+      {
+       "number": 4,
+       "name": "Масло трансмиссионное, 2 л",
+       "short_name": "Масло трансмиссионное",
+       "shape_key": "can",
+       "oem_number": ""
+      }
+     ]
+    },
+    {
+     "slug": "gearbox-at",
+     "title": "Автоматическая коробка передач",
+     "description": "Фильтр, прокладка поддона, масло, соленоиды.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Фильтр АКПП",
+       "short_name": "Фильтр АКПП",
+       "shape_key": "filter",
+       "oem_number": "96 018 190"
+      },
+      {
+       "number": 2,
+       "name": "Прокладка поддона АКПП",
+       "short_name": "Прокладка поддона АКПП",
+       "shape_key": "gasket",
+       "oem_number": "96 018 206"
+      },
+      {
+       "number": 3,
+       "name": "Масло ATF, 4 л",
+       "short_name": "Масло ATF",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 4,
+       "name": "Соленоид АКПП",
+       "short_name": "Соленоид АКПП",
+       "shape_key": "valve",
+       "oem_number": "96 018 213"
+      }
+     ]
+    },
+    {
+     "slug": "driveshaft",
+     "title": "Приводы и ШРУСы",
+     "description": "Привод в сборе, гранаты, пыльники.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Привод в сборе",
+       "short_name": "Привод",
+       "shape_key": "driveshaft",
+       "oem_number": "96 018 220"
+      },
+      {
+       "number": 2,
+       "name": "ШРУС наружный",
+       "short_name": "ШРУС наружный",
+       "shape_key": "cvjoint",
+       "oem_number": "96 018 237"
+      },
+      {
+       "number": 3,
+       "name": "ШРУС внутренний",
+       "short_name": "ШРУС внутренний",
+       "shape_key": "cvjoint",
+       "oem_number": "96 018 244"
+      },
+      {
+       "number": 4,
+       "name": "Пыльник ШРУС с смазкой",
+       "short_name": "Пыльник ШРУС с",
+       "shape_key": "shield",
+       "oem_number": "96 018 251"
+      },
+      {
+       "number": 5,
+       "name": "Хомут пыльника",
+       "short_name": "Хомут пыльника",
+       "shape_key": "ring",
+       "oem_number": "96 018 268"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "electric",
+   "title": "Электрика и зажигание",
+   "sort_order": 6,
+   "schemes": [
+    {
+     "slug": "ignition",
+     "title": "Зажигание",
+     "description": "Свечи, катушки, провода, модуль.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Свеча зажигания",
+       "short_name": "Свеча зажигания",
+       "shape_key": "sparkplug",
+       "oem_number": "BKR6E-11"
+      },
+      {
+       "number": 2,
+       "name": "Катушка зажигания",
+       "short_name": "Катушка зажигания",
+       "shape_key": "coil",
+       "oem_number": "96 402 112"
+      },
+      {
+       "number": 3,
+       "name": "Провода высоковольтные, комплект",
+       "short_name": "Провода высоковольтные",
+       "shape_key": "cable",
+       "oem_number": "96 402 129"
+      },
+      {
+       "number": 4,
+       "name": "Модуль зажигания",
+       "short_name": "Модуль зажигания",
+       "shape_key": "ecu",
+       "oem_number": "96 402 136"
+      }
+     ]
+    },
+    {
+     "slug": "charging",
+     "title": "Генератор и АКБ",
+     "description": "Генератор, аккумулятор, реле-регулятор.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Генератор",
+       "short_name": "Генератор",
+       "shape_key": "alternator",
+       "oem_number": "96 402 143"
+      },
+      {
+       "number": 2,
+       "name": "Аккумулятор 60 Ач",
+       "short_name": "Аккумулятор 60 Ач",
+       "shape_key": "battery",
+       "oem_number": ""
+      },
+      {
+       "number": 3,
+       "name": "Реле-регулятор напряжения",
+       "short_name": "Реле-регулятор напряжения",
+       "shape_key": "ecu",
+       "oem_number": "96 402 150"
+      },
+      {
+       "number": 4,
+       "name": "Шкив генератора обгонный",
+       "short_name": "Шкив генератора обгонный",
+       "shape_key": "roller",
+       "oem_number": "96 402 167"
+      }
+     ]
+    },
+    {
+     "slug": "starting",
+     "title": "Стартер",
+     "description": "Стартер, бендикс, втягивающее реле.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Стартер",
+       "short_name": "Стартер",
+       "shape_key": "starter",
+       "oem_number": "96 402 174"
+      },
+      {
+       "number": 2,
+       "name": "Бендикс",
+       "short_name": "Бендикс",
+       "shape_key": "sprocket",
+       "oem_number": "96 402 181"
+      },
+      {
+       "number": 3,
+       "name": "Втягивающее реле",
+       "short_name": "Втягивающее реле",
+       "shape_key": "ecu",
+       "oem_number": "96 402 198"
+      },
+      {
+       "number": 4,
+       "name": "Щётки стартера",
+       "short_name": "Щётки стартера",
+       "shape_key": "bolt",
+       "oem_number": "96 402 204"
+      }
+     ]
+    },
+    {
+     "slug": "sensors",
+     "title": "Датчики двигателя",
+     "description": "Коленвал, распредвал, детонации, температуры.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Датчик положения коленвала",
+       "short_name": "Датчик положения коленвала",
+       "shape_key": "sensor",
+       "oem_number": "96 402 211"
+      },
+      {
+       "number": 2,
+       "name": "Датчик положения распредвала",
+       "short_name": "Датчик положения распредвала",
+       "shape_key": "sensor",
+       "oem_number": "96 402 228"
+      },
+      {
+       "number": 3,
+       "name": "Датчик детонации",
+       "short_name": "Датчик детонации",
+       "shape_key": "sensor",
+       "oem_number": "96 402 235"
+      },
+      {
+       "number": 4,
+       "name": "Датчик температуры ОЖ",
+       "short_name": "Датчик температуры ОЖ",
+       "shape_key": "sensor",
+       "oem_number": "96 402 242"
+      }
+     ]
+    },
+    {
+     "slug": "wiring",
+     "title": "Проводка и предохранители",
+     "description": "Блок предохранителей, реле, разъёмы.",
+     "sort_order": 4,
+     "points": [
+      {
+       "number": 1,
+       "name": "Блок предохранителей",
+       "short_name": "Блок предохранителей",
+       "shape_key": "fusebox",
+       "oem_number": "96 402 259"
+      },
+      {
+       "number": 2,
+       "name": "Реле 4-контактное",
+       "short_name": "Реле 4-контактное",
+       "shape_key": "relay",
+       "oem_number": "96 402 266"
+      },
+      {
+       "number": 3,
+       "name": "Предохранитель, комплект",
+       "short_name": "Предохранитель",
+       "shape_key": "fuse",
+       "oem_number": "96 402 273"
+      },
+      {
+       "number": 4,
+       "name": "Разъём проводки",
+       "short_name": "Разъём проводки",
+       "shape_key": "plug",
+       "oem_number": "96 402 280"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "lighting",
+   "title": "Освещение",
+   "sort_order": 7,
+   "schemes": [
+    {
+     "slug": "headlamp",
+     "title": "Передняя оптика",
+     "description": "Фары, корректор, лампы, ПТФ.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Фара левая",
+       "short_name": "Фара левая",
+       "shape_key": "headlamp",
+       "oem_number": "96 556 118"
+      },
+      {
+       "number": 2,
+       "name": "Фара правая",
+       "short_name": "Фара правая",
+       "shape_key": "headlamp",
+       "oem_number": "96 556 125"
+      },
+      {
+       "number": 3,
+       "name": "Лампа ближнего света H7",
+       "short_name": "Лампа ближнего света",
+       "shape_key": "bulb",
+       "oem_number": ""
+      },
+      {
+       "number": 4,
+       "name": "Фара противотуманная",
+       "short_name": "Фара противотуманная",
+       "shape_key": "foglamp",
+       "oem_number": "96 556 132"
+      },
+      {
+       "number": 5,
+       "name": "Мотор корректора фар",
+       "short_name": "Мотор корректора фар",
+       "shape_key": "blower",
+       "oem_number": "96 556 149"
+      }
+     ]
+    },
+    {
+     "slug": "taillamp",
+     "title": "Задняя оптика",
+     "description": "Фонари, лампы, повторители.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Фонарь задний левый",
+       "short_name": "Фонарь задний левый",
+       "shape_key": "taillamp",
+       "oem_number": "96 556 156"
+      },
+      {
+       "number": 2,
+       "name": "Фонарь задний правый",
+       "short_name": "Фонарь задний правый",
+       "shape_key": "taillamp",
+       "oem_number": "96 556 163"
+      },
+      {
+       "number": 3,
+       "name": "Лампа P21W",
+       "short_name": "Лампа P21W",
+       "shape_key": "bulb",
+       "oem_number": ""
+      },
+      {
+       "number": 4,
+       "name": "Повторитель поворота",
+       "short_name": "Повторитель поворота",
+       "shape_key": "foglamp",
+       "oem_number": "96 556 170"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "body",
+   "title": "Кузов и стёкла",
+   "sort_order": 8,
+   "schemes": [
+    {
+     "slug": "bumper",
+     "title": "Бамперы",
+     "description": "Бампер, решётка, клипсы, кронштейны.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Бампер передний",
+       "short_name": "Бампер передний",
+       "shape_key": "bumper",
+       "oem_number": "96 640 112"
+      },
+      {
+       "number": 2,
+       "name": "Решётка радиатора",
+       "short_name": "Решётка радиатора",
+       "shape_key": "grille",
+       "oem_number": "96 640 129"
+      },
+      {
+       "number": 3,
+       "name": "Бампер задний",
+       "short_name": "Бампер задний",
+       "shape_key": "bumper",
+       "oem_number": "96 640 136"
+      },
+      {
+       "number": 4,
+       "name": "Клипса крепления, комплект",
+       "short_name": "Клипса крепления",
+       "shape_key": "bolt",
+       "oem_number": "96 640 143"
+      },
+      {
+       "number": 5,
+       "name": "Кронштейн бампера",
+       "short_name": "Кронштейн бампера",
+       "shape_key": "bolt",
+       "oem_number": "96 640 150"
+      }
+     ]
+    },
+    {
+     "slug": "panels",
+     "title": "Кузовные панели",
+     "description": "Капот, крылья, двери, петли.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Капот",
+       "short_name": "Капот",
+       "shape_key": "hood",
+       "oem_number": "96 640 167"
+      },
+      {
+       "number": 2,
+       "name": "Крыло переднее",
+       "short_name": "Крыло переднее",
+       "shape_key": "fender",
+       "oem_number": "96 640 174"
+      },
+      {
+       "number": 3,
+       "name": "Дверь передняя",
+       "short_name": "Дверь передняя",
+       "shape_key": "door",
+       "oem_number": "96 640 181"
+      },
+      {
+       "number": 4,
+       "name": "Подкрылок",
+       "short_name": "Подкрылок",
+       "shape_key": "shield",
+       "oem_number": "96 640 198"
+      }
+     ]
+    },
+    {
+     "slug": "glass",
+     "title": "Стёкла и зеркала",
+     "description": "Лобовое, боковые, зеркала, стеклоподъёмники.",
+     "sort_order": 2,
+     "points": [
+      {
+       "number": 1,
+       "name": "Стекло лобовое",
+       "short_name": "Стекло лобовое",
+       "shape_key": "glass",
+       "oem_number": "96 640 204"
+      },
+      {
+       "number": 2,
+       "name": "Зеркало наружное левое",
+       "short_name": "Зеркало наружное левое",
+       "shape_key": "mirror",
+       "oem_number": "96 640 211"
+      },
+      {
+       "number": 3,
+       "name": "Стеклоподъёмник",
+       "short_name": "Стеклоподъёмник",
+       "shape_key": "regulator",
+       "oem_number": "96 640 228"
+      },
+      {
+       "number": 4,
+       "name": "Уплотнитель стекла",
+       "short_name": "Уплотнитель стекла",
+       "shape_key": "seal",
+       "oem_number": "96 640 235"
+      }
+     ]
+    },
+    {
+     "slug": "wipers",
+     "title": "Стеклоочистители и омыватель",
+     "description": "Щётки, поводки, моторчик, бачок, форсунки.",
+     "sort_order": 3,
+     "points": [
+      {
+       "number": 1,
+       "name": "Щётка стеклоочистителя 600 мм",
+       "short_name": "Щётка стеклоочистителя 600",
+       "shape_key": "wiper",
+       "oem_number": ""
+      },
+      {
+       "number": 2,
+       "name": "Щётка стеклоочистителя 450 мм",
+       "short_name": "Щётка стеклоочистителя 450",
+       "shape_key": "wiper",
+       "oem_number": ""
+      },
+      {
+       "number": 3,
+       "name": "Моторчик стеклоочистителя",
+       "short_name": "Моторчик стеклоочистителя",
+       "shape_key": "blower",
+       "oem_number": "96 640 242"
+      },
+      {
+       "number": 4,
+       "name": "Насос омывателя",
+       "short_name": "Насос омывателя",
+       "shape_key": "pump",
+       "oem_number": "96 640 259"
+      },
+      {
+       "number": 5,
+       "name": "Форсунка омывателя",
+       "short_name": "Форсунка омывателя",
+       "shape_key": "injector",
+       "oem_number": "96 640 266"
+      }
+     ]
+    },
+    {
+     "slug": "locks",
+     "title": "Замки и ручки",
+     "description": "Замки дверей, ручки, личинки, петли капота.",
+     "sort_order": 4,
+     "points": [
+      {
+       "number": 1,
+       "name": "Замок двери передний",
+       "short_name": "Замок двери передний",
+       "shape_key": "lock",
+       "oem_number": "96 640 273"
+      },
+      {
+       "number": 2,
+       "name": "Ручка двери наружная",
+       "short_name": "Ручка двери наружная",
+       "shape_key": "handle",
+       "oem_number": "96 640 280"
+      },
+      {
+       "number": 3,
+       "name": "Личинка замка с ключом",
+       "short_name": "Личинка замка с",
+       "shape_key": "lock",
+       "oem_number": "96 640 297"
+      },
+      {
+       "number": 4,
+       "name": "Тросик замка капота",
+       "short_name": "Тросик замка капота",
+       "shape_key": "cable",
+       "oem_number": "96 640 303"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "service",
+   "title": "Плановое обслуживание",
+   "sort_order": 9,
+   "schemes": [
+    {
+     "slug": "service-kit",
+     "title": "Комплект ТО",
+     "description": "Всё, что меняется при плановом обслуживании.",
+     "sort_order": 0,
+     "points": [
+      {
+       "number": 1,
+       "name": "Фильтр масляный",
+       "short_name": "Фильтр масляный",
+       "shape_key": "filter",
+       "oem_number": "W 712/94"
+      },
+      {
+       "number": 2,
+       "name": "Фильтр воздушный",
+       "short_name": "Фильтр воздушный",
+       "shape_key": "panel",
+       "oem_number": "C 25 108"
+      },
+      {
+       "number": 3,
+       "name": "Фильтр салонный",
+       "short_name": "Фильтр салонный",
+       "shape_key": "panel",
+       "oem_number": "96 812 145"
+      },
+      {
+       "number": 4,
+       "name": "Масло моторное 5W-30, 4 л",
+       "short_name": "Масло моторное 5W-30",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 5,
+       "name": "Свечи зажигания, 4 шт",
+       "short_name": "Свечи зажигания",
+       "shape_key": "sparkplug",
+       "oem_number": "BKR6E-11"
+      },
+      {
+       "number": 6,
+       "name": "Пробка сливная с шайбой",
+       "short_name": "Пробка сливная с",
+       "shape_key": "bolt",
+       "oem_number": "96 812 152"
+      }
+     ]
+    },
+    {
+     "slug": "fluids",
+     "title": "Масла и жидкости",
+     "description": "Моторное, трансмиссионное, тормозная, антифриз.",
+     "sort_order": 1,
+     "points": [
+      {
+       "number": 1,
+       "name": "Масло моторное 5W-40, 4 л",
+       "short_name": "Масло моторное 5W-40",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 2,
+       "name": "Антифриз G12, 5 л",
+       "short_name": "Антифриз G12",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 3,
+       "name": "Жидкость тормозная DOT-4",
+       "short_name": "Жидкость тормозная DOT-4",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 4,
+       "name": "Жидкость омывателя, 5 л",
+       "short_name": "Жидкость омывателя",
+       "shape_key": "can",
+       "oem_number": ""
+      },
+      {
+       "number": 5,
+       "name": "Смазка ШРУС, 400 г",
+       "short_name": "Смазка ШРУС",
+       "shape_key": "can",
+       "oem_number": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

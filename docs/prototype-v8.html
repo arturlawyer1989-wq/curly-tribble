@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ДЕТАЛЬ 24 — запчасти для иномарок в Старобельске и районе</title>
+<meta name="description" content="Оригинальные автозапчасти и проверенные аналоги для иномарок. Подбор по VIN, схемы узлов, оплата при получении, доставка по северным районам ЛНР.">
+<meta name="theme-color" content="#0B3B52">
+<meta property="og:title" content="ДЕТАЛЬ 24 — запчасти для иномарок">
+<meta property="og:description" content="Оригинал и аналоги, подбор по VIN, оплата наличными при получении.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --petrol:#0B3B52; --petrol-d:#072B3C; --petrol-l:#0E4A66;
+  --ink:#0F1418; --steel:#5D6B77; --steel-2:#8A97A2;
+  --line:#E3E9EE; --line-2:#EFF3F6; --surface:#F4F7F9; --paper:#fff;
+  --accent:#F04E23; --accent-d:#D33F18; --accent-s:#FFF3EF;
+  --ok:#0E7A56; --ok-bg:#E7F5EF;
+  --warn:#B45309; --warn-bg:#FDF4E7;
+  --gold:#C9871F;
+  --r-s:8px; --r:12px; --r-l:18px;
+  --sh-1:0 1px 2px rgba(11,59,82,.06);
+  --sh-2:0 2px 8px rgba(11,59,82,.07), 0 12px 32px rgba(11,59,82,.07);
+  --f:'Golos Text',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --fd:'Unbounded',var(--f);
+  --fm:'JetBrains Mono',ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f);color:var(--ink);background:var(--surface);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+.mono{font-family:var(--fm)}
+.muted{color:var(--steel)}
+
+/* ===== оболочка прототипа ===== */
+.proto{position:sticky;top:0;z-index:200;background:var(--ink);color:#fff;padding:9px 12px;display:flex;gap:7px;align-items:center;overflow-x:auto;scrollbar-width:none}
+.proto::-webkit-scrollbar{display:none}
+.proto b{font-family:var(--fd);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:#8A97A2;white-space:nowrap;padding-right:4px}
+.proto button{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);color:#fff;border-radius:99px;padding:7px 12px;font-size:12.5px;white-space:nowrap;cursor:pointer}
+.proto button:hover{background:rgba(255,255,255,.18)}
+.proto button.on{background:var(--accent);border-color:var(--accent)}
+.screen{display:none}
+.screen.on{display:block}
+
+/* ===== шапка ===== */
+.top{background:var(--petrol);color:#fff;position:relative;z-index:40}
+.top-in{display:flex;align-items:center;gap:14px;height:60px}
+.logo{display:flex;align-items:center;gap:9px;font-family:var(--fd);font-weight:700;font-size:16.5px;letter-spacing:-.02em;white-space:nowrap}
+.logo i{width:28px;height:28px;border-radius:7px;background:var(--accent);display:grid;place-items:center;font-style:normal;font-size:12.5px;font-family:var(--fm);font-weight:700}
+.top nav{display:none;gap:20px;font-size:14.5px;color:#BFD3DD}
+.top nav a:hover{color:#fff}
+.top-act{margin-left:auto;display:flex;align-items:center;gap:8px}
+.ib{width:42px;height:42px;border-radius:var(--r-s);border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);display:grid;place-items:center;cursor:pointer;position:relative;flex:none}
+.ib:hover{background:rgba(255,255,255,.14)}
+.ib svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.badge{position:absolute;top:-6px;right:-6px;min-width:19px;height:19px;border-radius:99px;background:var(--accent);color:#fff;font-size:11px;font-weight:700;display:grid;place-items:center;padding:0 5px;border:2px solid var(--petrol)}
+.tel{display:none;font-family:var(--fm);font-weight:700;font-size:14.5px}
+
+/* номерной знак */
+.plate{display:inline-flex;align-items:stretch;background:#fff;border:1.5px solid var(--ink);border-radius:5px;overflow:hidden;font-family:var(--fm);font-weight:700;line-height:1;color:var(--ink);white-space:nowrap}
+.plate span{padding:6px 9px;font-size:12.5px;letter-spacing:.03em;display:flex;align-items:center;gap:5px}
+.plate em{font-style:normal;background:var(--petrol);color:#fff;padding:6px 7px;font-size:10px;display:flex;align-items:center;border-left:1.5px solid var(--ink);letter-spacing:.04em}
+.plate.lg span{font-size:14px;padding:9px 12px}
+.plate.lg em{font-size:11px;padding:9px 9px}
+.plate.gh{background:transparent;border-color:rgba(255,255,255,.45);color:#fff}
+.plate.gh em{background:rgba(255,255,255,.14);border-left-color:rgba(255,255,255,.45)}
+
+/* ===== поиск ===== */
+.sbar{background:var(--petrol);padding-bottom:16px}
+.sf{display:flex;background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-2)}
+.sf input{flex:1;border:0;padding:15px 16px;font-size:15.5px;min-width:0}
+.sf input:focus{outline:2px solid var(--accent);outline-offset:-2px}
+.sf button{border:0;background:var(--accent);color:#fff;font-weight:600;padding:0 20px;cursor:pointer;white-space:nowrap}
+.sf button:hover{background:var(--accent-d)}
+.smode{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.smode button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);color:#D7E5EC;padding:7px 13px;border-radius:99px;font-size:13px;cursor:pointer;min-height:36px}
+.smode button.on{background:#fff;color:var(--petrol);border-color:#fff;font-weight:600}
+.shint{margin-top:9px;font-size:12.5px;color:#9DB7C4}
+.sug{background:#fff;border-radius:var(--r);margin-top:8px;box-shadow:var(--sh-2);overflow:hidden}
+.sug .h{padding:9px 15px;font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--steel-2);background:var(--surface);font-weight:700}
+.sug a{display:flex;gap:11px;align-items:center;padding:12px 15px;border-bottom:1px solid var(--line-2);cursor:pointer}
+.sug a:hover{background:var(--accent-s)}
+.sug a:last-child{border:0}
+.sug .art{font-family:var(--fm);font-weight:700;font-size:13px;flex:none}
+.sug .nm{font-size:13.5px;color:var(--steel);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sug .pr{margin-left:auto;font-family:var(--fm);font-weight:700;white-space:nowrap;font-size:13.5px}
+
+/* ===== гараж-полоса ===== */
+.gbar{background:#fff;border-bottom:1px solid var(--line)}
+.gbar .wrap{display:flex;align-items:center;gap:10px;padding:11px 16px;overflow-x:auto;scrollbar-width:none}
+.gbar .wrap::-webkit-scrollbar{display:none}
+.gbar small{color:var(--steel);white-space:nowrap;font-size:12.5px;flex:none}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:8px 13px;font-size:13px;white-space:nowrap;cursor:pointer;min-height:38px;display:inline-flex;align-items:center;gap:6px;flex:none}
+.chip:hover{border-color:var(--steel-2)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* ===== типографика ===== */
+section{padding:26px 0}
+h1{font-family:var(--fd);font-size:27px;line-height:1.18;margin:0 0 10px;letter-spacing:-.025em}
+h2{font-size:20px;margin:0 0 15px;letter-spacing:-.015em;font-weight:700}
+h3{font-size:15.5px;margin:0 0 9px;font-weight:600}
+.eyebrow{font-family:var(--fm);font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:9px}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:15px}
+.sec-head h2{margin:0}
+.sec-head a{margin-left:auto;font-size:13.5px;color:var(--accent);font-weight:600;white-space:nowrap}
+
+/* ===== базовые элементы ===== */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r-l);padding:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;border:0;border-radius:var(--r-s);padding:13px 20px;font-weight:600;cursor:pointer;min-height:48px;transition:background .15s}
+.btn:hover{background:var(--accent-d)}
+.btn.ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+.btn.ghost:hover{background:var(--surface);border-color:var(--steel-2)}
+.btn.dark{background:var(--petrol)}.btn.dark:hover{background:var(--petrol-l)}
+.btn.wide{width:100%}
+.btn.sm{min-height:40px;padding:9px 14px;font-size:13.5px}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.pill{display:inline-flex;align-items:center;gap:5px;border-radius:99px;padding:4px 10px;font-size:11.5px;font-weight:600;white-space:nowrap}
+.pill.ok{background:var(--ok-bg);color:var(--ok)}
+.pill.wait{background:var(--warn-bg);color:var(--warn)}
+.pill.orig{background:#E8F0F5;color:var(--petrol)}
+.pill.anal{background:#F1F1F4;color:#4E4D63}
+.pill.hot{background:var(--accent-s);color:var(--accent-d)}
+.dot{width:6px;height:6px;border-radius:99px;background:currentColor}
+.note{background:var(--warn-bg);border-left:3px solid var(--warn);border-radius:0 var(--r-s) var(--r-s) 0;padding:12px 14px;font-size:13px;color:#6B4310;line-height:1.45}
+.price{font-family:var(--fm);font-weight:700;letter-spacing:-.02em}
+.stars{display:inline-flex;gap:1.5px;color:var(--gold)}
+.stars svg{width:12px;height:12px;fill:currentColor;stroke:none}
+.stars .e{color:#D8DEE3}
+
+/* ===== главная: hero ===== */
+.usp{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.usp div{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:13px}
+.usp b{display:block;font-size:13.5px;margin-bottom:3px}
+.usp span{font-size:12px;color:var(--steel);line-height:1.4;display:block}
+
+.cats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.cats a{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:14px;display:flex;flex-direction:column;gap:8px;min-height:96px}
+.cats a:hover{border-color:var(--accent);box-shadow:var(--sh-1)}
+.cats svg{width:28px;height:28px;stroke:var(--petrol);fill:none;stroke-width:1.4;stroke-linecap:round}
+.cats .n{font-weight:600;font-size:14px;margin-top:auto}
+.cats .q{font-family:var(--fm);font-size:11px;color:var(--steel-2)}
+
+/* ===== карточки товаров ===== */
+.goods{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.good{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:12px;display:flex;flex-direction:column;gap:8px;cursor:pointer;transition:box-shadow .15s,border-color .15s}
+.good:hover{box-shadow:var(--sh-2);border-color:#D3DDE4}
+.thumb{aspect-ratio:1;background:var(--surface);border-radius:var(--r-s);display:grid;place-items:center;position:relative;overflow:hidden}
+.thumb svg.pic{width:56%;height:56%;stroke:#9AA8B3;fill:none;stroke-width:1.1;stroke-linecap:round}
+.thumb .tag{position:absolute;top:8px;left:8px}
+.brand{font-family:var(--fm);font-size:10.5px;color:var(--steel-2);text-transform:uppercase;letter-spacing:.07em}
+.good .name{font-size:13.5px;font-weight:600;line-height:1.3}
+.good .art{font-family:var(--fm);font-size:11.5px;color:var(--steel)}
+.good .foot{display:flex;align-items:baseline;gap:6px;margin-top:auto}
+.good .foot .price{font-size:17.5px}
+.good .foot small{color:var(--steel-2);font-size:11px}
+.add{border:1.5px solid var(--line);background:#fff;border-radius:var(--r-s);padding:11px;font-weight:600;font-size:13.5px;cursor:pointer;min-height:46px}
+.add:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-s)}
+
+/* ===== выдача: оригинал / аналоги ===== */
+.seg{display:flex;background:var(--line-2);border-radius:var(--r-s);padding:3px;margin-bottom:14px}
+.seg button{flex:1;border:0;background:none;padding:10px 8px;border-radius:9px;font-size:13.5px;font-weight:600;cursor:pointer;color:var(--steel);min-height:44px}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:var(--sh-1)}
+.grp-head{display:flex;align-items:center;gap:9px;margin:20px 0 10px}
+.grp-head h3{margin:0;font-size:16px}
+.grp-head .cnt{font-family:var(--fm);font-size:12px;color:var(--steel-2)}
+.grp-head .rule{flex:1;height:1px;background:var(--line)}
+.offers{border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;background:#fff}
+.offer{display:grid;grid-template-columns:1fr auto;gap:12px;padding:14px;border-bottom:1px solid var(--line-2);align-items:center}
+.offer:last-child{border:0}
+.offer:hover{background:#FCFDFE}
+.offer.best{background:var(--accent-s);box-shadow:inset 3px 0 0 var(--accent)}
+.offer .l b{display:block;font-size:14.5px;line-height:1.3}
+.offer .l .art{font-family:var(--fm);font-size:11.5px;color:var(--steel);margin-top:3px}
+.offer .l .meta{margin-top:7px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.offer .r{text-align:right;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.offer .r .price{font-size:17.5px}
+
+/* ===== визуальный каталог ===== */
+.vcat{display:grid;gap:14px}
+.vcat .scheme{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);padding:10px;position:relative}
+.vcat svg.dia{width:100%;height:auto;display:block}
+.hot{cursor:pointer}
+.hot circle.mk{fill:#fff;stroke:var(--petrol);stroke-width:1.8;filter:drop-shadow(0 1px 2px rgba(11,59,82,.18))}
+.hot text{font-family:var(--fm);font-size:9px;font-weight:700;fill:var(--petrol);text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.hot.on circle.mk{fill:var(--accent);stroke:var(--accent)}
+.hot.on text{fill:#fff}
+.hot:hover circle.mk{stroke:var(--accent)}
+.plist{background:#fff;border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden}
+.plist .row{display:flex;gap:12px;align-items:center;padding:13px 14px;border-bottom:1px solid var(--line-2);cursor:pointer}
+.plist .row:last-child{border:0}
+.plist .row.on{background:var(--accent-s);box-shadow:inset 3px 0 0 var(--accent)}
+.plist .num{width:26px;height:26px;border-radius:99px;border:1.5px solid var(--petrol);color:var(--petrol);font-family:var(--fm);font-size:11px;font-weight:700;display:grid;place-items:center;flex:none}
+.plist .row.on .num{background:var(--accent);border-color:var(--accent);color:#fff}
+.plist .t b{display:block;font-size:14px}
+.plist .t small{font-family:var(--fm);font-size:11.5px;color:var(--steel)}
+.plist .p{margin-left:auto;text-align:right;white-space:nowrap}
+
+/* ===== дерево выбора модели ===== */
+.crumbs{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:14px;font-size:13px}
+.crumbs span{background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 12px}
+.crumbs span.done{background:var(--petrol);color:#fff;border-color:var(--petrol);font-weight:600}
+.crumbs i{color:var(--steel-2);font-style:normal}
+.tree{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.tree button{background:#fff;border:1px solid var(--line);border-radius:var(--r-s);padding:14px 12px;text-align:left;cursor:pointer;font-size:14px;min-height:52px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.tree button:hover{border-color:var(--accent);background:var(--accent-s)}
+.tree button small{font-family:var(--fm);font-size:11px;color:var(--steel-2)}
+
+/* ===== карточка товара ===== */
+.gal-main{aspect-ratio:1;background:#fff;border:1px solid var(--line);border-radius:var(--r-l);display:grid;place-items:center;position:relative;overflow:hidden}
+.gal-main svg{width:52%;height:52%;stroke:#9AA8B3;fill:none;stroke-width:1.1}
+.gal-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:8px}
+.gal-thumbs div{aspect-ratio:1;background:#fff;border:1.5px solid var(--line);border-radius:var(--r-s);cursor:pointer}
+.gal-thumbs div.on{border-color:var(--accent)}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:22px 0 0;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs button{border:0;background:none;padding:12px 14px;font-size:14px;font-weight:600;color:var(--steel);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;min-height:46px}
+.tabs button.on{color:var(--ink);border-bottom-color:var(--accent)}
+.tabc{display:none;padding-top:14px}
+.tabc.on{display:block}
+.spec{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.spec div{display:flex;justify-content:space-between;gap:16px;padding:12px 14px;border-bottom:1px solid var(--line-2);font-size:14px}
+.spec div:last-child{border:0}
+.spec b{font-family:var(--fm);font-weight:700}
+.cross{display:flex;flex-wrap:wrap;gap:7px}
+.cross span{background:#fff;border:1px solid var(--line);border-radius:var(--r-s);padding:8px 11px;font-family:var(--fm);font-size:12.5px}
+.cross span b{color:var(--steel-2);font-weight:500;margin-right:5px;font-family:var(--f)}
+.fit{background:#E8F0F5;border:1px solid #CFE0EA;border-radius:var(--r);padding:13px;display:flex;gap:11px;align-items:flex-start}
+
+/* ===== корзина / формы ===== */
+.li{display:grid;grid-template-columns:64px 1fr;gap:13px;padding:15px 0;border-bottom:1px solid var(--line-2)}
+.li:last-of-type{border:0}
+.li .th{aspect-ratio:1;background:var(--surface);border-radius:var(--r-s);display:grid;place-items:center}
+.li .th svg{width:58%;height:58%;stroke:#9AA8B3;fill:none;stroke-width:1.2}
+.qty{display:inline-flex;align-items:center;border:1.5px solid var(--line);border-radius:var(--r-s);overflow:hidden}
+.qty button{width:40px;height:40px;border:0;background:#fff;font-size:18px;cursor:pointer}
+.qty button:hover{background:var(--surface)}
+.qty span{width:38px;text-align:center;font-family:var(--fm);font-weight:700;font-size:14px}
+.sum{display:flex;justify-content:space-between;gap:12px;padding:8px 0;font-size:14px}
+.sum.total{border-top:1px solid var(--line);margin-top:7px;padding-top:13px;font-size:16px;font-weight:700}
+.sum.total .price{font-size:22px}
+label.f{display:block;margin-bottom:15px}
+label.f>span{display:block;font-size:13px;font-weight:600;margin-bottom:7px}
+label.f>span i{color:var(--accent);font-style:normal}
+.inp{width:100%;border:1.5px solid var(--line);border-radius:var(--r-s);padding:13px 14px;background:#fff;min-height:48px}
+.inp:focus{outline:0;border-color:var(--petrol);box-shadow:0 0 0 3px rgba(11,59,82,.08)}
+textarea.inp{min-height:92px;resize:vertical}
+.help{font-size:12px;color:var(--steel);margin-top:7px;line-height:1.4}
+.check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--steel);line-height:1.45;cursor:pointer}
+.check input{width:20px;height:20px;margin:0;flex:none;accent-color:var(--accent)}
+.rcards{display:grid;gap:8px}
+.rcards label{display:flex;gap:11px;align-items:flex-start;border:1.5px solid var(--line);border-radius:var(--r-s);padding:13px;background:#fff;cursor:pointer}
+.rcards label.on{border-color:var(--accent);background:var(--accent-s)}
+.rcards input{margin:2px 0 0;width:19px;height:19px;flex:none;accent-color:var(--accent)}
+.rcards b{display:block;font-size:14px}
+.rcards small{color:var(--steel);font-size:12.5px;line-height:1.4;display:block;margin-top:3px}
+
+/* ===== код ===== */
+.codebox{display:flex;gap:9px;justify-content:center;margin:8px 0 13px}
+.codebox input{width:54px;height:62px;text-align:center;font-family:var(--fm);font-weight:700;font-size:25px;border:1.5px solid var(--line);border-radius:var(--r);background:#fff}
+.codebox input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(240,78,35,.15)}
+.codebox.err input{border-color:var(--accent);animation:shk .3s}
+@keyframes shk{25%{transform:translateX(-4px)}75%{transform:translateX(4px)}}
+.chn{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:15px}
+.chn button{border:1.5px solid var(--line);background:#fff;border-radius:var(--r-s);padding:11px 6px;cursor:pointer;font-size:12.5px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:4px;min-height:68px}
+.chn button.on{border-color:var(--petrol);background:#E8F0F5;color:var(--petrol)}
+.chn small{font-weight:400;color:var(--steel);font-size:10.5px}
+.ok-s{text-align:center;padding:20px 0}
+.ok-s .ring{width:66px;height:66px;border-radius:99px;background:var(--ok-bg);color:var(--ok);display:grid;place-items:center;margin:0 auto 15px}
+.ok-s .ring svg{width:31px;height:31px;stroke:currentColor;fill:none;stroke-width:2.5;stroke-linecap:round}
+
+/* ===== статусы ===== */
+.steps>div{display:grid;grid-template-columns:26px 1fr;gap:13px;padding-bottom:17px;position:relative}
+.steps>div>div{display:block;min-width:0}
+.steps>div:not(:last-child)::before{content:'';position:absolute;left:12.5px;top:27px;bottom:0;width:1.5px;background:var(--line)}
+.steps>div>i{width:26px;height:26px;border-radius:99px;background:#fff;border:1.5px solid var(--line);display:grid;place-items:center;font-style:normal;font-family:var(--fm);font-size:11px;font-weight:700;color:var(--steel-2);z-index:1}
+.steps>div.done>i{background:var(--ok);border-color:var(--ok);color:#fff}
+.steps>div.now>i{background:var(--accent);border-color:var(--accent);color:#fff}
+.steps b{font-size:14px}
+.steps small{color:var(--steel);font-size:12.5px;display:block;margin-top:1px}
+
+/* ===== админка ===== */
+.adm{background:#0D1216;color:#DCE3E9;min-height:100vh;padding-bottom:30px}
+.adm h1,.adm h2,.adm h3{color:#fff}
+.a-top{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.a-tabs{display:flex;gap:6px;overflow-x:auto;padding:13px 0;scrollbar-width:none}
+.a-tabs::-webkit-scrollbar{display:none}
+.a-tabs button{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#DCE3E9;border-radius:99px;padding:8px 14px;font-size:13px;white-space:nowrap;cursor:pointer;min-height:40px}
+.a-tabs button.on{background:#fff;color:#0D1216;border-color:#fff;font-weight:600}
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
+.kpi div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:14px}
+.kpi b{display:block;font-family:var(--fm);font-size:23px;color:#fff;line-height:1.15}
+.kpi span{font-size:11.5px;color:#8A97A2}
+.kpi .w b{color:#FFB37A}
+.ord{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:15px;margin-bottom:11px}
+.ord .h{display:flex;align-items:center;gap:8px;margin-bottom:9px;flex-wrap:wrap}
+.ord .num{font-family:var(--fm);font-weight:700;color:#fff}
+.ord .t{font-size:12px;color:#8A97A2;margin-left:auto}
+.ord ul{margin:9px 0;padding-left:17px;font-size:13px;color:#B4C0C9}
+.ord .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:11px}
+.ord .acts button{border-radius:var(--r-s);padding:9px 13px;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;min-height:40px}
+.ord .acts button.pri{background:var(--accent);border-color:var(--accent)}
+.pill.dk{background:rgba(255,255,255,.1);color:#DCE3E9}
+.pill.rd{background:#4A1E14;color:#FF9670}
+.pill.gr{background:#12352A;color:#5FD3A5}
+.trust{display:inline-flex;gap:3px;align-items:center}
+.trust s{width:8px;height:8px;border-radius:99px;background:#3A464F;text-decoration:none;display:block}
+.trust s.f{background:#5FD3A5}
+.flow{display:flex;gap:6px;overflow-x:auto;padding:4px 0 12px;scrollbar-width:none}
+.flow::-webkit-scrollbar{display:none}
+.flow button{border-radius:99px;padding:9px 13px;font-size:12.5px;white-space:nowrap;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:#B4C0C9;min-height:40px}
+.flow button.on{background:var(--accent);border-color:var(--accent);color:#fff;font-weight:600}
+table.mini{width:100%;border-collapse:collapse;font-size:13px}
+table.mini th{text-align:left;font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:#8A97A2;padding:9px 6px;border-bottom:1px solid rgba(255,255,255,.1);font-weight:600}
+table.mini td{padding:12px 6px;border-bottom:1px solid rgba(255,255,255,.07)}
+
+/* ===== доставка ===== */
+.zone{display:flex;gap:12px;padding:14px 0;border-bottom:1px solid var(--line-2);align-items:flex-start}
+.zone:last-child{border:0}
+.zone i{width:36px;height:36px;border-radius:var(--r-s);background:var(--surface);display:grid;place-items:center;flex:none;font-style:normal;font-family:var(--fm);font-weight:700;font-size:12px;color:var(--petrol)}
+.zone b{display:block;font-size:14px}
+.zone small{color:var(--steel);font-size:12.5px}
+.zone .price{margin-left:auto;white-space:nowrap;font-size:14px}
+
+/* ===== мобильная навигация ===== */
+.tabbar{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr);z-index:30}
+.tabbar button{border:0;background:none;padding:9px 0 11px;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10.5px;color:var(--steel);cursor:pointer;position:relative}
+.tabbar svg{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round}
+.tabbar button.on{color:var(--accent)}
+.sticky{position:sticky;bottom:0;background:#fff;border-top:1px solid var(--line);padding:11px 16px;display:flex;gap:12px;align-items:center;z-index:29}
+.sticky .price{font-size:19px}
+
+footer{background:var(--petrol-d);color:#A9C1CE;padding:28px 0;font-size:13px;margin-top:10px}
+footer .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+footer b{color:#fff;display:block;margin-bottom:10px;font-size:13.5px}
+footer a{display:block;padding:4px 0}
+footer a:hover{color:#fff}
+footer .fin{border-top:1px solid rgba(255,255,255,.12);margin-top:22px;padding-top:15px;font-size:11.5px;color:#7A93A2;line-height:1.5}
+
+.callout{background:#101820;color:#C3D2DB;border-radius:var(--r-l);padding:17px;font-size:13.5px;line-height:1.55}
+.callout b{color:#fff}
+.callout ul{margin:9px 0 0;padding-left:18px}
+.callout li{margin-bottom:6px}
+.callout .a{color:#FF8A5F;font-weight:600}
+
+@media(min-width:900px){
+  body{font-size:16px}
+  .top-in{height:74px}
+  .top nav{display:flex}
+  .tel{display:block;margin-right:6px}
+  h1{font-size:40px}
+  h2{font-size:25px}
+  section{padding:38px 0}
+  .usp{grid-template-columns:repeat(4,1fr)}
+  .cats{grid-template-columns:repeat(6,1fr)}
+  .goods{grid-template-columns:repeat(4,1fr);gap:16px}
+  .kpi{grid-template-columns:repeat(4,1fr)}
+  .tree{grid-template-columns:repeat(4,1fr)}
+  .vcat{grid-template-columns:1.15fr 1fr;align-items:start}
+  .lay-cat{display:grid;grid-template-columns:270px 1fr;gap:26px;align-items:start}
+  .lay-2{display:grid;grid-template-columns:1fr 390px;gap:26px;align-items:start}
+  .lay-prod{display:grid;grid-template-columns:minmax(0,440px) 1fr;gap:36px;align-items:start}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+  .tabbar{display:none}
+  .sticky{position:static;border:0;padding:0;background:none}
+  footer .cols{grid-template-columns:repeat(4,1fr)}
+  .side{display:block!important}
+}
+.side{display:none}
+
+/* ================= ИСПРАВЛЕНИЯ ВЁРСТКИ ================= */
+.plate{flex:none;max-width:100%}
+.gbar .wrap>*{flex:none}
+.price,.offer .r .price,.plist .p,.zone .price{white-space:nowrap}
+.offer .l{min-width:0}
+.offer .l b{overflow-wrap:anywhere}
+.sug .nm{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.li>div{min-width:0}
+.li b{overflow-wrap:anywhere}
+.ord ul li{overflow-wrap:anywhere}
+.spec div>span:first-child{min-width:0;overflow-wrap:anywhere}
+.kpi b{overflow-wrap:anywhere}
+.tree button{min-width:0}
+.tree button small{white-space:nowrap}
+.screen{padding-bottom:0}
+@media(max-width:899px){#product>section{padding-bottom:84px}}
+.sum span:last-child{text-align:right}
+
+/* ================= ФОН ГЛАВНОГО ЭКРАНА ================= */
+.hero{position:relative;background:linear-gradient(158deg,#0E4A66 0%,#0B3B52 42%,#07293A 100%);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:'';position:absolute;inset:0;z-index:-2;
+  background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:40px 40px;
+  -webkit-mask-image:radial-gradient(120% 90% at 15% 10%,#000 0%,transparent 72%);
+  mask-image:radial-gradient(120% 90% at 15% 10%,#000 0%,transparent 72%)}
+.hero::after{content:'';position:absolute;z-index:-2;right:-14%;top:-32%;width:76%;aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(240,78,35,.30) 0%,rgba(240,78,35,.09) 42%,transparent 68%)}
+.hero-art{position:absolute;z-index:-1;right:-90px;top:50%;transform:translateY(-50%);width:420px;opacity:.16;pointer-events:none}
+.hero-art svg{width:100%;height:auto;display:block}
+.hero-in{position:relative;padding:26px 16px 22px}
+.hero h1{font-size:29px;line-height:1.14;margin:0 0 10px;letter-spacing:-.03em}
+.hero h1 em{font-style:normal;color:#FF9670}
+.hero .lead{color:#B9D0DC;font-size:14.5px;margin:0 0 18px;max-width:520px;line-height:1.5}
+.hero .trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.hero .trust span{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);
+  border-radius:99px;padding:7px 13px;font-size:12.5px;color:#DCE9EF;backdrop-filter:blur(2px)}
+.hero .trust b{color:#fff;font-weight:600}
+.hero .sf{box-shadow:0 8px 28px rgba(3,20,30,.34)}
+@media(min-width:900px){
+  .hero-in{padding:52px 16px 40px}
+  .hero h1{font-size:46px;max-width:660px}
+  .hero .lead{font-size:16.5px}
+  .hero-art{width:620px;right:-120px;opacity:.2}
+  .hero .sf{max-width:760px}
+  .hero .smode,.hero .shint{max-width:760px}
+}
+@media(prefers-reduced-motion:no-preference){
+  .hero-art svg{animation:spin 90s linear infinite;transform-origin:50% 50%}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+
+/* ================= СЦЕНА: ДВА АВТОМОБИЛЯ ================= */
+.duel{position:relative;margin-top:10px}
+.duel svg{display:block;width:100%;height:auto}
+.duel .cap{text-align:center;color:#7E9AA9;font-size:11.5px;font-family:var(--fm);letter-spacing:.06em;padding:6px 16px 14px}
+.spokes{transform-box:fill-box;transform-origin:center;animation:wheelspin 1.15s linear infinite}
+@keyframes wheelspin{to{transform:rotate(360deg)}}
+.car-body{animation:idle 1.05s ease-in-out infinite alternate}
+.car-body.b2{animation-duration:1.22s}
+@keyframes idle{to{transform:translateY(1.1px)}}
+.puff{transform-box:fill-box;transform-origin:center;opacity:0}
+.pl{animation:puffL 3s ease-out infinite}
+.pr{animation:puffR 3.2s ease-out infinite}
+@keyframes puffL{0%{transform:translate(0,0) scale(.35);opacity:0}12%{opacity:.55}100%{transform:translate(-52px,-40px) scale(1.7);opacity:0}}
+@keyframes puffR{0%{transform:translate(0,0) scale(.35);opacity:0}12%{opacity:.55}100%{transform:translate(52px,-40px) scale(1.7);opacity:0}}
+.hglow{animation:hpulse 2.4s ease-in-out infinite alternate}
+@keyframes hpulse{to{opacity:.5}}
+@media(prefers-reduced-motion:reduce){.spokes,.car-body,.puff,.hglow,.hero-art svg{animation:none!important}.puff{opacity:.3}}
+
+
+
+
+/* ============ ДОСТУПНОСТЬ И ПЕЧАТЬ ============ */
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;color:var(--ink);padding:12px 18px;z-index:999;border-radius:0 0 var(--r) 0;font-weight:600}
+.skip:focus{left:0}
+.hot{cursor:pointer}
+.hot:focus-visible circle.mk{stroke:var(--accent);stroke-width:3}
+@media print{.proto,.tabbar,.sticky,.top,footer{display:none!important}.screen{display:block!important}
+  body{background:#fff}.card,.offers,.plist{box-shadow:none;border-color:#ccc}}
+@media (prefers-contrast:more){:root{--line:#B9C6D0;--steel:#3C4954}}
+
+/* ============ ПОЛНЫЙ КАТАЛОГ УЗЛОВ ============ */
+.sysline{display:flex;gap:7px;overflow-x:auto;padding-bottom:6px;margin-bottom:12px;scrollbar-width:none}
+.sysline::-webkit-scrollbar{display:none}
+.sysline button{border:1px solid var(--line);background:#fff;border-radius:99px;padding:9px 14px;font-size:13px;
+  white-space:nowrap;cursor:pointer;min-height:40px;display:inline-flex;align-items:center;gap:7px;flex:none}
+.sysline button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sysline button .cnt{font-family:var(--fm);font-size:11px;opacity:.65}
+.nodefind{display:flex;background:#fff;border:1.5px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:14px}
+.nodefind input{flex:1;border:0;padding:12px 14px;min-width:0}
+.nodefind input:focus{outline:2px solid var(--accent);outline-offset:-2px}
+.nodefind .ct{display:flex;align-items:center;padding:0 14px;font-family:var(--fm);font-size:12px;color:var(--steel-2);white-space:nowrap}
+.nodegrid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:20px}
+.nodegrid button{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:12px;cursor:pointer;
+  text-align:left;display:flex;flex-direction:column;gap:5px;min-height:76px}
+.nodegrid button:hover{border-color:var(--accent);box-shadow:var(--sh-1)}
+.nodegrid button.on{border-color:var(--accent);background:var(--accent-s)}
+.nodegrid .n{font-weight:600;font-size:13px;line-height:1.3}
+.nodegrid .q{font-family:var(--fm);font-size:10.5px;color:var(--steel-2);margin-top:auto}
+.nodegrid .sy{font-family:var(--fm);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.emptyq{background:#fff;border:1px dashed var(--line);border-radius:var(--r);padding:22px;text-align:center;color:var(--steel);font-size:14px}
+@media(min-width:700px){.nodegrid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.nodegrid{grid-template-columns:repeat(4,1fr)}}
+
+/* ============ КАТАЛОГ УЗЛОВ ============ */
+.nodes{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
+.nodes button{background:#fff;border:1.5px solid var(--line);border-radius:var(--r);padding:13px;cursor:pointer;
+  text-align:left;display:flex;flex-direction:column;gap:7px;min-height:104px}
+.nodes button:hover{border-color:var(--accent);box-shadow:var(--sh-1)}
+.nodes button.on{border-color:var(--accent);background:var(--accent-s)}
+.nodes button svg{width:30px;height:30px;stroke:var(--petrol);fill:none;stroke-width:1.4;stroke-linecap:round}
+.nodes button.on svg{stroke:var(--accent-d)}
+.nodes .n{font-weight:600;font-size:13.5px;line-height:1.25;margin-top:auto}
+.nodes .q{font-family:var(--fm);font-size:10.5px;color:var(--steel-2)}
+.nodes button.soon{opacity:.62}
+.nodes button.soon .q{color:var(--warn)}
+.node-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:6px}
+.node-head h1{margin:0;font-size:23px}
+@media(min-width:900px){.nodes{grid-template-columns:repeat(4,1fr)}}
+
+/* ================= КАНАЛЫ СВЯЗИ ================= */
+.chn{grid-template-columns:repeat(2,1fr)}
+.chn button .ic{width:26px;height:26px;border-radius:7px;display:grid;place-items:center;font-family:var(--fd);font-size:12px;font-weight:700;color:#fff}
+.ic-tg{background:#229ED9}.ic-max{background:#7B3FF2}.ic-wb{background:#CB11AB}.ic-sms{background:#5D6B77}
+.chan-list{display:grid;gap:9px}
+.chan-list a{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:13px;min-height:60px}
+.chan-list a:hover{border-color:var(--accent)}
+.chan-list .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;color:#fff;font-family:var(--fd);font-size:14px;font-weight:700;flex:none}
+.chan-list b{display:block;font-size:14.5px}
+.chan-list small{color:var(--steel);font-size:12.5px}
+.chan-list .st{margin-left:auto;flex:none}
+
+
+/* ================= ЦЕНЫ И СИНХРОНИЗАЦИЯ ================= */
+.mk-big{display:flex;align-items:baseline;gap:10px;margin:4px 0 14px}
+.mk-big b{font-family:var(--fm);font-size:52px;color:#fff;line-height:1}
+.mk-big span{color:#8A97A2;font-size:13px}
+input[type=range].mk{width:100%;accent-color:var(--accent);height:34px}
+.mk-presets{display:flex;gap:8px;margin:10px 0 4px;flex-wrap:wrap}
+.mk-presets button{border-radius:99px;padding:9px 16px;font-size:13px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;min-height:40px}
+.mk-presets button.on{background:var(--accent);border-color:var(--accent)}
+.sync-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:14px;margin-bottom:10px}
+.sync-card .h{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:7px}
+.sync-card b{color:#fff;font-size:14.5px}
+.sync-card .src{font-family:var(--fm);font-size:11px;color:#8A97A2;background:rgba(255,255,255,.07);border-radius:6px;padding:3px 8px}
+.sync-card .meta{font-size:12.5px;color:#B4C0C9;line-height:1.6}
+.sync-card .ok{color:#5FD3A5}
+
+
+/* ============ ПРИЁМКА: РАСШИРЕННАЯ КАРТОЧКА ============ */
+.rcv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:14px;margin-bottom:10px}
+.rcv.new{border-color:#2E7D5B;background:#12352A;animation:pop .35s}
+.rcv .l1{display:flex;gap:11px;align-items:flex-start;margin-bottom:11px}
+.rcv .ck{width:30px;height:30px;border-radius:99px;background:#12352A;color:#5FD3A5;display:grid;place-items:center;flex:none;font-size:15px}
+.rcv.new .ck{background:#5FD3A5;color:#0D1216}
+.rcv .nm{flex:1;min-width:0}
+.rcv .nm b{display:block;font-size:14.5px;color:#fff;overflow-wrap:anywhere}
+.rcv .nm small{color:#8A97A2;font-size:11.5px;font-family:var(--fm)}
+.rcv .cell{flex:none;font-family:var(--fm);font-weight:700;font-size:13px;color:#0D1216;background:#5FD3A5;border-radius:6px;padding:5px 9px}
+.rcv .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px;margin-bottom:11px}
+.rcv .box{background:rgba(0,0,0,.24);border-radius:var(--r-s);padding:9px 11px;min-width:0}
+.rcv .box span{display:block;font-size:10.5px;color:#8A97A2;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.rcv .box b{font-family:var(--fm);font-size:15px;color:#fff;display:block;overflow-wrap:anywhere}
+.rcv .box.pay b{color:#5FD3A5;font-size:17px}
+.rcv .box.mrg b{color:#FFB37A}
+.rcv .who{display:flex;gap:9px;align-items:center;flex-wrap:wrap;font-size:12.5px;color:#B4C0C9;border-top:1px solid rgba(255,255,255,.08);padding-top:10px}
+.rcv .who .ph{font-family:var(--fm);color:#DCE3E9}
+.rcv .who .sent{color:#5FD3A5;margin-left:auto}
+.rcv .acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.rcv .acts button{border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;min-height:38px}
+.rcv .acts button.pri{background:var(--accent);border-color:var(--accent)}
+@media(min-width:700px){.rcv .grid{grid-template-columns:repeat(4,1fr)}}
+.inv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:14px;margin-bottom:10px}
+.inv .h{display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:9px}
+.inv .h b{color:#fff;font-size:14.5px}
+.inv .num{font-family:var(--fm);font-size:11.5px;color:#8A97A2;background:rgba(255,255,255,.07);border-radius:6px;padding:3px 8px}
+.inv .bars{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;font-size:12px}
+.inv .bars div{background:rgba(0,0,0,.24);border-radius:var(--r-s);padding:9px 11px}
+.inv .bars span{display:block;color:#8A97A2;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px}
+.inv .bars b{font-family:var(--fm);color:#fff;font-size:14px}
+.inv .bars .g b{color:#5FD3A5}
+.prog{height:6px;background:rgba(255,255,255,.1);border-radius:99px;overflow:hidden;margin:10px 0 6px}
+.prog i{display:block;height:100%;background:#5FD3A5}
+
+/* ================= ПРИЁМКА ПО ШТРИХКОДУ ================= */
+.scan-field{background:rgba(255,255,255,.06);border:2px dashed rgba(255,255,255,.28);border-radius:var(--r-l);padding:20px 16px;text-align:center;margin-bottom:16px}
+.scan-field input{width:100%;background:#0A1014;border:1.5px solid rgba(255,255,255,.2);border-radius:var(--r);
+  padding:16px;font-family:var(--fm);font-size:19px;color:#fff;text-align:center;letter-spacing:.08em}
+.scan-field input:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 4px rgba(240,78,35,.2)}
+.scan-field .hintline{color:#8A97A2;font-size:12.5px;margin-top:11px;line-height:1.5}
+.scan-field .pulse{width:9px;height:9px;border-radius:99px;background:#5FD3A5;display:inline-block;margin-right:7px;vertical-align:middle}
+@media(prefers-reduced-motion:no-preference){.scan-field .pulse{animation:blink 1.6s ease-in-out infinite}}
+@keyframes blink{50%{opacity:.25}}
+.scan-row{display:flex;gap:11px;align-items:center;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r);padding:13px;margin-bottom:9px}
+.scan-row.new{border-color:#2E7D5B;background:#12352A;animation:pop .35s}
+@keyframes pop{from{transform:scale(.97);opacity:.3}}
+.scan-row .ck{width:30px;height:30px;border-radius:99px;background:#12352A;color:#5FD3A5;display:grid;place-items:center;flex:none;font-size:15px}
+.scan-row.new .ck{background:#5FD3A5;color:#0D1216}
+.scan-row b{display:block;font-size:14px;color:#fff}
+.scan-row small{color:#8A97A2;font-size:12px;font-family:var(--fm)}
+.scan-row .who{margin-left:auto;text-align:right;font-size:12px;color:#B4C0C9;flex:none}
+.toast{line-height:1.5;position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#12352A;color:#DFF5EC;border:1px solid #2E7D5B;
+  border-radius:99px;padding:12px 20px;font-size:13.5px;z-index:300;box-shadow:0 8px 30px rgba(0,0,0,.4);display:none;max-width:92vw;text-align:center}
+.toast.on{display:block}
+.wait-row{display:flex;gap:11px;align-items:center;padding:12px 6px;border-bottom:1px solid rgba(255,255,255,.07);font-size:13.5px}
+.wait-row:last-child{border:0}
+.wait-row .bc{font-family:var(--fm);font-size:11.5px;color:#8A97A2;letter-spacing:.05em}
+.wait-row .ag{margin-left:auto;font-size:12px;flex:none}
+.barcode{display:inline-flex;align-items:flex-end;gap:1.5px;height:22px}
+.barcode i{display:block;width:2px;background:#DCE3E9;height:100%}
+.barcode i:nth-child(3n){width:1px;height:80%}
+.barcode i:nth-child(4n){width:3px}
+.barcode i:nth-child(5n){height:70%}
+.scan-row>span:nth-child(2),.wait-row>span:nth-child(2){flex:1 1 auto;min-width:0}
+.scan-row b,.wait-row b{overflow-wrap:anywhere}
+@media(max-width:560px){
+  .scan-row,.wait-row{flex-wrap:wrap}
+  .scan-row .who{margin-left:41px;text-align:left;width:calc(100% - 41px);font-size:11.5px;padding-top:2px}
+  .wait-row .ag{margin-left:33px;margin-top:6px}
+  .scan-field input{font-size:16px;padding:14px 10px;letter-spacing:.04em}
+}
+
+</style>
+</head>
+<body>
+
+<div class="proto">
+  <b>Экраны</b>
+  <button class="on" data-go="home">Главная</button>
+  <button data-go="search">Умный поиск</button>
+  <button data-go="model">Выбор модели</button>
+  <button data-go="vcat">Визуальный каталог</button>
+  <button data-go="results">Оригинал / аналоги</button>
+  <button data-go="product">Карточка товара</button>
+  <button data-go="vin">Подбор по VIN</button>
+  <button data-go="cart">Корзина</button>
+  <button data-go="checkout">Оформление + код</button>
+  <button data-go="account">Личный кабинет</button>
+  <button data-go="delivery">Доставка</button>
+  <button data-go="admin">Админка / CRM</button>
+  <button data-go="scan">Приёмка по штрихкоду</button>
+  <button data-go="report">Отчёт заказано/пришло</button>
+  <button data-go="pricing">Цены и синхронизация</button>
+  <button data-go="channels">Каналы связи</button>
+</div>
+
+<!-- ======================= ГЛАВНАЯ ======================= -->
+<div class="screen on" id="home">
+  <header class="top"><div class="wrap top-in">
+    <div class="logo"><i>Д24</i>ДЕТАЛЬ 24</div>
+    <nav><a data-go="model">Каталог</a><a data-go="vin">Подбор по VIN</a><a data-go="delivery">Доставка</a><a data-go="account">Мои заказы</a></nav>
+    <div class="top-act">
+      <span class="tel">+7 959 000-00-00</span>
+      <button class="ib" data-go="account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg></button>
+      <button class="ib" data-go="cart"><svg viewBox="0 0 24 24"><path d="M3 5h2l2.6 10.5a2 2 0 0 0 2 1.5h7a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="badge">3</span></button>
+    </div>
+  </div></header>
+
+  <div class="hero">
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <g fill="none" stroke="#fff" stroke-width="1.4">
+          <circle cx="150" cy="150" r="140"/><circle cx="150" cy="150" r="128"/>
+          <circle cx="150" cy="150" r="96"/><circle cx="150" cy="150" r="44"/><circle cx="150" cy="150" r="16"/>
+        </g>
+        <g fill="#fff" opacity=".5">
+          <circle cx="150" cy="118" r="5"/><circle cx="178" cy="134" r="5"/><circle cx="178" cy="166" r="5"/>
+          <circle cx="150" cy="182" r="5"/><circle cx="122" cy="166" r="5"/><circle cx="122" cy="134" r="5"/>
+        </g>
+        <g stroke="#fff" stroke-width="1" opacity=".45">
+          <path d="M150 54 v40"/><path d="M246 150 h-40"/><path d="M150 246 v-40"/><path d="M54 150 h40"/>
+          <path d="M218 82 l-28 28"/><path d="M218 218 l-28 -28"/><path d="M82 218 l28 -28"/><path d="M82 82 l28 28"/>
+        </g>
+        <g stroke="#fff" stroke-width=".8" opacity=".3">
+          <circle cx="150" cy="150" r="112" stroke-dasharray="6 10"/>
+          <circle cx="150" cy="150" r="70" stroke-dasharray="3 7"/>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap hero-in">
+      <h1>Запчасти для иномарок<br><em>в Старобельске</em> и районе</h1>
+      <p class="lead">Оригинал и проверенные аналоги. Подберём по VIN, привезём в ваш район, платите наличными при получении.</p>
+      <div class="smode">
+        <button class="on">Артикул или деталь</button>
+        <button data-go="vin">VIN / Frame</button>
+        <button data-go="model">По модели авто</button>
+      </div>
+      <div class="sf"><input placeholder="Введите артикул, OEM или название детали" data-go="search"><button data-go="search">Найти</button></div>
+      <div class="shint">Понимает артикул в любом написании, OEM-номер, название и латиницу вместо кириллицы.</div>
+      <div class="trust">
+        <span><b>Без предоплаты</b></span>
+        <span><b>Подбор по VIN</b> за день</span>
+        <span><b>Свои маршруты</b> по северным районам</span>
+        <span>Уведомления в <b>Telegram, MAX, WB Chat</b></span>
+      </div>
+    </div>
+      <div class="duel" aria-hidden="true">
+        <svg viewBox="0 0 940 208" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="blk" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#2C333B"/><stop offset=".45" stop-color="#1A2026"/><stop offset="1" stop-color="#0F1418"/>
+            </linearGradient>
+            <linearGradient id="prl" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#FFFFFF"/><stop offset=".5" stop-color="#EEF3F7"/><stop offset="1" stop-color="#D7E0E7"/>
+            </linearGradient>
+            <linearGradient id="prl2" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#DCEBFF" stop-opacity=".55"/><stop offset=".5" stop-color="#FFE4F1" stop-opacity=".4"/><stop offset="1" stop-color="#DDFBEF" stop-opacity=".55"/>
+            </linearGradient>
+            <linearGradient id="gls" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3E6E85"/><stop offset="1" stop-color="#12303F"/>
+            </linearGradient>
+            <linearGradient id="road" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#0A2838" stop-opacity="0"/><stop offset=".5" stop-color="#123B50"/><stop offset="1" stop-color="#0A2838" stop-opacity="0"/>
+            </linearGradient>
+            <filter id="bl2"><feGaussianBlur stdDeviation="2.2"/></filter>
+            <filter id="bl6"><feGaussianBlur stdDeviation="6"/></filter>
+          </defs>
+
+          <!-- дорога -->
+          <rect x="0" y="178" width="940" height="3" fill="url(#road)"/>
+          <ellipse cx="240" cy="181" rx="180" ry="10" fill="#03121B" opacity=".45" filter="url(#bl6)"/>
+          <ellipse cx="700" cy="181" rx="180" ry="10" fill="#03121B" opacity=".45" filter="url(#bl6)"/>
+
+          <!-- пар: чёрный седан (влево) -->
+          <g filter="url(#bl2)" fill="#DCEAF2">
+            <circle class="puff pl" cx="52" cy="168" r="7" style="animation-delay:0s"/>
+            <circle class="puff pl" cx="52" cy="168" r="10" style="animation-delay:1s"/>
+            <circle class="puff pl" cx="52" cy="168" r="13" style="animation-delay:2s"/>
+          </g>
+          <!-- пар: белый седан (вправо) -->
+          <g filter="url(#bl2)" fill="#DCEAF2">
+            <circle class="puff pr" cx="888" cy="168" r="7" style="animation-delay:.5s"/>
+            <circle class="puff pr" cx="888" cy="168" r="10" style="animation-delay:1.55s"/>
+            <circle class="puff pr" cx="888" cy="168" r="13" style="animation-delay:2.6s"/>
+          </g>
+
+          <!-- ЧЁРНЫЙ СЕДАН (классика, капотом вправо) -->
+          <g>
+            <g class="car-body">
+              <path d="M60 172 L58 128 Q58 118 70 116 L106 112 L134 78 Q138 72 148 71 L296 68 Q306 68 312 74 L344 104 L436 104 Q452 105 454 116 L457 152 Q458 164 447 166 L447 172 Z" fill="url(#blk)" stroke="#05090C" stroke-width="1.5"/>
+              <path d="M140 110 L158 80 L232 78 L232 110 Z" fill="url(#gls)" opacity=".92"/>
+              <path d="M242 110 L242 78 L296 77 L322 110 Z" fill="url(#gls)" opacity=".92"/>
+              <rect x="64" y="136" width="386" height="3.5" rx="1.7" fill="#8A97A2" opacity=".55"/>
+              <rect x="441" y="112" width="14" height="10" rx="2" fill="#FFE7B8"/><path d="M440 104 h14 M440 108 h14" stroke="#39424B" stroke-width="1.4"/>
+              <rect x="60" y="124" width="9" height="9" rx="2" fill="#B33A2A"/>
+              <ellipse class="hglow" cx="464" cy="118" rx="26" ry="9" fill="#FFD9A8" opacity=".22" filter="url(#bl6)"/>
+              <rect x="46" y="163" width="14" height="6" rx="3" fill="#39424B"/>
+            </g>
+            <g>
+              <circle cx="150" cy="168" r="27" fill="#0B0F13"/><circle cx="150" cy="168" r="17" fill="#1E252C" stroke="#39424B" stroke-width="2"/>
+              <g class="spokes" stroke="#9AA8B3" stroke-width="3" stroke-linecap="round">
+                <path d="M150 154 V182 M136 168 H164 M140 158 L160 178 M160 158 L140 178"/>
+              </g>
+              <circle cx="150" cy="168" r="4" fill="#C6D0D8"/>
+            </g>
+            <g>
+              <circle cx="376" cy="168" r="27" fill="#0B0F13"/><circle cx="376" cy="168" r="17" fill="#1E252C" stroke="#39424B" stroke-width="2"/>
+              <g class="spokes" stroke="#9AA8B3" stroke-width="3" stroke-linecap="round">
+                <path d="M376 154 V182 M362 168 H390 M366 158 L386 178 M386 158 L366 178"/>
+              </g>
+              <circle cx="376" cy="168" r="4" fill="#C6D0D8"/>
+            </g>
+          </g>
+
+          <!-- БЕЛЫЙ СЕДАН (перламутр, капотом влево) -->
+          <g transform="translate(-8,0)">
+            <g class="car-body b2">
+              <path d="M880 172 L882 128 Q882 118 870 116 L836 112 L806 76 Q800 69 790 69 L646 66 Q634 66 626 74 L592 110 L514 118 Q494 121 488 132 L484 152 Q483 164 494 166 L494 172 Z" fill="url(#prl)" stroke="#9FB0BC" stroke-width="1.5"/>
+              <path d="M880 172 L882 128 Q882 118 870 116 L836 112 L806 76 Q800 69 790 69 L646 66 Q634 66 626 74 L592 110 L514 118 Q494 121 488 132 L484 152 Q483 164 494 166 L494 172 Z" fill="url(#prl2)" opacity=".5"/>
+              <path d="M800 110 L780 78 L706 76 L706 110 Z" fill="url(#gls)" opacity=".9"/>
+              <path d="M696 110 L696 76 L644 76 L616 110 Z" fill="url(#gls)" opacity=".9"/>
+              <path d="M488 138 L876 134" stroke="#BCC9D3" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+              <path d="M486 124 Q494 120 506 121 L506 132 L487 133 Z" fill="#DDF1FF"/>
+              <rect x="872" y="124" width="9" height="9" rx="2" fill="#B33A2A"/>
+              <ellipse class="hglow" cx="478" cy="129" rx="26" ry="9" fill="#EAF6FF" opacity=".24" filter="url(#bl6)"/>
+              <rect x="880" y="163" width="14" height="6" rx="3" fill="#AEB9C2"/>
+            </g>
+            <g>
+              <circle cx="564" cy="168" r="27" fill="#111820"/><circle cx="564" cy="168" r="17" fill="#DFE7ED" stroke="#9FB0BC" stroke-width="2"/>
+              <g class="spokes" stroke="#5D6B77" stroke-width="3" stroke-linecap="round">
+                <path d="M564 154 V182 M550 168 H578 M554 158 L574 178 M574 158 L554 178"/>
+              </g>
+              <circle cx="564" cy="168" r="4" fill="#39424B"/>
+            </g>
+            <g>
+              <circle cx="790" cy="168" r="27" fill="#111820"/><circle cx="790" cy="168" r="17" fill="#DFE7ED" stroke="#9FB0BC" stroke-width="2"/>
+              <g class="spokes" stroke="#5D6B77" stroke-width="3" stroke-linecap="round">
+                <path d="M790 154 V182 M776 168 H804 M780 158 L800 178 M800 158 L780 178"/>
+              </g>
+              <circle cx="790" cy="168" r="4" fill="#39424B"/>
+            </g>
+          </g>
+        </svg>
+        <div class="cap">НЕМЕЦКАЯ КЛАССИКА · ЯПОНСКИЙ ПЕРЛАМУТР — ЗАПЧАСТИ ДЕРЖИМ ДЛЯ ОБОИХ</div>
+      </div>
+  </div>
+
+  <div class="gbar"><div class="wrap">
+    <small>Мой гараж:</small>
+    <span class="plate"><span>Chevrolet Lacetti 1.6 <b>2008</b></span><em>ВЫБРАНА</em></span>
+    <button class="chip" data-go="account">Сменить</button>
+    <button class="chip">+ Добавить машину</button>
+  </div></div>
+
+  <section>
+    <div class="wrap">
+      <div class="usp">
+        <div><b>Подбираем по VIN</b><span>Сверяем по каталогу производителя — деталь встанет, а не «должна подойти»</span></div>
+        <div><b>Оплата при получении</b><span>Наличными в пункте выдачи или курьеру. Предоплаты нет</span></div>
+        <div><b>Свои маршруты</b><span>Меловое, Беловодск, Марковка, Сватово — по расписанию</span></div>
+        <div><b>Оригинал и аналоги</b><span>Показываем оба варианта с ценой и сроком — выбираете вы</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Узлы автомобиля</h2><a data-go="vcat">Визуальные схемы</a></div>
+      <div class="cats">
+        <a data-go="vcat"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v3M12 17v3"/></svg><span class="n">Тормозная система</span><span class="q">860 позиций</span></a>
+        <a data-go="results"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="3"/><path d="M9 4v3h6V4M9 20v-3h6v3"/></svg><span class="n">Фильтры</span><span class="q">1 240 позиций</span></a>
+        <a data-go="vcat"><svg viewBox="0 0 24 24"><path d="M4 18h4l3-9 3 12 3-9h3"/></svg><span class="n">Подвеска и рулевое</span><span class="q">1 510 позиций</span></a>
+        <a data-go="results"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M8 7V5M16 7V5M7 12h10"/></svg><span class="n">Двигатель и ГРМ</span><span class="q">2 020 позиций</span></a>
+        <a data-go="results"><svg viewBox="0 0 24 24"><path d="M13 3 5 14h6l-2 7 8-11h-6z"/></svg><span class="n">Электрика</span><span class="q">740 позиций</span></a>
+        <a data-go="results"><svg viewBox="0 0 24 24"><path d="M3 15l2-6a3 3 0 0 1 3-2h8a3 3 0 0 1 3 2l2 6M3 15h18v3H3zM7 18v2M17 18v2"/></svg><span class="n">Кузов и оптика</span><span class="q">690 позиций</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><h2>Подходит вашему Lacetti</h2><a data-go="results">Весь каталог</a></div>
+      <div class="goods">
+        <div class="good" data-go="product">
+          <div class="thumb"><span class="tag pill orig">Оригинал</span><svg class="pic" viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="3"/><path d="M9 4v3h6V4M9 20v-3h6v3"/></svg></div>
+          <span class="brand">MANN-FILTER</span><span class="name">Фильтр масляный</span><span class="art">W 712/94</span>
+          <div><span class="pill ok"><i class="dot"></i>В наличии</span></div>
+          <div class="foot"><span class="price">480 ₽</span><small>сегодня</small></div>
+          <button class="add">В корзину</button>
+        </div>
+        <div class="good" data-go="product">
+          <div class="thumb"><span class="tag pill anal">Аналог</span><svg class="pic" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0v4H4z"/><circle cx="8" cy="17" r="1.6"/><circle cx="16" cy="17" r="1.6"/></svg></div>
+          <span class="brand">TRW</span><span class="name">Колодки тормозные передние</span><span class="art">GDB3332</span>
+          <div><span class="pill ok"><i class="dot"></i>В наличии</span></div>
+          <div class="foot"><span class="price">2 150 ₽</span><small>сегодня</small></div>
+          <button class="add">В корзину</button>
+        </div>
+        <div class="good" data-go="product">
+          <div class="thumb"><span class="tag pill orig">Оригинал</span><svg class="pic" viewBox="0 0 24 24"><path d="M12 3v6M9 9h6l-1 12h-4z"/></svg></div>
+          <span class="brand">NGK</span><span class="name">Свеча зажигания</span><span class="art">BKR6E-11</span>
+          <div><span class="pill ok"><i class="dot"></i>16 шт</span></div>
+          <div class="foot"><span class="price">340 ₽</span><small>сегодня</small></div>
+          <button class="add">В корзину</button>
+        </div>
+        <div class="good" data-go="product">
+          <div class="thumb"><span class="tag pill anal">Аналог</span><svg class="pic" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="8" ry="5"/><ellipse cx="12" cy="12" rx="3.5" ry="1.8"/></svg></div>
+          <span class="brand">GATES</span><span class="name">Ремень ГРМ, комплект</span><span class="art">K015603XS</span>
+          <div><span class="pill wait"><i class="dot"></i>Под заказ · 3 дня</span></div>
+          <div class="foot"><span class="price">4 980 ₽</span><small>ориентировочно</small></div>
+          <button class="add">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="wrap">
+      <div class="card" style="background:var(--petrol);border:0;color:#fff">
+        <div class="eyebrow" style="color:#FF8A5F">Не нашли деталь</div>
+        <h2 style="color:#fff;margin-bottom:8px">Пришлите VIN — подберём вручную</h2>
+        <p style="color:#B4CBD7;margin:0 0 16px;font-size:14.5px;max-width:560px">Менеджер сверит номер по каталогу производителя и пришлёт варианты: оригинал и проверенные аналоги, с ценой и сроком. Обычно в течение рабочего дня.</p>
+        <button class="btn" data-go="vin">Отправить VIN на подбор</button>
+      </div>
+    </div>
+  </section>
+
+  <footer><div class="wrap">
+    <div class="cols">
+      <div><b>Каталог</b><a data-go="vcat">Тормозная система</a><a data-go="results">Фильтры</a><a>Подвеска</a><a>Двигатель</a></div>
+      <div><b>Покупателям</b><a data-go="delivery">Доставка и оплата</a><a data-go="vin">Подбор по VIN</a><a>Возврат и гарантия</a><a>Публичная оферта</a></div>
+      <div><b>Контакты</b><a>+7 959 000-00-00</a><a>Telegram · MAX · WhatsApp</a><a>г. Старобельск, ул. ______, 1</a><a>Пн–Сб 9:00–18:00</a></div>
+      <div><b>Оплата</b><a>Наличными при получении</a><a>Онлайн-оплаты на сайте нет</a><a>Аванс — только на заказные позиции</a></div>
+    </div>
+    <div class="fin">ИП ______ · ИНН ______ · Политика обработки персональных данных · Информация на сайте не является публичной офертой. Цена и срок подтверждаются менеджером до оплаты.</div>
+  </div></footer>
+
+  <div class="tabbar">
+    <button class="on"><svg viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v8a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z"/></svg>Главная</button>
+    <button data-go="model"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Каталог</button>
+    <button data-go="cart"><svg viewBox="0 0 24 24"><path d="M3 5h2l2.6 10.5a2 2 0 0 0 2 1.5h7a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg>Корзина</button>
+    <button data-go="account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>Кабинет</button>
+  </div>
+</div>
+
+<!-- ======================= УМНЫЙ ПОИСК ======================= -->
+<div class="screen" id="search">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <div class="sbar"><div class="wrap">
+    <div class="sf"><input value="w712" autofocus><button>Найти</button></div>
+    <div class="sug">
+      <div class="h">Совпадение по артикулу</div>
+      <a data-go="product"><span class="art">W 712/94</span><span class="nm">MANN-FILTER · фильтр масляный</span><span class="pr">480 ₽</span></a>
+      <a data-go="product"><span class="art">W 712/95</span><span class="nm">MANN-FILTER · фильтр масляный</span><span class="pr">520 ₽</span></a>
+      <div class="h">Аналоги и кросс-номера</div>
+      <a data-go="results"><span class="art">OC 195</span><span class="nm">KNECHT · заменяет W 712/94</span><span class="pr">390 ₽</span></a>
+      <a data-go="results"><span class="art">OP 570</span><span class="nm">FILTRON · заменяет W 712/94</span><span class="pr">330 ₽</span></a>
+      <div class="h">Категории</div>
+      <a data-go="results"><span class="art">📂</span><span class="nm">Фильтры масляные — 214 позиций для Lacetti 1.6</span><span class="pr"></span></a>
+    </div>
+    <div class="shint">Введите VIN из 17 символов — поиск сам переключится в режим подбора по VIN.</div>
+  </div></div>
+  <section><div class="wrap">
+    <div class="callout">
+      <b>Как работает умная строка</b>
+      <ul>
+        <li>Нормализует артикул: <span class="a">w712 94</span>, <span class="a">W-712/94</span>, <span class="a">W71294</span> — один и тот же товар</li>
+        <li>Ищет по своей базе кросс-номеров и сразу показывает аналоги дешевле</li>
+        <li>Исправляет раскладку: <span class="a">athkmnh</span> → «фильтр»</li>
+        <li>Распознаёт 17-значный VIN и переводит в режим подбора</li>
+        <li>Учитывает машину из гаража: сверху то, что подходит вам</li>
+      </ul>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ВЫБОР МОДЕЛИ ======================= -->
+<div class="screen" id="model">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap">
+    <div class="eyebrow">Шаг 4 из 4</div>
+    <h1>Выбор автомобиля</h1>
+    <p class="muted" style="margin-top:-4px">Выберите машину один раз — она сохранится в гараже, и весь каталог будет отфильтрован под неё.</p>
+
+    <div class="crumbs">
+      <span class="done">Chevrolet</span><i>›</i><span class="done">Lacetti</span><i>›</i><span class="done">2004–2013 (J200)</span><i>›</i><span>Модификация</span>
+    </div>
+
+    <div class="tree" style="margin-bottom:20px">
+      <button>1.4 16V <small>95 л.с. · F14D3</small></button>
+      <button>1.6 16V <small>109 л.с. · F16D3</small></button>
+      <button>1.8 16V <small>122 л.с. · F18D3</small></button>
+      <button>2.0 D <small>121 л.с. · Z20S</small></button>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <h3>Не знаете модификацию?</h3>
+        <p class="muted" style="font-size:14px;margin-top:0">Введите VIN — определим поколение, двигатель и год выпуска автоматически, без звонков.</p>
+        <div class="sf" style="box-shadow:none;border:1.5px solid var(--line)"><input class="mono" style="letter-spacing:.12em;text-transform:uppercase" placeholder="17 символов"><button data-go="vin">Определить</button></div>
+      </div>
+      <div class="card">
+        <h3>Машины в гараже</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+          <span class="plate lg"><span>Chevrolet Lacetti 1.6 <b>2008</b></span><em>ОСНОВНАЯ</em></span>
+          <span class="plate lg"><span>ВАЗ-2107 <b>2004</b></span></span>
+          <button class="chip" data-go="account">Управлять гаражом</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ВИЗУАЛЬНЫЙ КАТАЛОГ ======================= -->
+<div class="screen" id="vcat">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><nav><a data-go="model">Каталог</a><a data-go="vin">Подбор по VIN</a></nav><div class="top-act"><button class="ib" data-go="cart"><svg viewBox="0 0 24 24"><path d="M3 5h2l2.6 10.5a2 2 0 0 0 2 1.5h7a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="badge">3</span></button></div></div></header>
+  <div class="gbar"><div class="wrap"><small>Схемы для:</small><span class="plate"><span>Chevrolet Lacetti 1.6 <b>2008</b></span><em>ГАРАЖ</em></span><button class="chip" data-go="model">Сменить</button></div></div>
+
+  <section><div class="wrap">
+    <p class="muted" style="font-size:12.5px;margin:0 0 12px"><a data-go="home">Главная</a> / <a data-go="model">Каталог</a> / Схемы узлов</p>
+    <h1 style="font-size:24px">Выберите узел автомобиля</h1>
+    <p class="muted" style="margin-top:-4px;font-size:14px">Схема покажет, из чего состоит узел и что с чем соединяется. Номера деталей подставляются под вашу машину из гаража.</p>
+
+    <div class="sysline" id="sysline"></div>
+    <div class="nodefind">
+      <input id="nodeq" placeholder="Найти узел: тормоз, ГРМ, генератор, стеклоподъёмник…" autocomplete="off">
+      <span class="ct" id="nodecnt">43 узла</span>
+    </div>
+    <div class="nodegrid" id="nodegrid"></div>
+
+    <div class="node-head"><h1 id="node-title">Передний тормозной механизм</h1><span class="pill orig" id="node-fit">подходит вашему Lacetti</span><span class="pill anal" id="node-cnt2">7 позиций</span></div>
+    <p class="muted" style="margin:-2px 0 14px;font-size:14px" id="node-desc">Объёмная разнесённая схема: детали показаны в порядке установки — стрелками отмечено, что во что входит. Нажмите номер, чтобы увидеть цену.</p>
+
+    <div class="vcat">
+      <div class="scheme" id="scheme-box"></div>
+      <div class="plist" id="plist"></div>
+    </div>
+
+    <div class="card" style="margin-top:14px;display:flex;gap:14px;align-items:center;flex-wrap:wrap">
+      <div><b style="font-size:15px" id="sel-title">Позиция 2 — колодки тормозные передние</b><div class="muted" style="font-size:13px" id="sel-sub">Оригинал и проверенные аналоги</div></div>
+      <button class="btn" style="margin-left:auto" data-go="results">Показать оригинал и аналоги</button>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <b>Почему схема есть на любой узел</b>
+      <ul>
+        <li>В каталоге <span class="a">43 узла в 10 системах</span> — от тормозов и ГРМ до замков, оптики и стеклоподъёмников</li>
+        <li>Узлы у иномарок устроены одинаково: тормоз Lacetti и тормоз Astra — <span class="a">одна и та же схема</span>, разные номера деталей</li>
+        <li>Номера деталей подставляются под машину из гаража автоматически</li>
+        <li>Нужного узла нет — кнопка «Запросить схему», менеджер добавит её в админке за 15 минут</li>
+      </ul>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ОРИГИНАЛ / АНАЛОГИ ======================= -->
+<div class="screen" id="results">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><nav><a data-go="model">Каталог</a><a data-go="vin">Подбор по VIN</a><a data-go="delivery">Доставка</a></nav><div class="top-act"><button class="ib" data-go="cart"><svg viewBox="0 0 24 24"><path d="M3 5h2l2.6 10.5a2 2 0 0 0 2 1.5h7a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="badge">3</span></button></div></div></header>
+  <div class="sbar" style="padding-top:0"><div class="wrap"><div class="sf"><input value="96 405 129"><button>Найти</button></div></div></div>
+  <div class="gbar"><div class="wrap"><small>Подходит для:</small><span class="plate"><span>Chevrolet Lacetti 1.6 <b>2008</b></span><em>ФИЛЬТР</em></span><button class="chip" data-go="model">Сменить</button><button class="chip">Показать всё</button></div></div>
+
+  <section style="padding-top:16px"><div class="wrap">
+    <h1 style="font-size:23px">Колодки тормозные передние</h1>
+    <p class="muted" style="margin-top:-4px;font-size:13.5px">Оригинал GM 96 405 129 · 7 предложений</p>
+
+    <div class="lay-cat">
+      <aside class="side">
+        <div class="card" style="padding:15px">
+          <h3>Сортировка</h3>
+          <div class="rcards" style="margin-bottom:18px">
+            <label class="on"><input type="radio" name="srt" checked><span><b>Сначала дешевле</b></span></label>
+            <label><input type="radio" name="srt"><span><b>Быстрее доставка</b></span></label>
+            <label><input type="radio" name="srt"><span><b>Выше рейтинг бренда</b></span></label>
+          </div>
+          <h3>Тип детали</h3>
+          <label class="check" style="margin-bottom:10px"><input type="checkbox" checked> Оригинал (1)</label>
+          <label class="check" style="margin-bottom:18px"><input type="checkbox" checked> Проверенные аналоги (6)</label>
+          <h3>Срок</h3>
+          <label class="check" style="margin-bottom:10px"><input type="checkbox"> Сегодня со склада (3)</label>
+          <label class="check" style="margin-bottom:18px"><input type="checkbox"> До 3 дней (7)</label>
+          <h3>Цена, ₽</h3>
+          <div style="display:flex;gap:8px;margin-bottom:18px"><input class="inp mono" placeholder="от 1 200" style="padding:10px"><input class="inp mono" placeholder="до 4 000" style="padding:10px"></div>
+          <h3>Бренд</h3>
+          <label class="check" style="margin-bottom:10px"><input type="checkbox"> GM (1)</label>
+          <label class="check" style="margin-bottom:10px"><input type="checkbox"> TRW (1)</label>
+          <label class="check" style="margin-bottom:10px"><input type="checkbox"> FERODO (1)</label>
+          <label class="check"><input type="checkbox"> Остальные (4)</label>
+        </div>
+      </aside>
+
+      <div>
+        <div class="seg" style="display:flex">
+          <button class="on">Все 7</button><button>Оригинал 1</button><button>Аналоги 6</button>
+        </div>
+        <div style="display:flex;gap:8px;overflow-x:auto;margin-bottom:6px;padding-bottom:4px">
+          <button class="chip on">Сначала дешевле</button><button class="chip">Быстрее срок</button><button class="chip">Выше рейтинг</button><button class="chip">В наличии</button>
+        </div>
+
+        <div class="grp-head"><h3>Оригинал</h3><span class="cnt">1</span><span class="rule"></span></div>
+        <div class="offers">
+          <div class="offer">
+            <div class="l"><b>Колодки тормозные передние GM</b><div class="art">96 405 129 · оригинал</div>
+              <div class="meta"><span class="pill orig">Оригинал</span><span class="pill ok"><i class="dot"></i>В наличии</span><span class="stars"><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 17l-6.5 4 2-7.5L2 9h7z"/></svg></span></div>
+            </div>
+            <div class="r"><span class="price">3 400 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div>
+          </div>
+        </div>
+
+        <div class="grp-head"><h3>Проверенные аналоги</h3><span class="cnt">6</span><span class="rule"></span></div>
+        <div class="offers">
+          <div class="offer best">
+            <div class="l"><b>TRW GDB3332</b><div class="art">заменяет 96 405 129 · Германия</div>
+              <div class="meta"><span class="pill anal">Аналог</span><span class="pill ok"><i class="dot"></i>В наличии</span><span class="pill hot">Наш выбор</span></div>
+            </div>
+            <div class="r"><span class="price">2 150 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div>
+          </div>
+          <div class="offer">
+            <div class="l"><b>FERODO FDB1424</b><div class="art">заменяет 96 405 129 · Италия</div>
+              <div class="meta"><span class="pill anal">Аналог</span><span class="pill wait"><i class="dot"></i>2 дня</span></div>
+            </div>
+            <div class="r"><span class="price">1 890 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div>
+          </div>
+          <div class="offer">
+            <div class="l"><b>BOSCH 0 986 494 573</b><div class="art">заменяет 96 405 129 · Германия</div>
+              <div class="meta"><span class="pill anal">Аналог</span><span class="pill ok"><i class="dot"></i>В наличии</span></div>
+            </div>
+            <div class="r"><span class="price">2 480 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div>
+          </div>
+          <div class="offer">
+            <div class="l"><b>SANGSIN SP1086</b><div class="art">заменяет 96 405 129 · Корея</div>
+              <div class="meta"><span class="pill anal">Аналог</span><span class="pill wait"><i class="dot"></i>3 дня</span></div>
+            </div>
+            <div class="r"><span class="price">1 240 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div>
+          </div>
+        </div>
+
+        <div class="note" style="margin-top:16px">Цены ориентировочные — зависят от закупки на день заказа. Точную сумму менеджер называет при подтверждении, до того как вы что-то платите.</div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= КАРТОЧКА ТОВАРА ======================= -->
+<div class="screen" id="product">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><nav><a data-go="model">Каталог</a><a data-go="vin">Подбор по VIN</a><a data-go="delivery">Доставка</a></nav><div class="top-act"><button class="ib" data-go="cart"><svg viewBox="0 0 24 24"><path d="M3 5h2l2.6 10.5a2 2 0 0 0 2 1.5h7a2 2 0 0 0 2-1.5L20.5 8H6"/><circle cx="10" cy="20" r="1.4"/><circle cx="17" cy="20" r="1.4"/></svg><span class="badge">3</span></button></div></div></header>
+  <section style="padding-top:16px"><div class="wrap">
+    <p class="muted" style="font-size:12.5px;margin:0 0 14px"><a data-go="home">Главная</a> / <a data-go="results">Фильтры</a> / Фильтр масляный MANN W 712/94</p>
+    <div class="lay-prod">
+      <div>
+        <div class="gal-main"><span class="tag pill orig" style="position:absolute;top:12px;left:12px">Оригинал</span><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="3"/><path d="M9 4v3h6V4M9 20v-3h6v3"/></svg></div>
+        <div class="gal-thumbs"><div class="on"></div><div></div><div></div><div></div></div>
+      </div>
+      <div>
+        <span class="brand">MANN-FILTER</span>
+        <h1 style="font-size:25px;margin:5px 0 7px">Фильтр масляный W 712/94</h1>
+        <div class="mono muted" style="font-size:13px;margin-bottom:14px">Артикул W 712/94 · OEM 25 183 779</div>
+
+        <div class="card" style="padding:15px;margin-bottom:12px">
+          <div style="display:flex;align-items:baseline;gap:11px;margin-bottom:7px;flex-wrap:wrap">
+            <span class="price" style="font-size:31px">480 ₽</span>
+            <span class="pill ok"><i class="dot"></i>В наличии · 12 шт</span>
+          </div>
+          <p class="muted" style="font-size:12.5px;margin:0 0 14px">Цена ориентировочная. Точную назовёт менеджер при подтверждении — до оплаты.</p>
+          <div style="display:flex;gap:11px;align-items:center">
+            <div class="qty"><button>−</button><span>1</span><button>+</button></div>
+            <button class="btn" style="flex:1" data-go="cart">В корзину</button>
+          </div>
+        </div>
+
+        <div class="fit" style="margin-bottom:12px">
+          <span class="plate" style="flex:none"><span>Lacetti 1.6</span><em>✓ ПОДХОДИТ</em></span>
+          <div style="font-size:13px;line-height:1.45">Совместимость подтверждена по машине из гаража. Сомневаетесь — <a data-go="vin" style="color:var(--accent);font-weight:600">проверим по VIN</a>.</div>
+        </div>
+
+        <div class="tabs">
+          <button class="on" data-tab="t1">Характеристики</button>
+          <button data-tab="t2">Кросс-номера</button>
+          <button data-tab="t3">Применяемость</button>
+          <button data-tab="t4">Аналоги</button>
+        </div>
+        <div class="tabc on" id="t1">
+          <div class="spec">
+            <div><span class="muted">Высота</span><b>65 мм</b></div>
+            <div><span class="muted">Внешний диаметр</span><b>76 мм</b></div>
+            <div><span class="muted">Резьба</span><b>3/4-16 UNF</b></div>
+            <div><span class="muted">Тип</span><b>Накручиваемый</b></div>
+            <div><span class="muted">Страна бренда</span><b>Германия</b></div>
+          </div>
+        </div>
+        <div class="tabc" id="t2">
+          <div class="cross">
+            <span><b>GM</b>25 183 779</span><span><b>KNECHT</b>OC 195</span><span><b>FILTRON</b>OP 570</span><span><b>BOSCH</b>0 451 103 316</span><span><b>MAHLE</b>OC 195</span><span><b>PURFLUX</b>LS 218</span><span><b>HENGST</b>H90W05</span>
+          </div>
+          <p class="muted" style="font-size:12.5px;margin-top:10px">База кросс-номеров ведётся магазином и пополняется при импорте прайсов.</p>
+        </div>
+        <div class="tabc" id="t3">
+          <div class="spec">
+            <div><span>Chevrolet Lacetti 1.4 / 1.6 / 1.8</span><b>2004–2013</b></div>
+            <div><span>Chevrolet Aveo 1.2 / 1.4</span><b>2005–2011</b></div>
+            <div><span>Daewoo Nexia 1.5 / 1.6</span><b>1995–2016</b></div>
+            <div><span>Opel Astra G 1.6</span><b>1998–2009</b></div>
+          </div>
+        </div>
+        <div class="tabc" id="t4">
+          <div class="offers">
+            <div class="offer"><div class="l"><b>KNECHT OC 195</b><div class="art">заменяет W 712/94</div><div class="meta"><span class="pill anal">Аналог</span><span class="pill ok"><i class="dot"></i>В наличии</span></div></div><div class="r"><span class="price">390 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div></div>
+            <div class="offer"><div class="l"><b>FILTRON OP 570</b><div class="art">заменяет W 712/94</div><div class="meta"><span class="pill anal">Аналог</span><span class="pill wait"><i class="dot"></i>2 дня</span></div></div><div class="r"><span class="price">330 ₽</span><button class="add" style="padding:9px 15px">В корзину</button></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+  <div class="sticky"><div><div class="price">480 ₽</div><small class="muted" style="font-size:11px">в наличии</small></div><button class="btn" style="flex:1" data-go="cart">В корзину</button></div>
+</div>
+
+<!-- ======================= ПОДБОР ПО VIN ======================= -->
+<div class="screen" id="vin">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap two">
+    <div>
+      <div class="eyebrow">Ручной подбор менеджером</div>
+      <h1>Подбор по VIN / Frame</h1>
+      <p class="muted" style="margin-top:0">Введите номер — система определит машину, а менеджер сверит деталь по каталогу производителя и пришлёт варианты с ценой и сроком.</p>
+      <div class="card">
+        <label class="f"><span>VIN или Frame <i>*</i></span>
+          <input class="inp mono" style="letter-spacing:.14em;text-transform:uppercase" value="KL1NF19EJ8K123456">
+          <div class="help">17 символов, латиница. Найдёте в ПТС, СТС или под лобовым стеклом.</div>
+        </label>
+        <div class="fit" style="margin-bottom:15px">
+          <span class="plate" style="flex:none"><span>Chevrolet Lacetti 1.6</span><em>2008</em></span>
+          <div style="font-size:13px;line-height:1.45">Определено по VIN: J200, двигатель F16D3, сборка 2008 г.</div>
+        </div>
+        <label class="f"><span>Что нужно подобрать <i>*</i></span>
+          <textarea class="inp">Сайлентблоки передних рычагов, 2 шт. Можно аналог.</textarea>
+        </label>
+        <label class="f"><span>Фото детали или места установки</span><button class="btn ghost wide">Прикрепить фото</button></label>
+        <label class="f"><span>Телефон <i>*</i></span>
+          <input class="inp mono" value="+7 959 ___-__-__">
+          <div class="help">Придёт код подтверждения — так мы отсекаем чужие и пустые заявки.</div>
+        </label>
+        <button class="btn wide" data-go="checkout">Отправить заявку</button>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:12px">
+        <h3>Как это работает</h3>
+        <div class="steps">
+          <div class="done"><i>1</i><div><b>Вы отправляете VIN</b><small>И подтверждаете телефон кодом</small></div></div>
+          <div class="done"><i>2</i><div><b>Менеджер сверяет по каталогу</b><small>Оригинальный номер и подходящие аналоги</small></div></div>
+          <div class="now"><i>3</i><div><b>Присылаем варианты</b><small>Цена, срок, оригинал или аналог — на выбор</small></div></div>
+          <div><i>4</i><div><b>Вы подтверждаете</b><small>Заказываем поставщику, сообщаем когда пришло</small></div></div>
+        </div>
+      </div>
+      <div class="note">VIN — данные вашего автомобиля. Используем только для подбора, нигде не публикуем и не передаём третьим лицам.</div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= КОРЗИНА ======================= -->
+<div class="screen" id="cart">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap">
+    <h1 style="font-size:25px">Корзина</h1>
+    <div class="lay-2">
+      <div class="card">
+        <div class="li"><div class="th"><svg viewBox="0 0 24 24"><rect x="6" y="4" width="12" height="16" rx="3"/></svg></div>
+          <div><b style="font-size:14.5px">Фильтр масляный MANN W 712/94</b>
+            <div class="mono muted" style="font-size:12px;margin:3px 0 8px">W 712/94 · <span class="pill orig">Оригинал</span> · в наличии</div>
+            <div style="display:flex;align-items:center;gap:12px"><div class="qty"><button>−</button><span>1</span><button>+</button></div><span class="price" style="margin-left:auto">480 ₽</span></div>
+          </div></div>
+        <div class="li"><div class="th"><svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0v4H4z"/></svg></div>
+          <div><b style="font-size:14.5px">Колодки тормозные передние TRW</b>
+            <div class="mono muted" style="font-size:12px;margin:3px 0 8px">GDB3332 · <span class="pill anal">Аналог</span> · в наличии</div>
+            <div style="display:flex;align-items:center;gap:12px"><div class="qty"><button>−</button><span>1</span><button>+</button></div><span class="price" style="margin-left:auto">2 150 ₽</span></div>
+          </div></div>
+        <div class="li"><div class="th"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="8" ry="5"/></svg></div>
+          <div><b style="font-size:14.5px">Ремень ГРМ комплект GATES</b>
+            <div class="mono muted" style="font-size:12px;margin:3px 0 8px">K015603XS · <span style="color:var(--warn);font-weight:600">под заказ, 3 дня</span></div>
+            <div style="display:flex;align-items:center;gap:12px"><div class="qty"><button>−</button><span>1</span><button>+</button></div><span class="price" style="margin-left:auto">4 980 ₽</span></div>
+          </div></div>
+      </div>
+      <div>
+        <div class="card">
+          <div class="sum"><span class="muted">Товары, 3 шт</span><span class="mono">7 610 ₽</span></div>
+          <div class="sum"><span class="muted">Доставка</span><span class="mono" style="font-size:13px">рассчитаем при подтверждении</span></div>
+          <div class="sum total"><span>Ориентировочно</span><span class="price">7 610 ₽</span></div>
+          <button class="btn wide" style="margin-top:14px" data-go="checkout">Оформить заказ</button>
+          <p class="muted" style="font-size:12px;margin:11px 0 0;text-align:center">Без предоплаты. Оплата наличными при получении.</p>
+        </div>
+        <div class="note" style="margin-top:12px"><b>Одна позиция под заказ.</b> Мы закупаем её специально для вас — поэтому попросим подтвердить номер телефона кодом.</div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ОФОРМЛЕНИЕ ======================= -->
+<div class="screen" id="checkout">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="cart">✕</button></div></div></header>
+  <section><div class="wrap">
+    <h1 style="font-size:25px">Оформление заказа</h1>
+    <div class="lay-2">
+      <div>
+        <div class="card" id="s1" style="margin-bottom:12px">
+          <div class="eyebrow">Шаг 1 из 2</div>
+          <h2 style="font-size:19px">Как с вами связаться</h2>
+          <label class="f"><span>Имя <i>*</i></span><input class="inp" value="Артур"></label>
+          <label class="f"><span>Телефон <i>*</i></span><input class="inp mono" id="ph" value="+7 959 123-45-67"><div class="help">Пришлём код подтверждения. Номер видит только магазин.</div></label>
+          <h3 style="margin-top:20px">Куда доставить</h3>
+          <div class="rcards" style="margin-bottom:18px">
+            <label class="on"><input type="radio" name="d" checked><span><b>Самовывоз — Старобельск</b><small>ул. ______, 1 · Пн–Сб 9:00–18:00 · бесплатно</small></span></label>
+            <label><input type="radio" name="d"><span><b>Пункт выдачи в вашем районе</b><small>Меловое, Беловодск, Марковка, Сватово · по графику маршрута</small></span></label>
+            <label><input type="radio" name="d"><span><b>Курьер по Старобельску</b><small>Сегодня или завтра · 200 ₽, от 5 000 ₽ бесплатно</small></span></label>
+          </div>
+          <label class="f"><span>Комментарий</span><textarea class="inp" placeholder="Например: удобно забрать после 17:00"></textarea></label>
+          <label class="check" style="margin-bottom:18px"><input type="checkbox" checked> Согласен на обработку персональных данных и с условиями публичной оферты</label>
+          <button class="btn wide" id="send">Получить код подтверждения</button>
+        </div>
+
+        <div class="card" id="s2" style="display:none;margin-bottom:12px">
+          <div class="eyebrow">Шаг 2 из 2</div>
+          <h2 style="font-size:19px">Подтвердите номер</h2>
+          <p class="muted" style="margin-top:-8px;font-size:13.5px">Код отправлен на <b class="mono" id="phe">+7 959 123-45-67</b>. Выберите канал — в него же будут приходить все уведомления по заказу:</p>
+          <div class="chn">
+            <button class="on"><span class="ic ic-tg">TG</span><span>Telegram</span><small>бесплатно</small></button>
+            <button><span class="ic ic-max">M</span><span>MAX</span><small>бесплатно</small></button>
+            <button><span class="ic ic-wb">WB</span><span>WB Chat</span><small>бесплатно</small></button>
+            <button><span class="ic ic-sms">SMS</span><span>SMS</span><small>резервный</small></button>
+          </div>
+          <div class="codebox" id="code"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"><input maxlength="1" inputmode="numeric"></div>
+          <p class="muted" style="text-align:center;font-size:12.5px;margin:0 0 15px">Для демонстрации введите <b class="mono">2 4 0 8</b>. Код действует 5 минут.</p>
+          <button class="btn wide" id="conf" disabled>Подтвердить и отправить заказ</button>
+          <p class="muted" style="text-align:center;font-size:12.5px;margin:13px 0 0">Повторная отправка через <b class="mono">00:47</b> · <a data-go="checkout" style="color:var(--accent)">Изменить номер</a></p>
+        </div>
+
+        <div class="card" id="s3" style="display:none">
+          <div class="ok-s">
+            <div class="ring"><svg viewBox="0 0 24 24"><path d="M4 12.5 9.5 18 20 7"/></svg></div>
+            <h2 style="font-size:21px;margin-bottom:7px">Заказ № 2408 принят</h2>
+            <p class="muted" style="margin:0 0 20px;font-size:14px">Номер подтверждён. Менеджер проверит наличие и цену и напишет в Telegram в течение рабочего дня.</p>
+            <div class="steps" style="text-align:left;max-width:350px;margin:0 auto 18px">
+              <div class="done"><i>✓</i><div><b>Номер подтверждён</b><small>сегодня, 14:32</small></div></div>
+              <div class="now"><i>2</i><div><b>В обработке</b><small>проверяем наличие и цену</small></div></div>
+              <div><i>3</i><div><b>В пути</b><small>заказано у поставщика</small></div></div>
+              <div><i>4</i><div><b>Ожидает выдачи</b><small>оплата наличными при получении</small></div></div>
+            </div>
+            <button class="btn ghost wide" data-go="account">Открыть мои заказы</button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card" style="margin-bottom:12px">
+          <div class="sum"><span class="muted">Товары, 3 шт</span><span class="mono">7 610 ₽</span></div>
+          <div class="sum total"><span>Ориентировочно</span><span class="price">7 610 ₽</span></div>
+          <p class="muted" style="font-size:12px;margin:11px 0 0">Точную сумму назовёт менеджер при подтверждении. Платите только при получении.</p>
+        </div>
+        <div class="callout">
+          <b>Зачем код подтверждения</b>
+          <ul>
+            <li>Заказ нельзя оформить на чужой или выдуманный номер</li>
+            <li>Один номер — одна история заказов и <span class="a">репутация покупателя</span></li>
+            <li>Два невыкупа подряд — дальше заказ только с авансом</li>
+            <li>Telegram и MAX бесплатны для магазина, SMS — резервный канал</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ЛИЧНЫЙ КАБИНЕТ ======================= -->
+<div class="screen" id="account">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><span class="plate gh"><span>+7 959 123-45-67</span></span><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap two">
+    <div>
+      <h1 style="font-size:25px">Мои заказы</h1>
+      <p class="muted" style="margin-top:-8px;font-size:13.5px">Вход по номеру телефона и коду — пароль не нужен.</p>
+
+      <div class="card" style="margin-bottom:12px;border-color:#9FD8C2;box-shadow:0 0 0 3px rgba(14,122,86,.1)">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:12px;flex-wrap:wrap">
+          <b class="mono">Заказ № 2408</b><span class="pill ok"><i class="dot"></i>Прибыл — готов к выдаче</span><span class="muted" style="margin-left:auto;font-size:12.5px">сегодня, 14:32</span>
+        </div>
+        <div class="fit" style="background:var(--ok-bg);border-color:#9FD8C2;margin-bottom:14px">
+          <div style="font-size:13.5px;line-height:1.5"><b>Деталь пришла и отсканирована сегодня в 16:04.</b><br>Забрать: Старобельск, ул. ______, 1, Пн–Сб 9:00–18:00. При себе — <b class="mono">7 610 ₽</b> наличными.</div>
+        </div>
+        <div class="steps">
+          <div class="done"><i>✓</i><div><b>Принят</b><small>номер подтверждён, 14:32</small></div></div>
+          <div class="done"><i>✓</i><div><b>В обработке</b><small>цена подтверждена, 15:10</small></div></div>
+          <div class="done"><i>✓</i><div><b>В пути</b><small>заказано у поставщика</small></div></div>
+          <div class="now"><i>4</i><div><b>Ожидает выдачи</b><small>отсканировано при приёмке в 16:04</small></div></div>
+        </div>
+        <div class="sum total"><span>К оплате при получении</span><span class="price">7 610 ₽</span></div>
+      </div>
+
+      <div class="card">
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:11px;flex-wrap:wrap">
+          <b class="mono">Заказ № 2261</b><span class="pill ok"><i class="dot"></i>Выдан</span><span class="muted" style="margin-left:auto;font-size:12.5px">12 августа</span>
+        </div>
+        <p class="muted" style="font-size:13.5px;margin:0 0 11px">Свеча зажигания NGK BKR6E-11 × 4 · Фильтр воздушный MANN C 25 108</p>
+        <div class="sum total"><span>Оплачено наличными</span><span class="price">2 010 ₽</span></div>
+        <button class="btn ghost wide" style="margin-top:13px">Повторить заказ</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="margin-bottom:12px">
+        <h3>Мой гараж</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;align-items:flex-start">
+          <span class="plate lg"><span>Chevrolet Lacetti 1.6 <b>2008</b></span><em>ОСНОВНАЯ</em></span>
+          <span class="plate lg"><span>ВАЗ-2107 <b>2004</b></span></span>
+          <button class="chip" data-go="model">+ Добавить машину</button>
+        </div>
+      </div>
+      <div class="card" style="margin-bottom:12px">
+        <h3>Куда присылать уведомления</h3>
+        <div class="chan-list">
+          <a><span class="ic ic-tg">TG</span><span><b>Telegram</b><small>@detal24_bot</small></span><span class="st pill ok">Активен</span></a>
+          <a><span class="ic ic-max">M</span><span><b>MAX</b><small>Уведомления и чат с менеджером</small></span><span class="st pill dk" style="background:var(--line-2);color:var(--steel)">Подключить</span></a>
+          <a><span class="ic ic-wb">WB</span><span><b>WB Chat</b><small>Канал магазина в мессенджере WB</small></span><span class="st pill dk" style="background:var(--line-2);color:var(--steel)">Подключить</span></a>
+        </div>
+        <p class="muted" style="font-size:12.5px;margin:11px 0 0">Можно выбрать несколько — дублируем в каждый выбранный.</p>
+      </div>
+      <div class="card">
+        <h3>Репутация покупателя</h3>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:9px">
+          <span class="trust"><s class="f" style="width:10px;height:10px"></s><s class="f" style="width:10px;height:10px"></s><s class="f" style="width:10px;height:10px"></s><s style="width:10px;height:10px"></s></span>
+          <b style="font-size:14.5px">Надёжный покупатель</b>
+        </div>
+        <p class="muted" style="font-size:13px;margin:0">6 выкупленных заказов, ни одного отказа. Заказные позиции доступны без аванса.</p>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= ДОСТАВКА ======================= -->
+<div class="screen" id="delivery">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap two">
+    <div>
+      <h1>Доставка и оплата</h1>
+      <p class="muted" style="margin-top:0">Оплата только при получении — наличными. Онлайн-оплаты на сайте нет, предоплату не берём, кроме редких заказных позиций.</p>
+      <h3 style="margin-top:22px">Куда возим</h3>
+      <div class="card" style="padding:6px 16px">
+        <div class="zone"><i>СБ</i><div><b>Старобельск — самовывоз</b><small>ул. ______, 1 · Пн–Сб 9:00–18:00</small></div><span class="price">0 ₽</span></div>
+        <div class="zone"><i>СБ</i><div><b>Старобельск — курьер</b><small>В день готовности или на следующий</small></div><span class="price">200 ₽</span></div>
+        <div class="zone"><i>СВ</i><div><b>Сватово, Кременная</b><small>Маршрут по вторникам и пятницам</small></div><span class="price">300 ₽</span></div>
+        <div class="zone"><i>МЛ</i><div><b>Меловое, Беловодск, Марковка</b><small>Маршрут по средам и субботам</small></div><span class="price">350 ₽</span></div>
+        <div class="zone"><i>ОС</i><div><b>Остальные населённые пункты</b><small>По согласованию, попутным маршрутом</small></div><span class="price">от 350 ₽</span></div>
+      </div>
+      <p class="muted" style="font-size:12.5px">Маршруты и пункты выдачи владелец заводит в админке — без программиста.</p>
+    </div>
+    <div>
+      <h3>Когда попросим аванс</h3>
+      <div class="card" style="margin-bottom:12px">
+        <p style="margin-top:0;font-size:14px">Аванс наличными в пункте выдачи берём только в трёх случаях:</p>
+        <div class="steps">
+          <div class="now"><i>1</i><div><b>Редкая заказная позиция</b><small>Которую нельзя вернуть поставщику</small></div></div>
+          <div class="now"><i>2</i><div><b>Заказ дороже 15 000 ₽ от нового покупателя</b><small>При первом заказе с этого номера</small></div></div>
+          <div class="now"><i>3</i><div><b>Есть невыкупленные заказы</b><small>Два отказа подряд — дальше только с авансом</small></div></div>
+        </div>
+        <p class="muted" style="font-size:13px;margin-bottom:0">В остальных случаях не платите ничего, пока не увидите деталь.</p>
+      </div>
+      <div class="note"><b>Почему так.</b> Заказная деталь — это замороженные деньги магазина. Правило одинаково для всех и опубликовано заранее, чтобы не было споров.</div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ======================= АДМИНКА ======================= -->
+<div class="screen" id="admin">
+  <div class="adm"><div class="wrap">
+    <div class="a-top"><div class="logo" style="font-size:15px"><i>Д24</i>Панель управления</div><button class="ib" style="margin-left:auto" data-go="home">✕</button></div>
+    <div class="a-tabs">
+      <button class="on">Заказы <span class="pill rd" style="margin-left:5px">4</span></button>
+      <button>Заявки по VIN</button>
+      <button>Товары и цены</button>
+      <button>Поставщики</button>
+      <button>Импорт прайсов</button>
+      <button>Кросс-номера</button>
+      <button>Клиенты</button>
+      <button>Доставка</button>
+    </div>
+
+    <div class="kpi">
+      <div><b>4</b><span>Новых заказа</span></div>
+      <div><b>11</b><span>В обработке</span></div>
+      <div class="w"><b>2</b><span>Ждут выдачи &gt; 5 дней</span></div>
+      <div><b>38 420 ₽</b><span>Выдано за неделю</span></div>
+    </div>
+
+    <div class="flow">
+      <button class="on">Все 17</button><button>Новый 4</button><button>В обработке 6</button><button>В пути 3</button><button>Ожидает выдачи 2</button><button>Выдан</button><button>Невыкуп 2</button>
+    </div>
+
+    <div class="ord">
+      <div class="h"><span class="num">№ 2408</span><span class="pill gr">✓ Телефон подтверждён · Telegram</span><span class="t">14:32</span></div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13.5px">
+        <b>Артур</b><span class="mono" style="color:#8A97A2">+7 959 123-45-67</span>
+        <span class="trust"><s class="f"></s><s class="f"></s><s class="f"></s><s></s></span>
+        <span style="color:#8A97A2;font-size:12.5px">6 заказов, 0 отказов</span>
+      </div>
+      <ul>
+        <li>MANN W 712/94 × 1 — оригинал, в наличии</li>
+        <li>TRW GDB3332 × 1 — аналог, в наличии</li>
+        <li>GATES K015603XS × 1 — <span style="color:#FFB37A">под заказ, 3 дня</span></li>
+      </ul>
+      <div style="font-size:13px;color:#B4C0C9">Самовывоз, Старобельск · ориентировочно <b class="mono" style="color:#fff">7 610 ₽</b></div>
+      <div class="acts">
+        <button class="pri">→ В обработку</button><button>Подтвердить цену</button><button>Написать в Telegram</button><button>Отменить</button>
+      </div>
+    </div>
+
+    <div class="ord">
+      <div class="h"><span class="num">№ 2407</span><span class="pill rd">⚠ Новый номер · первый заказ</span><span class="t">13:05</span></div>
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13.5px">
+        <b>Без имени</b><span class="mono" style="color:#8A97A2">+7 959 555-11-22</span>
+        <span class="trust"><s></s><s></s><s></s><s></s></span>
+        <span style="color:#8A97A2;font-size:12.5px">0 заказов · 4 корзины за час</span>
+      </div>
+      <ul><li>Турбина Garrett 786880-5021S × 2 — <span style="color:#FFB37A">заказная, невозвратная</span></li></ul>
+      <div style="font-size:13px;color:#B4C0C9">Ориентировочно <b class="mono" style="color:#fff">124 000 ₽</b> · <span style="color:#FF9670">выше порога для нового покупателя</span></div>
+      <div class="acts"><button class="pri">Запросить аванс 30%</button><button>Позвонить</button><button>В чёрный список</button></div>
+    </div>
+
+    <h2 style="font-size:19px;margin-top:24px">Клиенты и репутация</h2>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:6px 14px">
+      <table class="mini">
+        <tr><th>Телефон</th><th>Выкуплено</th><th>Отказов</th><th>Статус</th></tr>
+        <tr><td class="mono">+7 959 123-45-67</td><td>6</td><td>0</td><td><span class="pill gr">Без аванса</span></td></tr>
+        <tr><td class="mono">+7 959 777-33-11</td><td>1</td><td>2</td><td><span class="pill rd">Только аванс</span></td></tr>
+        <tr><td class="mono">+7 959 555-11-22</td><td>0</td><td>0</td><td><span class="pill dk">Новый</span></td></tr>
+      </table>
+    </div>
+    <p style="color:#8A97A2;font-size:12.5px">Статус присваивается автоматически по правилам, владелец может изменить вручную.</p>
+  </div></div>
+</div>
+
+
+<!-- ======================= ПРИЁМКА ПО ШТРИХКОДУ ======================= -->
+<div class="screen" id="scan">
+  <div class="adm"><div class="wrap">
+    <div class="a-top"><div class="logo" style="font-size:15px"><i>Д24</i>Приёмка товара</div><button class="ib" style="margin-left:auto" data-go="admin">✕</button></div>
+
+    <div class="kpi" style="margin-top:16px">
+      <div><b>14</b><span>Заказано у поставщика</span></div>
+      <div><b id="k-today">3</b><span>Принято сегодня</span></div>
+      <div><b id="k-wait">9</b><span>Ждём поступления</span></div>
+      <div class="w"><b>2</b><span>Лежат &gt; 5 дней</span></div>
+      <div><b id="k-sum">7 810 ₽</b><span>К получению с клиентов</span></div>
+      <div><b id="k-buy">6 080 ₽</b><span>Вложено в закупку</span></div>
+      <div class="w"><b id="k-mrg">1 730 ₽</b><span>Ваша маржа на полке</span></div>
+      <div><b>27%</b><span>Текущая наценка</span></div>
+    </div>
+
+    <div class="scan-field">
+      <div style="color:#fff;font-size:15px;font-weight:600;margin-bottom:12px"><span class="pulse"></span>Сканер подключён — наведите пистолет и нажмите курок</div>
+      <input id="scan-in" placeholder="Ожидание штрихкода…" autocomplete="off">
+      <div class="hintline">Поле всегда в фокусе. Сканер работает как клавиатура — ничего настраивать не нужно.<br>
+      Для демонстрации: <b class="mono" style="color:#fff">D24-2408-3</b>, <b class="mono" style="color:#fff">D24-2411-1</b>, <b class="mono" style="color:#fff">D24-2402-2</b> или EAN <b class="mono" style="color:#fff">4009026112283</b> — и Enter.</div>
+    </div>
+
+    <h2 style="font-size:18px">Принято в этой смене</h2>
+    <div id="scan-log">
+      <div class="rcv">
+        <div class="l1">
+          <span class="ck">✓</span>
+          <span class="nm"><b>Фильтр масляный MANN W 712/94</b><small>W 712/94 · D24-2405-1 · заказ № 2405 · принят 09:14</small></span>
+          <span class="cell">А-3</span>
+        </div>
+        <div class="grid">
+          <div class="box"><span>Закупка</span><b>378 ₽</b></div>
+          <div class="box"><span>Наценка 27%</span><b>+102 ₽</b></div>
+          <div class="box pay"><span>К оплате клиентом</span><b>480 ₽</b></div>
+          <div class="box mrg"><span>Маржа</span><b>102 ₽</b></div>
+        </div>
+        <div class="who"><b style="color:#fff">Артур</b><span class="ph">+7 959 123-45-67</span><span class="pill gr">Надёжный</span><span class="sent">✓ уведомлён в Telegram</span></div>
+        <div class="acts"><button class="pri">Выдан, оплачено 480 ₽</button><button>Написать</button><button>Печать ценника</button></div>
+      </div>
+
+      <div class="rcv">
+        <div class="l1">
+          <span class="ck">✓</span>
+          <span class="nm"><b>Колодки тормозные TRW GDB3332</b><small>GDB3332 · D24-2405-2 · заказ № 2405 · принят 09:15</small></span>
+          <span class="cell">А-3</span>
+        </div>
+        <div class="grid">
+          <div class="box"><span>Закупка</span><b>1 693 ₽</b></div>
+          <div class="box"><span>Наценка 27%</span><b>+457 ₽</b></div>
+          <div class="box pay"><span>К оплате клиентом</span><b>2 150 ₽</b></div>
+          <div class="box mrg"><span>Маржа</span><b>457 ₽</b></div>
+        </div>
+        <div class="who"><b style="color:#fff">Артур</b><span class="ph">+7 959 123-45-67</span><span class="pill gr">Надёжный</span><span class="sent">✓ уведомлён в Telegram</span></div>
+        <div class="acts"><button class="pri">Выдан, оплачено 2 150 ₽</button><button>Написать</button><button>Печать ценника</button></div>
+      </div>
+
+      <div class="rcv">
+        <div class="l1">
+          <span class="ck">✓</span>
+          <span class="nm"><b>Свеча зажигания NGK BKR6E-11 × 4</b><small>BKR6E-11 · D24-2399-4 · заказ № 2399 · принят 08:52</small></span>
+          <span class="cell">Б-1</span>
+        </div>
+        <div class="grid">
+          <div class="box"><span>Закупка</span><b>1 072 ₽</b></div>
+          <div class="box"><span>Наценка 27%</span><b>+288 ₽</b></div>
+          <div class="box pay"><span>К оплате клиентом</span><b>1 360 ₽</b></div>
+          <div class="box mrg"><span>Маржа</span><b>288 ₽</b></div>
+        </div>
+        <div class="who"><b style="color:#fff">Сергей</b><span class="ph">+7 959 777-20-14</span><span class="pill dk">Новый</span><span class="sent">✓ уведомлён в MAX</span></div>
+        <div class="acts"><button class="pri">Выдан, оплачено 1 360 ₽</button><button>Написать</button><button>Печать ценника</button></div>
+      </div>
+    </div>
+
+
+    <h2 style="font-size:18px;margin-top:24px">Приход от поставщиков</h2>
+    <div class="inv">
+      <div class="h"><b>Поставщик A</b><span class="num">Накладная № 4471 · 27.08</span><span class="pill gr" style="margin-left:auto">Принята полностью</span></div>
+      <div class="prog"><i style="width:100%"></i></div>
+      <div class="bars">
+        <div><span>Позиций</span><b>6 / 6</b></div>
+        <div><span>Закупка</span><b>9 240 ₽</b></div>
+        <div class="g"><span>Розница</span><b>11 740 ₽</b></div>
+      </div>
+    </div>
+    <div class="inv">
+      <div class="h"><b>Поставщик B</b><span class="num">Накладная № 1180 · 27.08</span><span class="pill" style="background:#4A3410;color:#FFB37A;margin-left:auto">Принята частично</span></div>
+      <div class="prog"><i style="width:60%"></i></div>
+      <div class="bars">
+        <div><span>Позиций</span><b>3 / 5</b></div>
+        <div><span>Закупка</span><b>5 120 ₽</b></div>
+        <div class="g"><span>Розница</span><b>6 510 ₽</b></div>
+      </div>
+      <p style="color:#FFB37A;font-size:12.5px;margin:9px 0 0">Не отсканировано 2 позиции — проверьте коробку или отметьте недостачу.</p>
+      <div class="acts" style="display:flex;gap:8px;flex-wrap:wrap;margin-top:9px">
+        <button style="border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;min-height:38px">Показать недостающие</button>
+        <button style="border-radius:8px;padding:8px 12px;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);color:#fff;min-height:38px">Отметить недостачу</button>
+      </div>
+    </div>
+    <h2 style="font-size:18px;margin-top:24px">Ждём поступления</h2>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:6px 14px">
+      <div class="wait-row" id="w-2408">
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span><b style="color:#fff">Ремень ГРМ GATES K015603XS</b><br><span class="bc">D24-2408-3 · заказ № 2408 · Артур</span></span>
+        <span class="ag pill wait" style="background:#4A3410;color:#FFB37A">3-й день</span>
+      </div>
+      <div class="wait-row">
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span><b style="color:#fff">Сайлентблок рычага LEMFORDER</b><br><span class="bc">D24-2411-1 · заказ № 2411 · Сергей</span></span>
+        <span class="ag pill dk">1-й день</span>
+      </div>
+      <div class="wait-row">
+        <span class="barcode"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span><b style="color:#fff">Амортизатор передний SACHS 314 045</b><br><span class="bc">D24-2402-2 · заказ № 2402 · Виктор</span></span>
+        <span class="ag pill rd">7-й день</span>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:18px">
+      <b>Как это работает у вас в магазине</b>
+      <ul>
+        <li>При заказе поставщику система печатает наклейку со штрихкодом позиции — <span class="a">D24-{номер заказа}-{позиция}</span></li>
+        <li>Пришла коробка — клеите наклейку на деталь и стреляете сканером в это поле</li>
+        <li>Позиция мгновенно переходит в «Ожидает выдачи», клиенту уходит уведомление в его мессенджер</li>
+        <li>Если наклейки нет — сканируете заводской штрихкод (EAN) на упаковке, система сама найдёт, чей это заказ</li>
+        <li>Система сразу показывает: <span class="a">кто заказал, телефон, закупку, вашу наценку и сумму к получению</span></li>
+        <li>Товару автоматически присваивается <span class="a">ячейка хранения</span> — при выдаче не ищете по всему складу</li>
+        <li>Нажали «Выдан, оплачено» — позиция закрыта, деньги учтены, заказ уходит в архив</li>
+        <li>Нет сканера — открываете этот экран на телефоне и наводите камеру</li>
+      </ul>
+    </div>
+  </div></div>
+  <div class="toast" id="toast"></div>
+</div>
+
+<!-- ======================= ОТЧЁТ ======================= -->
+<div class="screen" id="report">
+  <div class="adm"><div class="wrap">
+    <div class="a-top"><div class="logo" style="font-size:15px"><i>Д24</i>Отчёт по заказам</div><button class="ib" style="margin-left:auto" data-go="admin">✕</button></div>
+    <div class="a-tabs"><button class="on">За неделю</button><button>За месяц</button><button>За всё время</button><button>Выгрузить в Excel</button></div>
+
+    <div class="kpi">
+      <div><b>31</b><span>Заказано у поставщиков</span></div>
+      <div><b>22</b><span>Пришло и отсканировано</span></div>
+      <div><b>18</b><span>Выдано и оплачено</span></div>
+      <div class="w"><b>2</b><span>Невыкуп</span></div>
+    </div>
+
+    <h2 style="font-size:18px">Движение по позициям</h2>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:6px 14px;overflow-x:auto">
+      <table class="mini" style="min-width:940px">
+        <tr><th>Позиция</th><th>Заказ</th><th>Клиент</th><th>Заказано</th><th>Пришло</th><th>Выдано</th><th>Закупка</th><th>Продажа</th><th>Маржа</th><th>Статус</th></tr>
+        <tr><td>MANN W 712/94</td><td class="mono">2405</td><td>Артур</td><td>18.08</td><td>21.08</td><td>21.08</td><td class="mono">378 ₽</td><td class="mono">480 ₽</td><td class="mono" style="color:#5FD3A5">102 ₽</td><td><span class="pill gr">Закрыто</span></td></tr>
+        <tr><td>TRW GDB3332</td><td class="mono">2405</td><td>Артур</td><td>18.08</td><td>21.08</td><td>21.08</td><td class="mono">1 693 ₽</td><td class="mono">2 150 ₽</td><td class="mono" style="color:#5FD3A5">457 ₽</td><td><span class="pill gr">Закрыто</span></td></tr>
+        <tr><td>GATES K015603XS</td><td class="mono">2408</td><td>Артур</td><td>21.08</td><td>—</td><td>—</td><td class="mono">3 921 ₽</td><td class="mono">4 980 ₽</td><td class="mono" style="color:#8A97A2">1 059 ₽</td><td><span class="pill dk">В пути</span></td></tr>
+        <tr><td>NGK BKR6E-11 × 4</td><td class="mono">2399</td><td>Сергей</td><td>15.08</td><td>19.08</td><td>—</td><td class="mono">1 072 ₽</td><td class="mono">1 360 ₽</td><td class="mono" style="color:#FFB37A">288 ₽</td><td><span class="pill" style="background:#4A3410;color:#FFB37A">Ждёт выдачи</span></td></tr>
+        <tr><td>SACHS 314 045</td><td class="mono">2402</td><td>Виктор</td><td>16.08</td><td>—</td><td>—</td><td class="mono">7 480 ₽</td><td class="mono">9 500 ₽</td><td class="mono" style="color:#8A97A2">2 020 ₽</td><td><span class="pill rd">Просрочка 7 дн</span></td></tr>
+      </table>
+    </div>
+    <p style="color:#8A97A2;font-size:12.5px">Каждая строка заполняется автоматически: «заказано» — при отправке поставщику, «пришло» — при сканировании, «выдано» — при закрытии заказа.</p>
+
+    <h2 style="font-size:18px;margin-top:22px">Сколько денег лежит на полке</h2>
+    <div class="kpi">
+      <div><b>14 300 ₽</b><span>Пришло, ждёт выдачи</span></div>
+      <div class="w"><b>8 900 ₽</b><span>Лежит дольше 5 дней</span></div>
+      <div><b>11 240 ₽</b><span>Вложено в закупку</span></div>
+      <div><b style="color:#5FD3A5">3 060 ₽</b><span>Маржа в этих позициях</span></div>
+    </div>
+    <p style="color:#8A97A2;font-size:12.5px">Это ваши замороженные деньги. Отчёт показывает, по каким заказам пора звонить клиенту.</p>
+  </div></div>
+</div>
+
+
+<!-- ======================= ЦЕНЫ И СИНХРОНИЗАЦИЯ ======================= -->
+<div class="screen" id="pricing">
+  <div class="adm"><div class="wrap">
+    <div class="a-top"><div class="logo" style="font-size:15px"><i>Д24</i>Цены и синхронизация</div><button class="ib" style="margin-left:auto" data-go="admin">✕</button></div>
+
+    <div class="two" style="display:grid;gap:14px;margin-top:16px">
+      <div class="sync-card" style="margin:0">
+        <h2 style="font-size:18px;margin-top:0">Наценка магазина</h2>
+        <div class="mk-big"><b id="mk-val">27%</b><span>к закупочной цене поставщика</span></div>
+        <input type="range" class="mk" id="mk-range" min="10" max="60" value="27">
+        <div class="mk-presets">
+          <button data-mk="25">25%</button><button data-mk="27" class="on">27%</button><button data-mk="30">30%</button><button data-mk="35">35%</button>
+        </div>
+        <div class="meta" style="font-size:12.5px;color:#8A97A2;line-height:1.55;margin-top:8px">
+          Округление: <b style="color:#fff">до 10 ₽ вверх</b> · Применяется <b style="color:#fff">мгновенно ко всем товарам</b> —
+          розничная цена не хранится в базе, а считается из закупочной по этой формуле. Один клик — и весь каталог пересчитан.
+        </div>
+      </div>
+
+      <div class="sync-card" style="margin:0">
+        <h2 style="font-size:18px;margin-top:0">Как это видит покупатель</h2>
+        <table class="mini">
+          <tr><th>Товар</th><th>Закупка</th><th>На сайте</th></tr>
+          <tr><td>MANN W 712/94</td><td class="mono">378 ₽</td><td class="mono" style="color:#5FD3A5" data-base="378">480 ₽</td></tr>
+          <tr><td>TRW GDB3332</td><td class="mono">1 693 ₽</td><td class="mono" style="color:#5FD3A5" data-base="1693">2 150 ₽</td></tr>
+          <tr><td>GATES K015603XS</td><td class="mono">3 921 ₽</td><td class="mono" style="color:#5FD3A5" data-base="3921">4 980 ₽</td></tr>
+          <tr><td>SACHS 314 045</td><td class="mono">7 480 ₽</td><td class="mono" style="color:#5FD3A5" data-base="7480">9 500 ₽</td></tr>
+        </table>
+        <p style="color:#8A97A2;font-size:12px;margin:10px 0 0">Двигайте ползунок — цены пересчитываются на лету. Закупочные цены покупатель не видит никогда.</p>
+      </div>
+    </div>
+
+    <h2 style="font-size:18px;margin-top:22px">Наценка по группам (важнее общей)</h2>
+    <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r);padding:6px 14px;margin-bottom:18px">
+      <table class="mini">
+        <tr><th>Правило</th><th>Наценка</th><th>Действие</th></tr>
+        <tr><td>Фильтры и расходники</td><td class="mono">+32%</td><td><span class="pill dk">Изменить</span></td></tr>
+        <tr><td>Кузов и оптика (дорогие позиции)</td><td class="mono">+22%</td><td><span class="pill dk">Изменить</span></td></tr>
+        <tr><td>Бренд MANN-FILTER</td><td class="mono">+28%</td><td><span class="pill dk">Изменить</span></td></tr>
+        <tr><td>Всё остальное</td><td class="mono">общая наценка</td><td><span class="pill gr">По умолчанию</span></td></tr>
+      </table>
+    </div>
+
+    <h2 style="font-size:18px">Автообновление прайсов поставщиков</h2>
+    <div class="sync-card">
+      <div class="h"><b>Поставщик A</b><span class="src">EMAIL · XLSX</span><span class="pill gr" style="margin-left:auto">Активен</span></div>
+      <div class="meta">Прайс приходит на почту магазина ежедневно ~06:00 — система сама забирает вложение.<br>
+      Последняя синхронизация: <span class="ok">сегодня 06:12</span> · обновлено цен: <b style="color:#fff">4 812</b> · снято с продажи: 37 · следующая: завтра 06:00</div>
+    </div>
+    <div class="sync-card">
+      <div class="h"><b>Поставщик B</b><span class="src">ССЫЛКА · CSV</span><span class="pill gr" style="margin-left:auto">Активен</span></div>
+      <div class="meta">Прайс скачивается по постоянной ссылке поставщика каждые 6 часов.<br>
+      Последняя: <span class="ok">сегодня 12:00</span> · обновлено цен: <b style="color:#fff">2 145</b> · новых позиций: 18</div>
+    </div>
+    <div class="sync-card">
+      <div class="h"><b>Поставщик C</b><span class="src">API</span><span class="pill" style="background:#4A3410;color:#FFB37A;margin-left:auto">Проверка остатков</span></div>
+      <div class="meta">Цены и остатки по API в реальном времени при просмотре карточки — плюс полная выгрузка ночью в 03:30.</div>
+    </div>
+
+    <div class="callout" style="margin-top:16px">
+      <b>Что это даёт владельцу</b>
+      <ul>
+        <li>Поставщик поднял закупку — на сайте цена <span class="a">сама выросла с вашей наценкой</span>, вы ничего не делали</li>
+        <li>Позиция пропала из прайса — сама снялась с продажи, «пустых» заказов нет</li>
+        <li>Наценка меняется одним движением ползунка — без пересчёта базы и без программиста</li>
+        <li>Цены, которые вы поставили руками с флагом «зафиксировано», автообновление не трогает</li>
+      </ul>
+    </div>
+  </div></div>
+</div>
+
+<!-- ======================= КАНАЛЫ СВЯЗИ ======================= -->
+<div class="screen" id="channels">
+  <header class="top"><div class="wrap top-in"><div class="logo" data-go="home"><i>Д24</i>ДЕТАЛЬ 24</div><div class="top-act"><button class="ib" data-go="home">✕</button></div></div></header>
+  <section><div class="wrap two">
+    <div>
+      <div class="eyebrow">Связь с магазином</div>
+      <h1>Пишите, где удобно</h1>
+      <p class="muted" style="margin-top:0">Выберите мессенджер — туда же будут приходить уведомления о заказе: принят, цена подтверждена, в пути, прибыл и готов к выдаче.</p>
+      <div class="chan-list">
+        <a><span class="ic ic-tg">TG</span><span><b>Telegram</b><small>Заказ, подбор по VIN, уведомления</small></span><span class="st pill ok">Работает</span></a>
+        <a><span class="ic ic-max">M</span><span><b>MAX</b><small>Российский мессенджер, бот магазина</small></span><span class="st pill ok">Работает</span></a>
+        <a><span class="ic ic-wb">WB</span><span><b>WB Chat</b><small>Канал магазина в мессенджере Wildberries</small></span><span class="st pill wait">Канал открыт</span></a>
+        <a><span class="ic" style="background:#25D366">WA</span><span><b>WhatsApp</b><small>Переписка с менеджером</small></span><span class="st pill ok">Работает</span></a>
+        <a><span class="ic ic-sms">SMS</span><span><b>SMS</b><small>Если мессенджеров нет</small></span><span class="st pill ok">Резерв</span></a>
+      </div>
+      <div class="note" style="margin-top:14px">Уведомления дублируются в выбранные каналы. Если сообщение не доставлено ни в один — система отправит SMS, чтобы вы точно узнали о готовности заказа.</div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:12px">
+        <h3>Что вам приходит</h3>
+        <div class="steps">
+          <div class="done"><i>1</i><div><b>Заказ принят</b><small>сразу после подтверждения номера</small></div></div>
+          <div class="done"><i>2</i><div><b>Цена и срок подтверждены</b><small>нужен ваш ответ «да»</small></div></div>
+          <div class="done"><i>3</i><div><b>Заказано у поставщика</b><small>с ожидаемой датой</small></div></div>
+          <div class="now"><i>4</i><div><b>Прибыло, готово к выдаче</b><small>в момент приёмки на складе</small></div></div>
+          <div><i>5</i><div><b>Напоминание</b><small>если не забрали за 3 дня</small></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Контакты</h3>
+        <div class="spec">
+          <div><span class="muted">Телефон</span><b>+7 959 000-00-00</b></div>
+          <div><span class="muted">Адрес</span><b>Старобельск, ул. ______, 1</b></div>
+          <div><span class="muted">Часы</span><b>Пн–Сб 9:00–18:00</b></div>
+        </div>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<script>
+function go(id){
+  document.querySelectorAll('.screen').forEach(s=>s.classList.toggle('on',s.id===id));
+  document.querySelectorAll('.proto button').forEach(b=>b.classList.toggle('on',b.dataset.go===id));
+  window.scrollTo({top:0});
+  if(id==='scan'){const f=document.getElementById('scan-in');if(f)setTimeout(()=>f.focus(),120);}
+}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-go]');if(t){e.preventDefault();go(t.dataset.go);}});
+
+// группы-переключатели
+document.querySelectorAll('.smode,.seg,.a-tabs,.chn,.flow').forEach(g=>{
+  g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.dataset.go)return;
+    g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');});
+});
+document.querySelectorAll('.rcards').forEach(g=>{
+  g.addEventListener('click',e=>{const l=e.target.closest('label');if(!l)return;
+    g.querySelectorAll('label').forEach(x=>x.classList.remove('on'));l.classList.add('on');});
+});
+document.querySelectorAll('.qty').forEach(q=>{const s=q.querySelector('span');
+  q.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+    let v=+s.textContent;s.textContent=b.textContent.trim()==='+'?v+1:Math.max(1,v-1);});});
+
+// вкладки карточки товара
+document.querySelectorAll('.tabs').forEach(g=>{
+  g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||!b.dataset.tab)return;
+    g.querySelectorAll('button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    const host=g.parentElement;
+    host.querySelectorAll('.tabc').forEach(c=>c.classList.toggle('on',c.id===b.dataset.tab));});
+});
+
+
+
+// ===== БИБЛИОТЕКА ГРАФИЧЕСКИХ ПРИМИТИВОВ ДЕТАЛЕЙ =====
+const S={
+disc:'<ellipse cx="0" cy="0" rx="16" ry="30" class="f1"/><ellipse cx="0" cy="0" rx="9" ry="18" class="f2"/><ellipse cx="0" cy="0" rx="4" ry="8" class="f3"/><path d="M6 0 a9 18 0 0 0 0 0" class="f3"/><ellipse cx="0" cy="-13" rx="1.8" ry="3" class="f3"/><ellipse cx="0" cy="13" rx="1.8" ry="3" class="f3"/>',
+pad:'<path d="M-8 -24 q0 -5 5 -5 h6 q5 0 5 5 v48 q0 5 -5 5 h-6 q-5 0 -5 -5 z" class="f1"/><rect x="-15" y="-22" width="8" height="44" rx="3" fill="#8E6B4F" stroke="#5D6B77" stroke-width="1.4"/>',
+caliper:'<path d="M-14 -26 h26 q7 0 7 7 v38 q0 7 -7 7 h-8 v-16 q0 -6 -6 -6 h-12 q-6 0 -6 6 v16 h-2 q-6 0 -6 -6 v-40 q0 -6 6 -6 z" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><ellipse cx="0" cy="-8" rx="7" ry="5" class="f3"/>',
+drum:'<ellipse cx="0" cy="0" rx="18" ry="28" class="f1"/><ellipse cx="6" cy="0" rx="12" ry="20" class="f2"/><ellipse cx="6" cy="0" rx="5" ry="8" class="f3"/>',
+hose:'<path d="M-18 -20 C4 -18 -2 12 18 22" fill="none" stroke="#39424B" stroke-width="7" stroke-linecap="round"/><path d="M-18 -20 C4 -18 -2 12 18 22" fill="none" stroke="#8A97A2" stroke-width="1.6" stroke-dasharray="3 4"/><circle cx="-18" cy="-20" r="5" class="f2"/><circle cx="18" cy="22" r="5" class="f2"/>',
+pipe:'<path d="M-20 6 h30 l12 -10 v14 l-12 -10" fill="none" stroke="#5D6B77" stroke-width="2"/><rect x="-22" y="-4" width="34" height="14" rx="6" class="f2"/><path d="M12 -6 l14 8 -14 8 z" class="f3"/>',
+sensor:'<rect x="-6" y="-16" width="12" height="24" rx="3" class="f2"/><rect x="-9" y="6" width="18" height="9" rx="3" class="f3"/><path d="M0 -16 q-14 -10 -20 -2" fill="none" stroke="#5D6B77" stroke-width="2"/><rect x="-26" y="-22" width="10" height="8" rx="2" class="f3"/>',
+bolt:'<path d="M-6 -18 l6 -4 6 4 v8 l-6 3 -6 -3 z" class="f2"/><rect x="-2.5" y="-8" width="5" height="30" rx="2" class="f3"/><path d="M-2.5 6 h5 M-2.5 12 h5 M-2.5 18 h5" stroke="#5D6B77" stroke-width="1"/>',
+shield:'<path d="M-8 -28 q14 28 0 56 q-8 -28 0 -56" class="f2"/><path d="M4 -24 q12 24 0 48 q-7 -24 0 -48" class="f3"/>',
+spring:'<g fill="none" stroke="#5D6B77" stroke-width="3.4" stroke-linecap="round"><path d="M-15 -24 q15 8 30 0"/><path d="M-15 -12 q15 8 30 0"/><path d="M-15 0 q15 8 30 0"/><path d="M-15 12 q15 8 30 0"/><path d="M-15 24 q15 8 30 0"/></g>',
+shock:'<rect x="-6" y="-30" width="12" height="26" rx="4" class="f2"/><rect x="-9" y="-6" width="18" height="34" rx="6" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><path d="M-9 6 h18 M-9 14 h18" stroke="#8A97A2" stroke-width="1.2"/>',
+mount:'<ellipse cx="0" cy="0" rx="20" ry="9" class="f1"/><ellipse cx="0" cy="0" rx="7" ry="4" class="f3"/><ellipse cx="0" cy="7" rx="20" ry="8" class="f2"/>',
+arm:'<path d="M-26 6 q26 -14 52 2 l-3 12 q-24 -13 -46 -2 z" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="-24" cy="10" r="6" class="f3"/><circle cx="24" cy="14" r="6" class="f3"/>',
+balljoint:'<circle cx="0" cy="-4" r="12" class="f1"/><circle cx="0" cy="-4" r="5" class="f3"/><path d="M-4 8 h8 v14 h-8 z" class="f2"/><path d="M-7 22 h14 v5 h-14 z" class="f3"/>',
+bushing:'<ellipse cx="0" cy="0" rx="13" ry="16" class="f1"/><ellipse cx="0" cy="0" rx="7" ry="9" fill="#8E6B4F" stroke="#5D6B77" stroke-width="1.3"/><ellipse cx="0" cy="0" rx="3" ry="4" class="f3"/>',
+link:'<circle cx="-18" cy="-14" r="7" class="f2"/><circle cx="18" cy="16" r="7" class="f2"/><path d="M-15 -9 l30 20" stroke="#5D6B77" stroke-width="5" stroke-linecap="round"/>',
+hub:'<ellipse cx="0" cy="0" rx="17" ry="24" class="f1"/><ellipse cx="0" cy="0" rx="7" ry="10" class="f3"/><g class="f3"><circle cx="0" cy="-15" r="2.4"/><circle cx="9" cy="-6" r="2.4"/><circle cx="9" cy="8" r="2.4"/><circle cx="0" cy="15" r="2.4"/><circle cx="-9" cy="8" r="2.4"/><circle cx="-9" cy="-6" r="2.4"/></g>',
+bearing:'<circle cx="0" cy="0" r="20" class="f1"/><circle cx="0" cy="0" r="10" class="f2"/><g class="f3"><circle cx="0" cy="-15" r="3.4"/><circle cx="13" cy="-7" r="3.4"/><circle cx="13" cy="8" r="3.4"/><circle cx="0" cy="15" r="3.4"/><circle cx="-13" cy="8" r="3.4"/><circle cx="-13" cy="-7" r="3.4"/></g>',
+knuckle:'<path d="M-14 -22 q16 -6 30 4 l4 26 q-16 12 -34 2 z" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="2" cy="2" r="9" class="f3"/><path d="M-14 -22 l-8 -8 M20 8 l10 6" stroke="#5D6B77" stroke-width="3"/>',
+rack:'<rect x="-30" y="-6" width="60" height="14" rx="7" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><path d="M-14 -6 v-6 M-6 -6 v-6 M2 -6 v-6 M10 -6 v-6" stroke="#5D6B77" stroke-width="2"/><circle cx="-30" cy="1" r="6" class="f3"/><circle cx="30" cy="1" r="6" class="f3"/>',
+tierod:'<rect x="-28" y="-3" width="46" height="8" rx="4" class="f2"/><circle cx="22" cy="1" r="9" class="f1"/><circle cx="22" cy="1" r="4" class="f3"/><path d="M-28 -6 h6 v14 h-6 z" class="f3"/>',
+pump:'<circle cx="0" cy="0" r="19" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="0" cy="0" r="9" class="f2"/><path d="M0 -19 v-8 M19 0 h8 M0 19 v8 M-19 0 h-8" stroke="#5D6B77" stroke-width="2.6"/>',
+belt:'<ellipse cx="0" cy="0" rx="28" ry="20" fill="none" stroke="#39424B" stroke-width="9"/><ellipse cx="0" cy="0" rx="28" ry="20" fill="none" stroke="#8A97A2" stroke-width="1.6" stroke-dasharray="3 5"/>',
+roller:'<circle cx="0" cy="0" r="20" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="0" cy="0" r="11" class="f2"/><circle cx="0" cy="0" r="4" class="f3"/>',
+sprocket:'<circle cx="0" cy="0" r="18" class="f1"/><circle cx="0" cy="0" r="8" class="f3"/><g class="f2"><rect x="-3" y="-24" width="6" height="7" rx="2"/><rect x="-3" y="17" width="6" height="7" rx="2"/><rect x="-24" y="-3" width="7" height="6" rx="2"/><rect x="17" y="-3" width="7" height="6" rx="2"/></g>',
+chain:'<g class="f2"><rect x="-30" y="-5" width="14" height="10" rx="5"/><rect x="-14" y="-5" width="14" height="10" rx="5"/><rect x="2" y="-5" width="14" height="10" rx="5"/><rect x="18" y="-5" width="14" height="10" rx="5"/></g>',
+tensioner:'<circle cx="-6" cy="-4" r="14" class="f1"/><circle cx="-6" cy="-4" r="6" class="f3"/><path d="M4 6 l16 16" stroke="#5D6B77" stroke-width="5" stroke-linecap="round"/><rect x="16" y="18" width="12" height="10" rx="3" class="f2"/>',
+guide:'<path d="M-20 -22 q10 22 0 44 l10 2 q10 -24 0 -48 z" class="f2"/>',
+seal:'<ellipse cx="0" cy="0" rx="18" ry="12" class="f1"/><ellipse cx="0" cy="0" rx="10" ry="6" fill="#39424B"/>',
+ring:'<circle cx="0" cy="0" r="18" fill="none" stroke="#5D6B77" stroke-width="4"/><circle cx="0" cy="0" r="13" fill="none" stroke="#B6C2CB" stroke-width="2"/>',
+gasket:'<path d="M-24 -14 h48 v28 h-48 z" class="f2"/><g fill="#F4F7F9" stroke="#5D6B77" stroke-width="1.2"><circle cx="-12" cy="0" r="6"/><circle cx="4" cy="0" r="6"/><circle cx="18" cy="-7" r="2.5"/><circle cx="18" cy="7" r="2.5"/></g>',
+valve:'<rect x="-3" y="-26" width="6" height="34" rx="2" class="f3"/><path d="M-12 8 q12 -4 24 0 l-4 10 h-16 z" class="f1"/>',
+piston:'<rect x="-14" y="-20" width="28" height="26" rx="4" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><path d="M-14 -12 h28 M-14 -6 h28" stroke="#8A97A2" stroke-width="1.6"/><path d="M-5 6 l-4 24 h18 l-4 -24 z" class="f2"/>',
+pan:'<path d="M-28 -10 h56 l-6 26 h-44 z" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="0" cy="14" r="4" class="f3"/>',
+filter:'<rect x="-14" y="-22" width="28" height="42" rx="6" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><rect x="-10" y="-28" width="20" height="8" rx="3" class="f2"/><path d="M-10 -8 h20 M-10 2 h20 M-10 12 h20" stroke="#8A97A2" stroke-width="1.4"/>',
+panel:'<rect x="-26" y="-16" width="52" height="32" rx="4" class="f1"/><g stroke="#5D6B77" stroke-width="1.4"><path d="M-18 -12 v24 M-10 -12 v24 M-2 -12 v24 M6 -12 v24 M14 -12 v24"/></g>',
+can:'<rect x="-13" y="-22" width="26" height="44" rx="5" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><rect x="-5" y="-28" width="10" height="8" rx="3" class="f3"/><rect x="-10" y="-4" width="20" height="14" rx="3" class="f2"/>',
+tank:'<path d="M-16 -18 h32 q4 0 4 5 v28 q0 5 -4 5 h-32 q-4 0 -4 -5 v-28 q0 -5 4 -5 z" class="f1"/><rect x="-6" y="-25" width="12" height="8" rx="3" class="f3"/><path d="M-14 4 h28" stroke="#8A97A2" stroke-width="1.4"/>',
+cap:'<ellipse cx="0" cy="0" rx="15" ry="9" class="f1"/><ellipse cx="0" cy="-5" rx="15" ry="9" class="f2"/>',
+radiator:'<rect x="-30" y="-20" width="60" height="40" rx="4" class="f1"/><g stroke="#8A97A2" stroke-width="1.6"><path d="M-24 -16 v32 M-16 -16 v32 M-8 -16 v32 M0 -16 v32 M8 -16 v32 M16 -16 v32 M24 -16 v32"/></g><rect x="-30" y="-24" width="60" height="6" rx="3" class="f2"/>',
+fan:'<circle cx="0" cy="0" r="24" fill="none" stroke="#5D6B77" stroke-width="2.4"/><g class="f2"><path d="M0 0 q12 -14 18 -4 q-8 10 -18 4"/><path d="M0 0 q14 10 6 17 q-11 -5 -6 -17"/><path d="M0 0 q-4 17 -14 12 q3 -12 14 -12"/><path d="M0 0 q-17 -3 -14 -14 q12 2 14 14"/></g><circle cx="0" cy="0" r="6" class="f3"/>',
+thermostat:'<circle cx="0" cy="0" r="15" class="f1"/><circle cx="0" cy="0" r="7" class="f3"/><path d="M-15 0 h-8 M15 0 h8" stroke="#5D6B77" stroke-width="3"/>',
+housing:'<path d="M-18 -14 h30 q6 0 6 6 v20 q0 6 -6 6 h-30 q-6 0 -6 -6 v-20 q0 -6 6 -6 z" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="-2" cy="2" r="7" class="f3"/>',
+blower:'<circle cx="0" cy="0" r="20" class="f1"/><circle cx="0" cy="0" r="12" class="f2"/><g stroke="#5D6B77" stroke-width="1.6"><path d="M0 -20 v8 M14 -14 l-6 6 M20 0 h-8 M14 14 l-6 -6 M0 20 v-8 M-14 14 l6 -6 M-20 0 h8 M-14 -14 l6 6"/></g><rect x="-4" y="18" width="8" height="10" rx="2" class="f3"/>',
+resistor:'<rect x="-16" y="-12" width="32" height="24" rx="4" class="f2"/><path d="M-8 12 v8 M0 12 v8 M8 12 v8" stroke="#5D6B77" stroke-width="2.4"/>',
+compressor:'<circle cx="-4" cy="0" r="19" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="-4" cy="0" r="8" class="f3"/><rect x="14" y="-12" width="14" height="24" rx="4" class="f2"/>',
+injector:'<rect x="-6" y="-22" width="12" height="26" rx="4" class="f2"/><path d="M-4 4 h8 l-2 14 h-4 z" class="f3"/><rect x="-10" y="-26" width="20" height="7" rx="3" class="f1"/>',
+throttle:'<circle cx="0" cy="0" r="21" class="f1"/><ellipse cx="0" cy="0" rx="18" ry="6" class="f2"/><circle cx="0" cy="0" r="4" class="f3"/><rect x="18" y="-8" width="12" height="16" rx="3" class="f2"/>',
+catalyst:'<ellipse cx="-22" cy="0" rx="5" ry="10" class="f3"/><rect x="-22" y="-14" width="44" height="28" rx="6" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><ellipse cx="22" cy="0" rx="5" ry="10" class="f3"/><path d="M-14 -14 v28 M-6 -14 v28 M2 -14 v28 M10 -14 v28" stroke="#B6C2CB" stroke-width="1.4"/>',
+muffler:'<ellipse cx="0" cy="0" rx="26" ry="15" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><path d="M-26 -4 h52 M-26 4 h52" stroke="#B6C2CB" stroke-width="1.3"/><rect x="24" y="-4" width="16" height="8" rx="4" class="f3"/><rect x="-40" y="-4" width="16" height="8" rx="4" class="f3"/>',
+clutch:'<circle cx="0" cy="0" r="24" class="f1"/><circle cx="0" cy="0" r="14" class="f2"/><circle cx="0" cy="0" r="6" class="f3"/><g stroke="#5D6B77" stroke-width="1.4"><path d="M0 -24 v10 M17 -17 l-7 7 M24 0 h-10 M17 17 l-7 -7 M0 24 v-10 M-17 17 l7 -7 M-24 0 h10 M-17 -17 l7 7"/></g>',
+cylinder:'<rect x="-20" y="-11" width="40" height="22" rx="7" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><rect x="18" y="-4" width="16" height="8" rx="3" class="f3"/><rect x="-8" y="-18" width="12" height="8" rx="3" class="f2"/>',
+booster:'<ellipse cx="0" cy="0" rx="26" ry="22" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><ellipse cx="0" cy="0" rx="14" ry="12" class="f2"/><rect x="24" y="-5" width="14" height="10" rx="3" class="f3"/>',
+driveshaft:'<circle cx="-26" cy="0" r="11" class="f1"/><rect x="-16" y="-5" width="34" height="10" rx="5" class="f2"/><path d="M-16 -8 q8 -3 8 8 M10 -8 q-8 -3 -8 8" fill="none" stroke="#8A97A2" stroke-width="1.4"/><circle cx="26" cy="0" r="9" class="f1"/>',
+cvjoint:'<circle cx="0" cy="0" r="19" class="f1"/><circle cx="0" cy="0" r="9" class="f3"/><g class="f2"><circle cx="0" cy="-13" r="3"/><circle cx="12" cy="-5" r="3"/><circle cx="8" cy="10" r="3"/><circle cx="-8" cy="10" r="3"/><circle cx="-12" cy="-5" r="3"/></g><rect x="18" y="-4" width="14" height="8" rx="3" class="f3"/>',
+sparkplug:'<rect x="-7" y="-26" width="14" height="18" rx="3" class="f2"/><rect x="-5" y="-8" width="10" height="14" rx="2" class="f3"/><path d="M0 6 v12" stroke="#5D6B77" stroke-width="2.6"/><path d="M0 18 q10 0 8 -9" fill="none" stroke="#5D6B77" stroke-width="2.6"/>',
+coil:'<rect x="-12" y="-20" width="24" height="28" rx="5" class="f2"/><rect x="-6" y="8" width="12" height="16" rx="3" class="f3"/><rect x="-18" y="-16" width="8" height="12" rx="2" class="f1"/>',
+alternator:'<circle cx="-2" cy="0" r="21" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="-2" cy="0" r="10" class="f2"/><g stroke="#8A97A2" stroke-width="1.4"><path d="M-2 -21 v6 M-2 15 v6 M-23 0 h6 M17 0 h6"/></g><rect x="18" y="-9" width="10" height="18" rx="3" class="f3"/>',
+starter:'<rect x="-24" y="-13" width="38" height="26" rx="10" fill="url(#mtl)" stroke="#5D6B77" stroke-width="1.7"/><circle cx="20" cy="0" r="10" class="f2"/><g class="f3"><circle cx="20" cy="0" r="4"/></g><rect x="-14" y="-22" width="18" height="10" rx="4" class="f2"/>',
+battery:'<rect x="-26" y="-16" width="52" height="32" rx="4" class="f1"/><rect x="-18" y="-22" width="10" height="7" rx="2" class="f3"/><rect x="8" y="-22" width="10" height="7" rx="2" class="f3"/><path d="M-14 0 h10 M-9 -5 v10 M6 0 h10" stroke="#5D6B77" stroke-width="2"/>',
+ecu:'<rect x="-24" y="-15" width="48" height="30" rx="4" class="f1"/><rect x="-18" y="15" width="36" height="7" rx="2" class="f3"/><path d="M-16 -8 h32 M-16 0 h20" stroke="#8A97A2" stroke-width="1.4"/>',
+fusebox:'<rect x="-26" y="-18" width="52" height="36" rx="4" class="f1"/><g class="f2"><rect x="-20" y="-12" width="10" height="8" rx="2"/><rect x="-6" y="-12" width="10" height="8" rx="2"/><rect x="8" y="-12" width="10" height="8" rx="2"/><rect x="-20" y="2" width="10" height="8" rx="2"/><rect x="-6" y="2" width="10" height="8" rx="2"/><rect x="8" y="2" width="10" height="8" rx="2"/></g>',
+relay:'<rect x="-13" y="-13" width="26" height="26" rx="3" class="f2"/><path d="M-7 13 v8 M0 13 v8 M7 13 v8" stroke="#5D6B77" stroke-width="2.2"/>',
+fuse:'<rect x="-11" y="-14" width="22" height="20" rx="3" class="f1"/><path d="M-5 6 v12 M5 6 v12" stroke="#5D6B77" stroke-width="3"/>',
+plug:'<path d="M-12 -12 h20 q6 0 6 6 v12 q0 6 -6 6 h-20 z" class="f2"/><path d="M-12 -6 h-8 M-12 6 h-8" stroke="#5D6B77" stroke-width="2.4"/>',
+cable:'<path d="M-24 -14 q14 10 0 20 q-14 10 0 18" fill="none" stroke="#39424B" stroke-width="5" stroke-linecap="round"/><rect x="-30" y="-20" width="10" height="9" rx="2" class="f3"/><rect x="16" y="14" width="10" height="9" rx="2" class="f3"/>',
+headlamp:'<path d="M-28 -16 q30 -8 54 2 l2 26 q-28 10 -56 0 z" class="f1"/><ellipse cx="-8" cy="-2" rx="12" ry="11" class="f2"/><ellipse cx="16" cy="0" rx="8" ry="8" class="f3"/>',
+foglamp:'<circle cx="0" cy="0" r="18" class="f1"/><circle cx="0" cy="0" r="10" class="f2"/><circle cx="0" cy="0" r="4" class="f3"/>',
+taillamp:'<path d="M-24 -14 q26 -6 48 2 l0 24 q-24 8 -48 0 z" class="f2"/><path d="M-16 -8 h30 v10 h-30 z" fill="#D9E3EA" stroke="#5D6B77" stroke-width="1.2"/>',
+bulb:'<circle cx="0" cy="-8" r="13" class="f1"/><rect x="-6" y="4" width="12" height="12" rx="2" class="f3"/><path d="M-6 16 h12" stroke="#5D6B77" stroke-width="2.4"/>',
+bumper:'<path d="M-32 -6 q32 -14 64 0 l0 18 q-32 -10 -64 0 z" class="f1"/><path d="M-24 4 q24 -8 48 0" fill="none" stroke="#8A97A2" stroke-width="1.6"/>',
+grille:'<rect x="-28" y="-14" width="56" height="28" rx="5" class="f1"/><g stroke="#5D6B77" stroke-width="2"><path d="M-22 -8 h44 M-22 0 h44 M-22 8 h44"/></g>',
+hood:'<path d="M-30 12 q30 -26 60 -6 l-4 10 q-26 -16 -52 4 z" class="f1"/>',
+fender:'<path d="M-24 16 q6 -30 30 -30 q18 0 22 16 l-8 4 q-6 -12 -16 -10 q-16 2 -18 22 z" class="f1"/>',
+door:'<path d="M-22 -18 h40 q6 0 6 6 v30 q0 6 -6 6 h-40 z" class="f1"/><rect x="6" y="-2" width="14" height="5" rx="2" class="f3"/><rect x="-16" y="-12" width="26" height="12" rx="2" class="f2"/>',
+glass:'<path d="M-28 12 q10 -24 22 -24 h18 q10 0 12 24 z" fill="#DCEBF3" stroke="#5D6B77" stroke-width="1.6"/>',
+mirror:'<path d="M-16 -12 q18 -8 30 2 l2 16 q-16 8 -32 0 z" class="f1"/><ellipse cx="0" cy="0" rx="11" ry="8" fill="#DCEBF3" stroke="#5D6B77" stroke-width="1.3"/>',
+regulator:'<path d="M-22 -16 l40 26 M-22 10 l40 -26" stroke="#5D6B77" stroke-width="4" stroke-linecap="round"/><circle cx="-22" cy="-16" r="5" class="f3"/><circle cx="18" cy="10" r="5" class="f3"/><rect x="-6" y="12" width="16" height="10" rx="3" class="f2"/>',
+wiper:'<path d="M-30 14 q22 -10 44 -16" stroke="#39424B" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M-26 10 q20 -9 40 -14" stroke="#8A97A2" stroke-width="2" fill="none"/><rect x="-34" y="10" width="10" height="10" rx="3" class="f3"/>',
+lock:'<rect x="-16" y="-8" width="32" height="26" rx="4" class="f1"/><path d="M-8 -8 v-6 q0 -8 8 -8 q8 0 8 8 v6" fill="none" stroke="#5D6B77" stroke-width="3"/><circle cx="0" cy="5" r="4" class="f3"/>',
+handle:'<path d="M-24 -4 q24 -12 48 0 l0 10 q-24 -10 -48 0 z" class="f1"/><circle cx="16" cy="2" r="4" class="f3"/>',
+kit:'<rect x="-26" y="-16" width="52" height="34" rx="5" class="f1"/><path d="M-26 -6 h52" stroke="#5D6B77" stroke-width="1.6"/><rect x="-10" y="-24" width="20" height="9" rx="3" class="f2"/><g class="f3"><circle cx="-12" cy="6" r="6"/><rect x="2" y="0" width="16" height="12" rx="3"/></g>'
+};
+const ALIAS={ring:'ring',seal:'seal'};
+function shapeFor(k){return S[k]||S.kit;}
+
+// ===== ГЕНЕРАТОР СХЕМ =====
+function wrapLabel(t){
+  const w=t.split(' '); const L=[]; let cur='';
+  w.forEach(x=>{ if((cur+' '+x).trim().length<=14){cur=(cur+' '+x).trim();} else {if(cur)L.push(cur);cur=x;} });
+  if(cur)L.push(cur);
+  if(L.length>2){L[1]=L[1]+'…';L.length=2;}
+  return L;
+}
+function buildScheme(parts){
+  const n=parts.length, W=560, H=336, y0=164, dy=52;
+  const sc = n>=7?0.92 : n>=6?1.04 : 1.16;
+  const span = Math.min(104, (W-120)/Math.max(1,n-1));
+  const x0=(W-span*(n-1))/2;
+  let body='', marks='';
+  body+='<path class="axl" d="M'+(x0-40)+' '+(y0+22)+' L'+(x0+span*(n-1)+40)+' '+(y0-22)+'"/>';
+  parts.forEach((p,i)=>{
+    const up=(i%2===0), x=x0+span*i, y=y0+(up?-dy:dy), r=38*sc;
+    body+='<g transform="translate('+x+','+y+') scale('+sc+')">'+shapeFor(p.s)+'</g>';
+    const L=wrapLabel(p.short);
+    if(up){ // верхний ряд — подпись НАД деталью, чтобы не пересекать ось сборки
+      L.forEach((ln,k)=>{ body+='<text x="'+x+'" y="'+(y-r-12-(L.length-1-k)*11)+'" class="cap3">'+ln+'</text>'; });
+    }else{  // нижний ряд — подпись под деталью
+      L.forEach((ln,k)=>{ body+='<text x="'+x+'" y="'+(y+r+13+k*11)+'" class="cap3">'+ln+'</text>'; });
+    }
+    // номер на самой детали, слева — стрелки сборки идут справа, пересечений нет
+    const bx=x-r*0.86, by=y+(up?r*0.86:-r*0.86);
+    marks+='<g class="hot" data-p="'+(i+1)+'" tabindex="0" role="button" aria-label="Позиция '+(i+1)+': '+p.n+'"><circle class="mk" cx="'+bx+'" cy="'+by+'" r="12.5"/>'+
+           '<text x="'+bx+'" y="'+by+'">'+(i+1)+'</text></g>';
+    if(i<n-1){const ax=x0+span*i+span/2;
+      body+='<path class="arw" d="M'+(ax-11)+' '+y0+' h16 m-6 -5 l7 5 -7 5"/>';}
+  });
+  return '<svg class="dia" viewBox="0 0 '+W+' '+H+'" xmlns="http://www.w3.org/2000/svg">'+SVGDEFS+body+marks+'</svg>';
+}
+const NODEDATA={"brake-front": {"t": "Передний тормозной механизм", "d": "Диски, колодки, суппорт и всё, что стоит на передней ступице.", "sys": "brakes", "parts": [{"n": "Диск тормозной передний", "short": "Диск тормозной передний", "a": "96 549 782", "p": "3 850 ₽", "s": "disc"}, {"n": "Колодки тормозные передние", "short": "Колодки тормозные передние", "a": "96 405 129", "p": "2 150 ₽", "s": "pad"}, {"n": "Суппорт тормозной", "short": "Суппорт тормозной", "a": "96 549 790", "p": "9 400 ₽", "s": "caliper"}, {"n": "Шланг тормозной передний", "short": "Шланг тормозной передний", "a": "96 549 801", "p": "640 ₽", "s": "hose"}, {"n": "Датчик износа колодок", "short": "Датчик износа колодок", "a": "96 549 812", "p": "420 ₽", "s": "sensor"}, {"n": "Направляющая суппорта, ремкомплект", "short": "Направляющая суппорта", "a": "96 549 823", "p": "890 ₽", "s": "bolt"}, {"n": "Пыльник тормозного диска", "short": "Пыльник тормозного диска", "a": "96 549 834", "p": "1 120 ₽", "s": "shield"}]}, "brake-rear-disc": {"t": "Задний тормозной механизм, дисковый", "d": "Задняя ось с дисковыми тормозами.", "sys": "brakes", "parts": [{"n": "Диск тормозной задний", "short": "Диск тормозной задний", "a": "96 549 845", "p": "3 200 ₽", "s": "disc"}, {"n": "Колодки тормозные задние", "short": "Колодки тормозные задние", "a": "96 405 136", "p": "1 780 ₽", "s": "pad"}, {"n": "Суппорт задний", "short": "Суппорт задний", "a": "96 549 852", "p": "8 200 ₽", "s": "caliper"}, {"n": "Шланг тормозной задний", "short": "Шланг тормозной задний", "a": "96 549 869", "p": "580 ₽", "s": "hose"}, {"n": "Трос стояночного тормоза", "short": "Трос стояночного тормоза", "a": "96 549 876", "p": "1 240 ₽", "s": "cable"}]}, "brake-rear-drum": {"t": "Задний тормозной механизм, барабанный", "d": "Барабан, колодки, цилиндр и пружины.", "sys": "brakes", "parts": [{"n": "Барабан тормозной", "short": "Барабан тормозной", "a": "96 549 883", "p": "2 900 ₽", "s": "drum"}, {"n": "Колодки барабанные, комплект", "short": "Колодки барабанные", "a": "96 405 143", "p": "1 650 ₽", "s": "pad"}, {"n": "Цилиндр тормозной рабочий", "short": "Цилиндр тормозной рабочий", "a": "96 549 890", "p": "1 180 ₽", "s": "cylinder"}, {"n": "Комплект пружин и планок", "short": "Комплект пружин и", "a": "96 549 906", "p": "740 ₽", "s": "spring"}, {"n": "Пыльник и ремкомплект цилиндра", "short": "Пыльник и ремкомплект", "a": "96 549 913", "p": "380 ₽", "s": "shield"}]}, "brake-hydro": {"t": "Гидравлика тормозов", "d": "Главный цилиндр, вакуумник, трубки, жидкость.", "sys": "brakes", "parts": [{"n": "Главный тормозной цилиндр", "short": "Главный тормозной цилиндр", "a": "96 549 920", "p": "6 400 ₽", "s": "cylinder"}, {"n": "Вакуумный усилитель", "short": "Вакуумный усилитель", "a": "96 549 937", "p": "11 200 ₽", "s": "booster"}, {"n": "Бачок тормозной жидкости", "short": "Бачок тормозной жидкости", "a": "96 549 944", "p": "890 ₽", "s": "tank"}, {"n": "Трубка тормозная", "short": "Трубка тормозная", "a": "96 549 951", "p": "520 ₽", "s": "pipe"}, {"n": "Жидкость тормозная DOT-4, 1 л", "short": "Жидкость тормозная DOT-4", "a": "—", "p": "640 ₽", "s": "can"}]}, "brake-abs": {"t": "ABS и датчики", "d": "Блок ABS и датчики скорости колёс.", "sys": "brakes", "parts": [{"n": "Блок ABS", "short": "Блок ABS", "a": "96 549 968", "p": "24 800 ₽", "s": "ecu"}, {"n": "Датчик ABS передний", "short": "Датчик ABS передний", "a": "96 549 975", "p": "1 480 ₽", "s": "sensor"}, {"n": "Датчик ABS задний", "short": "Датчик ABS задний", "a": "96 549 982", "p": "1 380 ₽", "s": "sensor"}, {"n": "Кольцо ABS ступицы", "short": "Кольцо ABS ступицы", "a": "96 549 999", "p": "620 ₽", "s": "ring"}]}, "susp-front": {"t": "Передняя подвеска МакФерсон", "d": "Стойка собирается сверху вниз: опора, пружина, амортизатор.", "sys": "suspension", "parts": [{"n": "Опора стойки амортизатора", "short": "Опора стойки амортизатора", "a": "96 653 234", "p": "1 780 ₽", "s": "mount"}, {"n": "Пружина передняя", "short": "Пружина передняя", "a": "96 653 241", "p": "3 240 ₽", "s": "spring"}, {"n": "Амортизатор передний", "short": "Амортизатор передний", "a": "96 653 258", "p": "4 980 ₽", "s": "shock"}, {"n": "Кулак поворотный", "short": "Кулак поворотный", "a": "96 653 265", "p": "7 900 ₽", "s": "knuckle"}, {"n": "Опора шаровая", "short": "Опора шаровая", "a": "96 653 272", "p": "1 150 ₽", "s": "balljoint"}, {"n": "Сайлентблок рычага", "short": "Сайлентблок рычага", "a": "96 653 289", "p": "680 ₽", "s": "bushing"}, {"n": "Рычаг передний нижний", "short": "Рычаг передний нижний", "a": "96 653 296", "p": "4 900 ₽", "s": "arm"}, {"n": "Стойка стабилизатора", "short": "Стойка стабилизатора", "a": "96 653 303", "p": "790 ₽", "s": "link"}]}, "susp-rear": {"t": "Задняя подвеска", "d": "Балка или многорычажка, амортизаторы и пружины.", "sys": "suspension", "parts": [{"n": "Амортизатор задний", "short": "Амортизатор задний", "a": "96 653 310", "p": "3 900 ₽", "s": "shock"}, {"n": "Пружина задняя", "short": "Пружина задняя", "a": "96 653 327", "p": "2 760 ₽", "s": "spring"}, {"n": "Сайлентблок балки", "short": "Сайлентблок балки", "a": "96 653 334", "p": "940 ₽", "s": "bushing"}, {"n": "Рычаг задний поперечный", "short": "Рычаг задний поперечный", "a": "96 653 341", "p": "3 480 ₽", "s": "arm"}, {"n": "Отбойник и пыльник", "short": "Отбойник и пыльник", "a": "96 653 358", "p": "520 ₽", "s": "shield"}]}, "hub": {"t": "Ступицы и подшипники", "d": "Подшипник, ступица, гайка, кольцо ABS.", "sys": "suspension", "parts": [{"n": "Ступица в сборе передняя", "short": "Ступица передняя", "a": "96 653 365", "p": "5 400 ₽", "s": "hub"}, {"n": "Подшипник ступицы", "short": "Подшипник ступицы", "a": "96 653 372", "p": "2 280 ₽", "s": "bearing"}, {"n": "Гайка ступицы", "short": "Гайка ступицы", "a": "96 653 389", "p": "180 ₽", "s": "bolt"}, {"n": "Ступица задняя", "short": "Ступица задняя", "a": "96 653 396", "p": "4 700 ₽", "s": "hub"}]}, "steering": {"t": "Рулевое управление", "d": "Рейка, тяги, наконечники, пыльники.", "sys": "suspension", "parts": [{"n": "Рейка рулевая", "short": "Рейка рулевая", "a": "96 653 402", "p": "28 400 ₽", "s": "rack"}, {"n": "Тяга рулевая", "short": "Тяга рулевая", "a": "96 653 419", "p": "1 340 ₽", "s": "tierod"}, {"n": "Наконечник рулевой", "short": "Наконечник рулевой", "a": "96 653 426", "p": "980 ₽", "s": "balljoint"}, {"n": "Пыльник рейки", "short": "Пыльник рейки", "a": "96 653 433", "p": "420 ₽", "s": "shield"}, {"n": "Насос ГУР", "short": "Насос ГУР", "a": "96 653 440", "p": "12 600 ₽", "s": "pump"}, {"n": "Жидкость ГУР, 1 л", "short": "Жидкость ГУР", "a": "—", "p": "580 ₽", "s": "can"}]}, "stabilizer": {"t": "Стабилизатор поперечной устойчивости", "d": "Штанга, втулки, стойки.", "sys": "suspension", "parts": [{"n": "Штанга стабилизатора", "short": "Штанга стабилизатора", "a": "96 653 457", "p": "4 200 ₽", "s": "link"}, {"n": "Втулка стабилизатора", "short": "Втулка стабилизатора", "a": "96 653 464", "p": "340 ₽", "s": "bushing"}, {"n": "Стойка стабилизатора", "short": "Стойка стабилизатора", "a": "96 653 471", "p": "790 ₽", "s": "link"}, {"n": "Скоба крепления", "short": "Скоба крепления", "a": "96 653 488", "p": "260 ₽", "s": "bolt"}]}, "timing-belt": {"t": "Привод ГРМ, ремень", "d": "Ремень идёт по шкивам коленвала и распредвалов, натягивается роликом.", "sys": "engine", "parts": [{"n": "Ремень ГРМ", "short": "Ремень ГРМ", "a": "96 725 041", "p": "2 340 ₽", "s": "belt"}, {"n": "Ролик натяжной", "short": "Ролик натяжной", "a": "96 725 058", "p": "1 480 ₽", "s": "roller"}, {"n": "Ролик обводной", "short": "Ролик обводной", "a": "96 725 065", "p": "1 190 ₽", "s": "roller"}, {"n": "Помпа водяная", "short": "Помпа водяная", "a": "96 725 072", "p": "2 790 ₽", "s": "pump"}, {"n": "Сальник коленвала", "short": "Сальник коленвала", "a": "96 725 089", "p": "420 ₽", "s": "seal"}, {"n": "Комплект ГРМ с помпой", "short": "Комплект ГРМ с", "a": "K015603XS", "p": "4 980 ₽", "s": "kit"}]}, "timing-chain": {"t": "Привод ГРМ, цепь", "d": "Цепь, успокоители, натяжитель, звёзды.", "sys": "engine", "parts": [{"n": "Цепь ГРМ", "short": "Цепь ГРМ", "a": "96 725 096", "p": "4 200 ₽", "s": "chain"}, {"n": "Натяжитель цепи", "short": "Натяжитель цепи", "a": "96 725 102", "p": "3 100 ₽", "s": "tensioner"}, {"n": "Успокоитель цепи", "short": "Успокоитель цепи", "a": "96 725 119", "p": "1 480 ₽", "s": "guide"}, {"n": "Звезда распредвала", "short": "Звезда распредвала", "a": "96 725 126", "p": "5 200 ₽", "s": "sprocket"}]}, "head": {"t": "Головка блока и клапаны", "d": "ГБЦ, прокладка, клапаны, сальники, крышка.", "sys": "engine", "parts": [{"n": "Прокладка ГБЦ", "short": "Прокладка ГБЦ", "a": "96 725 133", "p": "2 400 ₽", "s": "gasket"}, {"n": "Клапан впускной", "short": "Клапан впускной", "a": "96 725 140", "p": "680 ₽", "s": "valve"}, {"n": "Клапан выпускной", "short": "Клапан выпускной", "a": "96 725 157", "p": "740 ₽", "s": "valve"}, {"n": "Маслосъёмный колпачок", "short": "Маслосъёмный колпачок", "a": "96 725 164", "p": "120 ₽", "s": "seal"}, {"n": "Прокладка клапанной крышки", "short": "Прокладка клапанной крышки", "a": "96 725 171", "p": "980 ₽", "s": "gasket"}, {"n": "Болт ГБЦ, комплект", "short": "Болт ГБЦ", "a": "96 725 188", "p": "1 640 ₽", "s": "bolt"}]}, "piston": {"t": "Поршневая группа", "d": "Поршни, кольца, вкладыши, шатуны.", "sys": "engine", "parts": [{"n": "Поршень", "short": "Поршень", "a": "96 725 195", "p": "3 800 ₽", "s": "piston"}, {"n": "Кольца поршневые, комплект", "short": "Кольца поршневые", "a": "96 725 201", "p": "2 900 ₽", "s": "ring"}, {"n": "Вкладыш коренной", "short": "Вкладыш коренной", "a": "96 725 218", "p": "1 780 ₽", "s": "bearing"}, {"n": "Вкладыш шатунный", "short": "Вкладыш шатунный", "a": "96 725 225", "p": "1 620 ₽", "s": "bearing"}, {"n": "Прокладка поддона", "short": "Прокладка поддона", "a": "96 725 232", "p": "720 ₽", "s": "gasket"}]}, "lubrication": {"t": "Система смазки", "d": "Насос, поддон, фильтр, датчик давления.", "sys": "engine", "parts": [{"n": "Насос масляный", "short": "Насос масляный", "a": "96 725 249", "p": "6 800 ₽", "s": "pump"}, {"n": "Поддон картера", "short": "Поддон картера", "a": "96 725 256", "p": "5 400 ₽", "s": "pan"}, {"n": "Фильтр масляный", "short": "Фильтр масляный", "a": "W 712/94", "p": "480 ₽", "s": "filter"}, {"n": "Датчик давления масла", "short": "Датчик давления масла", "a": "96 725 263", "p": "840 ₽", "s": "sensor"}, {"n": "Пробка сливная с шайбой", "short": "Пробка сливная с", "a": "96 812 152", "p": "180 ₽", "s": "bolt"}]}, "mounts": {"t": "Опоры двигателя и КПП", "d": "Подушки, кронштейны.", "sys": "engine", "parts": [{"n": "Опора двигателя правая", "short": "Опора двигателя правая", "a": "96 725 270", "p": "4 200 ₽", "s": "mount"}, {"n": "Опора двигателя левая", "short": "Опора двигателя левая", "a": "96 725 287", "p": "3 900 ₽", "s": "mount"}, {"n": "Опора КПП задняя", "short": "Опора КПП задняя", "a": "96 725 294", "p": "3 400 ₽", "s": "mount"}, {"n": "Кронштейн опоры", "short": "Кронштейн опоры", "a": "96 725 300", "p": "1 200 ₽", "s": "bolt"}]}, "accessory-belt": {"t": "Ремень навесного оборудования", "d": "Поликлиновой ремень, ролики, натяжитель.", "sys": "engine", "parts": [{"n": "Ремень поликлиновой", "short": "Ремень поликлиновой", "a": "6PK1080", "p": "1 240 ₽", "s": "belt"}, {"n": "Ролик натяжной навесного", "short": "Ролик натяжной навесного", "a": "96 725 317", "p": "2 100 ₽", "s": "roller"}, {"n": "Ролик обводной навесного", "short": "Ролик обводной навесного", "a": "96 725 324", "p": "1 740 ₽", "s": "roller"}, {"n": "Натяжитель ремня", "short": "Натяжитель ремня", "a": "96 725 331", "p": "4 600 ₽", "s": "tensioner"}]}, "radiator": {"t": "Радиатор и охлаждение", "d": "Радиатор, вентилятор, бачок, патрубки.", "sys": "cooling", "parts": [{"n": "Радиатор охлаждения", "short": "Радиатор охлаждения", "a": "96 890 112", "p": "8 400 ₽", "s": "radiator"}, {"n": "Вентилятор радиатора", "short": "Вентилятор радиатора", "a": "96 890 129", "p": "6 900 ₽", "s": "fan"}, {"n": "Бачок расширительный", "short": "Бачок расширительный", "a": "96 890 136", "p": "1 180 ₽", "s": "tank"}, {"n": "Крышка бачка", "short": "Крышка бачка", "a": "96 890 143", "p": "420 ₽", "s": "cap"}, {"n": "Патрубок радиатора верхний", "short": "Патрубок радиатора верхний", "a": "96 890 150", "p": "890 ₽", "s": "hose"}, {"n": "Антифриз, 5 л", "short": "Антифриз", "a": "—", "p": "1 980 ₽", "s": "can"}]}, "thermostat": {"t": "Термостат и помпа", "d": "Термостат, корпус, помпа, датчик температуры.", "sys": "cooling", "parts": [{"n": "Термостат", "short": "Термостат", "a": "96 890 167", "p": "1 890 ₽", "s": "thermostat"}, {"n": "Корпус термостата", "short": "Корпус термостата", "a": "96 890 174", "p": "2 400 ₽", "s": "housing"}, {"n": "Помпа водяная", "short": "Помпа водяная", "a": "96 890 181", "p": "2 790 ₽", "s": "pump"}, {"n": "Датчик температуры", "short": "Датчик температуры", "a": "96 890 198", "p": "680 ₽", "s": "sensor"}]}, "heater": {"t": "Отопитель салона", "d": "Радиатор печки, моторчик, кран, фильтр.", "sys": "cooling", "parts": [{"n": "Радиатор отопителя", "short": "Радиатор отопителя", "a": "96 890 204", "p": "4 200 ₽", "s": "radiator"}, {"n": "Моторчик вентилятора печки", "short": "Моторчик вентилятора печки", "a": "96 890 211", "p": "5 400 ₽", "s": "blower"}, {"n": "Резистор вентилятора", "short": "Резистор вентилятора", "a": "96 890 228", "p": "1 240 ₽", "s": "resistor"}, {"n": "Фильтр салонный", "short": "Фильтр салонный", "a": "96 812 145", "p": "540 ₽", "s": "panel"}]}, "ac": {"t": "Кондиционер", "d": "Компрессор, радиатор, осушитель, трубки.", "sys": "cooling", "parts": [{"n": "Компрессор кондиционера", "short": "Компрессор кондиционера", "a": "96 890 235", "p": "26 800 ₽", "s": "compressor"}, {"n": "Радиатор кондиционера", "short": "Радиатор кондиционера", "a": "96 890 242", "p": "7 400 ₽", "s": "radiator"}, {"n": "Осушитель", "short": "Осушитель", "a": "96 890 259", "p": "1 980 ₽", "s": "tank"}, {"n": "Датчик давления хладагента", "short": "Датчик давления хладагента", "a": "96 890 266", "p": "1 140 ₽", "s": "sensor"}, {"n": "Трубка кондиционера", "short": "Трубка кондиционера", "a": "96 890 273", "p": "2 600 ₽", "s": "pipe"}]}, "fuel-supply": {"t": "Топливная система", "d": "Насос, фильтр, форсунки, регулятор.", "sys": "fuel", "parts": [{"n": "Насос топливный", "short": "Насос топливный", "a": "96 934 118", "p": "9 800 ₽", "s": "pump"}, {"n": "Фильтр топливный", "short": "Фильтр топливный", "a": "96 934 125", "p": "1 240 ₽", "s": "filter"}, {"n": "Форсунка топливная", "short": "Форсунка топливная", "a": "96 934 132", "p": "4 200 ₽", "s": "injector"}, {"n": "Регулятор давления", "short": "Регулятор давления", "a": "96 934 149", "p": "2 400 ₽", "s": "valve"}, {"n": "Датчик уровня топлива", "short": "Датчик уровня топлива", "a": "96 934 156", "p": "2 800 ₽", "s": "sensor"}]}, "intake": {"t": "Впуск и дроссель", "d": "Коллектор, дроссельная заслонка, ДМРВ, воздушный фильтр.", "sys": "fuel", "parts": [{"n": "Дроссельная заслонка", "short": "Дроссельная заслонка", "a": "96 934 163", "p": "12 400 ₽", "s": "throttle"}, {"n": "Датчик массового расхода воздуха", "short": "Датчик массового расхода", "a": "96 934 170", "p": "6 800 ₽", "s": "sensor"}, {"n": "Фильтр воздушный", "short": "Фильтр воздушный", "a": "C 25 108", "p": "650 ₽", "s": "panel"}, {"n": "Патрубок воздушный", "short": "Патрубок воздушный", "a": "96 934 187", "p": "1 180 ₽", "s": "hose"}, {"n": "Прокладка впускного коллектора", "short": "Прокладка впускного коллектора", "a": "96 934 194", "p": "640 ₽", "s": "gasket"}]}, "exhaust": {"t": "Выпускная система", "d": "Приёмная труба, катализатор, резонатор, глушитель.", "sys": "fuel", "parts": [{"n": "Катализатор", "short": "Катализатор", "a": "96 934 200", "p": "34 800 ₽", "s": "catalyst"}, {"n": "Датчик кислорода (лямбда)", "short": "Датчик кислорода (лямбда)", "a": "0 258 006 537", "p": "5 200 ₽", "s": "sensor"}, {"n": "Резонатор", "short": "Резонатор", "a": "96 934 217", "p": "6 400 ₽", "s": "muffler"}, {"n": "Глушитель задний", "short": "Глушитель задний", "a": "96 934 224", "p": "7 800 ₽", "s": "muffler"}, {"n": "Гофра приёмной трубы", "short": "Гофра приёмной трубы", "a": "96 934 231", "p": "1 480 ₽", "s": "pipe"}, {"n": "Прокладка выпускного коллектора", "short": "Прокладка выпускного коллектора", "a": "96 934 248", "p": "520 ₽", "s": "gasket"}]}, "egr": {"t": "Рециркуляция и вентиляция", "d": "Клапан EGR, клапан вентиляции картера.", "sys": "fuel", "parts": [{"n": "Клапан EGR", "short": "Клапан EGR", "a": "96 934 255", "p": "8 900 ₽", "s": "valve"}, {"n": "Прокладка EGR", "short": "Прокладка EGR", "a": "96 934 262", "p": "340 ₽", "s": "gasket"}, {"n": "Клапан вентиляции картера", "short": "Клапан вентиляции картера", "a": "96 934 279", "p": "1 180 ₽", "s": "valve"}, {"n": "Патрубок вентиляции", "short": "Патрубок вентиляции", "a": "96 934 286", "p": "640 ₽", "s": "hose"}]}, "clutch": {"t": "Сцепление", "d": "Диск, корзина, выжимной, рабочий цилиндр.", "sys": "transmission", "parts": [{"n": "Диск сцепления", "short": "Диск сцепления", "a": "96 018 114", "p": "6 400 ₽", "s": "clutch"}, {"n": "Корзина сцепления", "short": "Корзина сцепления", "a": "96 018 121", "p": "8 900 ₽", "s": "clutch"}, {"n": "Подшипник выжимной", "short": "Подшипник выжимной", "a": "96 018 138", "p": "2 400 ₽", "s": "bearing"}, {"n": "Цилиндр сцепления рабочий", "short": "Цилиндр сцепления рабочий", "a": "96 018 145", "p": "3 200 ₽", "s": "cylinder"}, {"n": "Комплект сцепления", "short": "Комплект сцепления", "a": "96 018 152", "p": "16 800 ₽", "s": "kit"}]}, "gearbox-mt": {"t": "Механическая коробка передач", "d": "Синхронизаторы, сальники, кулиса, масло.", "sys": "transmission", "parts": [{"n": "Сальник привода КПП", "short": "Сальник привода КПП", "a": "96 018 169", "p": "620 ₽", "s": "seal"}, {"n": "Синхронизатор", "short": "Синхронизатор", "a": "96 018 176", "p": "4 800 ₽", "s": "sprocket"}, {"n": "Кулиса переключения", "short": "Кулиса переключения", "a": "96 018 183", "p": "3 400 ₽", "s": "link"}, {"n": "Масло трансмиссионное, 2 л", "short": "Масло трансмиссионное", "a": "—", "p": "1 980 ₽", "s": "can"}]}, "gearbox-at": {"t": "Автоматическая коробка передач", "d": "Фильтр, прокладка поддона, масло, соленоиды.", "sys": "transmission", "parts": [{"n": "Фильтр АКПП", "short": "Фильтр АКПП", "a": "96 018 190", "p": "2 400 ₽", "s": "filter"}, {"n": "Прокладка поддона АКПП", "short": "Прокладка поддона АКПП", "a": "96 018 206", "p": "1 180 ₽", "s": "gasket"}, {"n": "Масло ATF, 4 л", "short": "Масло ATF", "a": "—", "p": "4 800 ₽", "s": "can"}, {"n": "Соленоид АКПП", "short": "Соленоид АКПП", "a": "96 018 213", "p": "6 900 ₽", "s": "valve"}]}, "driveshaft": {"t": "Приводы и ШРУСы", "d": "Привод в сборе, гранаты, пыльники.", "sys": "transmission", "parts": [{"n": "Привод в сборе", "short": "Привод", "a": "96 018 220", "p": "11 400 ₽", "s": "driveshaft"}, {"n": "ШРУС наружный", "short": "ШРУС наружный", "a": "96 018 237", "p": "4 200 ₽", "s": "cvjoint"}, {"n": "ШРУС внутренний", "short": "ШРУС внутренний", "a": "96 018 244", "p": "4 800 ₽", "s": "cvjoint"}, {"n": "Пыльник ШРУС с смазкой", "short": "Пыльник ШРУС с", "a": "96 018 251", "p": "890 ₽", "s": "shield"}, {"n": "Хомут пыльника", "short": "Хомут пыльника", "a": "96 018 268", "p": "120 ₽", "s": "ring"}]}, "ignition": {"t": "Зажигание", "d": "Свечи, катушки, провода, модуль.", "sys": "electric", "parts": [{"n": "Свеча зажигания", "short": "Свеча зажигания", "a": "BKR6E-11", "p": "340 ₽", "s": "sparkplug"}, {"n": "Катушка зажигания", "short": "Катушка зажигания", "a": "96 402 112", "p": "4 800 ₽", "s": "coil"}, {"n": "Провода высоковольтные, комплект", "short": "Провода высоковольтные", "a": "96 402 129", "p": "2 400 ₽", "s": "cable"}, {"n": "Модуль зажигания", "short": "Модуль зажигания", "a": "96 402 136", "p": "6 400 ₽", "s": "ecu"}]}, "charging": {"t": "Генератор и АКБ", "d": "Генератор, аккумулятор, реле-регулятор.", "sys": "electric", "parts": [{"n": "Генератор", "short": "Генератор", "a": "96 402 143", "p": "18 900 ₽", "s": "alternator"}, {"n": "Аккумулятор 60 Ач", "short": "Аккумулятор 60 Ач", "a": "—", "p": "8 400 ₽", "s": "battery"}, {"n": "Реле-регулятор напряжения", "short": "Реле-регулятор напряжения", "a": "96 402 150", "p": "2 200 ₽", "s": "ecu"}, {"n": "Шкив генератора обгонный", "short": "Шкив генератора обгонный", "a": "96 402 167", "p": "3 800 ₽", "s": "roller"}]}, "starting": {"t": "Стартер", "d": "Стартер, бендикс, втягивающее реле.", "sys": "electric", "parts": [{"n": "Стартер", "short": "Стартер", "a": "96 402 174", "p": "14 800 ₽", "s": "starter"}, {"n": "Бендикс", "short": "Бендикс", "a": "96 402 181", "p": "2 400 ₽", "s": "sprocket"}, {"n": "Втягивающее реле", "short": "Втягивающее реле", "a": "96 402 198", "p": "2 900 ₽", "s": "ecu"}, {"n": "Щётки стартера", "short": "Щётки стартера", "a": "96 402 204", "p": "680 ₽", "s": "bolt"}]}, "sensors": {"t": "Датчики двигателя", "d": "Коленвал, распредвал, детонации, температуры.", "sys": "electric", "parts": [{"n": "Датчик положения коленвала", "short": "Датчик положения коленвала", "a": "96 402 211", "p": "2 400 ₽", "s": "sensor"}, {"n": "Датчик положения распредвала", "short": "Датчик положения распредвала", "a": "96 402 228", "p": "2 600 ₽", "s": "sensor"}, {"n": "Датчик детонации", "short": "Датчик детонации", "a": "96 402 235", "p": "1 900 ₽", "s": "sensor"}, {"n": "Датчик температуры ОЖ", "short": "Датчик температуры ОЖ", "a": "96 402 242", "p": "680 ₽", "s": "sensor"}]}, "wiring": {"t": "Проводка и предохранители", "d": "Блок предохранителей, реле, разъёмы.", "sys": "electric", "parts": [{"n": "Блок предохранителей", "short": "Блок предохранителей", "a": "96 402 259", "p": "5 400 ₽", "s": "fusebox"}, {"n": "Реле 4-контактное", "short": "Реле 4-контактное", "a": "96 402 266", "p": "280 ₽", "s": "relay"}, {"n": "Предохранитель, комплект", "short": "Предохранитель", "a": "96 402 273", "p": "340 ₽", "s": "fuse"}, {"n": "Разъём проводки", "short": "Разъём проводки", "a": "96 402 280", "p": "180 ₽", "s": "plug"}]}, "headlamp": {"t": "Передняя оптика", "d": "Фары, корректор, лампы, ПТФ.", "sys": "lighting", "parts": [{"n": "Фара левая", "short": "Фара левая", "a": "96 556 118", "p": "14 200 ₽", "s": "headlamp"}, {"n": "Фара правая", "short": "Фара правая", "a": "96 556 125", "p": "14 200 ₽", "s": "headlamp"}, {"n": "Лампа ближнего света H7", "short": "Лампа ближнего света", "a": "—", "p": "480 ₽", "s": "bulb"}, {"n": "Фара противотуманная", "short": "Фара противотуманная", "a": "96 556 132", "p": "4 200 ₽", "s": "foglamp"}, {"n": "Мотор корректора фар", "short": "Мотор корректора фар", "a": "96 556 149", "p": "1 980 ₽", "s": "blower"}]}, "taillamp": {"t": "Задняя оптика", "d": "Фонари, лампы, повторители.", "sys": "lighting", "parts": [{"n": "Фонарь задний левый", "short": "Фонарь задний левый", "a": "96 556 156", "p": "6 800 ₽", "s": "taillamp"}, {"n": "Фонарь задний правый", "short": "Фонарь задний правый", "a": "96 556 163", "p": "6 800 ₽", "s": "taillamp"}, {"n": "Лампа P21W", "short": "Лампа P21W", "a": "—", "p": "120 ₽", "s": "bulb"}, {"n": "Повторитель поворота", "short": "Повторитель поворота", "a": "96 556 170", "p": "640 ₽", "s": "foglamp"}]}, "bumper": {"t": "Бамперы", "d": "Бампер, решётка, клипсы, кронштейны.", "sys": "body", "parts": [{"n": "Бампер передний", "short": "Бампер передний", "a": "96 640 112", "p": "12 400 ₽", "s": "bumper"}, {"n": "Решётка радиатора", "short": "Решётка радиатора", "a": "96 640 129", "p": "4 800 ₽", "s": "grille"}, {"n": "Бампер задний", "short": "Бампер задний", "a": "96 640 136", "p": "11 800 ₽", "s": "bumper"}, {"n": "Клипса крепления, комплект", "short": "Клипса крепления", "a": "96 640 143", "p": "240 ₽", "s": "bolt"}, {"n": "Кронштейн бампера", "short": "Кронштейн бампера", "a": "96 640 150", "p": "980 ₽", "s": "bolt"}]}, "panels": {"t": "Кузовные панели", "d": "Капот, крылья, двери, петли.", "sys": "body", "parts": [{"n": "Капот", "short": "Капот", "a": "96 640 167", "p": "21 400 ₽", "s": "hood"}, {"n": "Крыло переднее", "short": "Крыло переднее", "a": "96 640 174", "p": "9 800 ₽", "s": "fender"}, {"n": "Дверь передняя", "short": "Дверь передняя", "a": "96 640 181", "p": "28 900 ₽", "s": "door"}, {"n": "Подкрылок", "short": "Подкрылок", "a": "96 640 198", "p": "1 980 ₽", "s": "shield"}]}, "glass": {"t": "Стёкла и зеркала", "d": "Лобовое, боковые, зеркала, стеклоподъёмники.", "sys": "body", "parts": [{"n": "Стекло лобовое", "short": "Стекло лобовое", "a": "96 640 204", "p": "16 800 ₽", "s": "glass"}, {"n": "Зеркало наружное левое", "short": "Зеркало наружное левое", "a": "96 640 211", "p": "6 400 ₽", "s": "mirror"}, {"n": "Стеклоподъёмник", "short": "Стеклоподъёмник", "a": "96 640 228", "p": "5 200 ₽", "s": "regulator"}, {"n": "Уплотнитель стекла", "short": "Уплотнитель стекла", "a": "96 640 235", "p": "1 240 ₽", "s": "seal"}]}, "wipers": {"t": "Стеклоочистители и омыватель", "d": "Щётки, поводки, моторчик, бачок, форсунки.", "sys": "body", "parts": [{"n": "Щётка стеклоочистителя 600 мм", "short": "Щётка стеклоочистителя 600", "a": "—", "p": "890 ₽", "s": "wiper"}, {"n": "Щётка стеклоочистителя 450 мм", "short": "Щётка стеклоочистителя 450", "a": "—", "p": "740 ₽", "s": "wiper"}, {"n": "Моторчик стеклоочистителя", "short": "Моторчик стеклоочистителя", "a": "96 640 242", "p": "6 800 ₽", "s": "blower"}, {"n": "Насос омывателя", "short": "Насос омывателя", "a": "96 640 259", "p": "980 ₽", "s": "pump"}, {"n": "Форсунка омывателя", "short": "Форсунка омывателя", "a": "96 640 266", "p": "420 ₽", "s": "injector"}]}, "locks": {"t": "Замки и ручки", "d": "Замки дверей, ручки, личинки, петли капота.", "sys": "body", "parts": [{"n": "Замок двери передний", "short": "Замок двери передний", "a": "96 640 273", "p": "4 200 ₽", "s": "lock"}, {"n": "Ручка двери наружная", "short": "Ручка двери наружная", "a": "96 640 280", "p": "1 980 ₽", "s": "handle"}, {"n": "Личинка замка с ключом", "short": "Личинка замка с", "a": "96 640 297", "p": "2 400 ₽", "s": "lock"}, {"n": "Тросик замка капота", "short": "Тросик замка капота", "a": "96 640 303", "p": "1 180 ₽", "s": "cable"}]}, "service-kit": {"t": "Комплект ТО", "d": "Всё, что меняется при плановом обслуживании.", "sys": "service", "parts": [{"n": "Фильтр масляный", "short": "Фильтр масляный", "a": "W 712/94", "p": "480 ₽", "s": "filter"}, {"n": "Фильтр воздушный", "short": "Фильтр воздушный", "a": "C 25 108", "p": "650 ₽", "s": "panel"}, {"n": "Фильтр салонный", "short": "Фильтр салонный", "a": "96 812 145", "p": "540 ₽", "s": "panel"}, {"n": "Масло моторное 5W-30, 4 л", "short": "Масло моторное 5W-30", "a": "—", "p": "3 200 ₽", "s": "can"}, {"n": "Свечи зажигания, 4 шт", "short": "Свечи зажигания", "a": "BKR6E-11", "p": "1 360 ₽", "s": "sparkplug"}, {"n": "Пробка сливная с шайбой", "short": "Пробка сливная с", "a": "96 812 152", "p": "180 ₽", "s": "bolt"}]}, "fluids": {"t": "Масла и жидкости", "d": "Моторное, трансмиссионное, тормозная, антифриз.", "sys": "service", "parts": [{"n": "Масло моторное 5W-40, 4 л", "short": "Масло моторное 5W-40", "a": "—", "p": "3 400 ₽", "s": "can"}, {"n": "Антифриз G12, 5 л", "short": "Антифриз G12", "a": "—", "p": "1 980 ₽", "s": "can"}, {"n": "Жидкость тормозная DOT-4", "short": "Жидкость тормозная DOT-4", "a": "—", "p": "640 ₽", "s": "can"}, {"n": "Жидкость омывателя, 5 л", "short": "Жидкость омывателя", "a": "—", "p": "480 ₽", "s": "can"}, {"n": "Смазка ШРУС, 400 г", "short": "Смазка ШРУС", "a": "—", "p": "520 ₽", "s": "can"}]}};
+const SYSMETA=[{"id": "brakes", "t": "Тормозная система", "nodes": [{"id": "brake-front", "t": "Передний тормозной механизм", "c": 7}, {"id": "brake-rear-disc", "t": "Задний тормозной механизм, дисковый", "c": 5}, {"id": "brake-rear-drum", "t": "Задний тормозной механизм, барабанный", "c": 5}, {"id": "brake-hydro", "t": "Гидравлика тормозов", "c": 5}, {"id": "brake-abs", "t": "ABS и датчики", "c": 4}]}, {"id": "suspension", "t": "Подвеска и рулевое", "nodes": [{"id": "susp-front", "t": "Передняя подвеска МакФерсон", "c": 8}, {"id": "susp-rear", "t": "Задняя подвеска", "c": 5}, {"id": "hub", "t": "Ступицы и подшипники", "c": 4}, {"id": "steering", "t": "Рулевое управление", "c": 6}, {"id": "stabilizer", "t": "Стабилизатор поперечной устойчивости", "c": 4}]}, {"id": "engine", "t": "Двигатель", "nodes": [{"id": "timing-belt", "t": "Привод ГРМ, ремень", "c": 6}, {"id": "timing-chain", "t": "Привод ГРМ, цепь", "c": 4}, {"id": "head", "t": "Головка блока и клапаны", "c": 6}, {"id": "piston", "t": "Поршневая группа", "c": 5}, {"id": "lubrication", "t": "Система смазки", "c": 5}, {"id": "mounts", "t": "Опоры двигателя и КПП", "c": 4}, {"id": "accessory-belt", "t": "Ремень навесного оборудования", "c": 4}]}, {"id": "cooling", "t": "Охлаждение и климат", "nodes": [{"id": "radiator", "t": "Радиатор и охлаждение", "c": 6}, {"id": "thermostat", "t": "Термостат и помпа", "c": 4}, {"id": "heater", "t": "Отопитель салона", "c": 4}, {"id": "ac", "t": "Кондиционер", "c": 5}]}, {"id": "fuel", "t": "Топливо, впуск и выпуск", "nodes": [{"id": "fuel-supply", "t": "Топливная система", "c": 5}, {"id": "intake", "t": "Впуск и дроссель", "c": 5}, {"id": "exhaust", "t": "Выпускная система", "c": 6}, {"id": "egr", "t": "Рециркуляция и вентиляция", "c": 4}]}, {"id": "transmission", "t": "Трансмиссия", "nodes": [{"id": "clutch", "t": "Сцепление", "c": 5}, {"id": "gearbox-mt", "t": "Механическая коробка передач", "c": 4}, {"id": "gearbox-at", "t": "Автоматическая коробка передач", "c": 4}, {"id": "driveshaft", "t": "Приводы и ШРУСы", "c": 5}]}, {"id": "electric", "t": "Электрика и зажигание", "nodes": [{"id": "ignition", "t": "Зажигание", "c": 4}, {"id": "charging", "t": "Генератор и АКБ", "c": 4}, {"id": "starting", "t": "Стартер", "c": 4}, {"id": "sensors", "t": "Датчики двигателя", "c": 4}, {"id": "wiring", "t": "Проводка и предохранители", "c": 4}]}, {"id": "lighting", "t": "Освещение", "nodes": [{"id": "headlamp", "t": "Передняя оптика", "c": 5}, {"id": "taillamp", "t": "Задняя оптика", "c": 4}]}, {"id": "body", "t": "Кузов и стёкла", "nodes": [{"id": "bumper", "t": "Бамперы", "c": 5}, {"id": "panels", "t": "Кузовные панели", "c": 4}, {"id": "glass", "t": "Стёкла и зеркала", "c": 4}, {"id": "wipers", "t": "Стеклоочистители и омыватель", "c": 5}, {"id": "locks", "t": "Замки и ручки", "c": 4}]}, {"id": "service", "t": "Плановое обслуживание", "nodes": [{"id": "service-kit", "t": "Комплект ТО", "c": 6}, {"id": "fluids", "t": "Масла и жидкости", "c": 5}]}];
+
+// ===== ЭКРАН «ВИЗУАЛЬНЫЙ КАТАЛОГ» =====
+const SVGDEFS='<defs><style>.f1{fill:#F2F6F9;stroke:#5D6B77;stroke-width:1.7}.f2{fill:#DCE4EA;stroke:#5D6B77;stroke-width:1.5}.f3{fill:#C4CFD8;stroke:#5D6B77;stroke-width:1.3}.axl{stroke:#8A97A2;stroke-width:1.4;stroke-dasharray:5 6;fill:none}.cap3{font:600 10px Golos Text,sans-serif;fill:#5D6B77;text-anchor:middle}.lead3{stroke:#B6C2CB;stroke-width:1;stroke-dasharray:3 3}.arw{fill:none;stroke:#F04E23;stroke-width:2;stroke-linecap:round}</style><linearGradient id="mtl" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FAFCFD"/><stop offset="1" stop-color="#DDE5EB"/></linearGradient></defs>';
+let CURNODE='brake-front', CURSYS='all', CURQ='';
+
+function allNodes(){
+  const out=[];
+  SYSMETA.forEach(sy=>sy.nodes.forEach(n=>out.push({...n,sys:sy.id,syst:sy.t})));
+  return out;
+}
+function drawSysLine(){
+  const el=document.getElementById('sysline'); if(!el)return;
+  const total=allNodes().length;
+  el.innerHTML='<button data-sys="all" class="'+(CURSYS==='all'?'on':'')+'">Все узлы <span class="cnt">'+total+'</span></button>'+
+    SYSMETA.map(sy=>'<button data-sys="'+sy.id+'" class="'+(CURSYS===sy.id?'on':'')+'">'+sy.t+' <span class="cnt">'+sy.nodes.length+'</span></button>').join('');
+}
+function drawGrid(){
+  const el=document.getElementById('nodegrid'); if(!el)return;
+  let list=allNodes();
+  if(CURSYS!=='all')list=list.filter(n=>n.sys===CURSYS);
+  if(CURQ){const q=CURQ.toLowerCase();
+    list=list.filter(n=>n.t.toLowerCase().includes(q)||n.syst.toLowerCase().includes(q)||
+      (NODEDATA[n.id].parts||[]).some(p=>p.n.toLowerCase().includes(q)||p.a.toLowerCase().includes(q)));}
+  document.getElementById('nodecnt').textContent=list.length+' '+(list.length%10===1&&list.length%100!==11?'узел':(list.length>=2&&list.length<=4?'узла':'узлов'));
+  if(!list.length){el.innerHTML='<div class="emptyq" style="grid-column:1/-1">Узел не найден. Попробуйте другое слово — или <b>запросите схему</b>, менеджер добавит её в течение дня.<br><button class="btn sm" style="margin-top:12px" data-go="vin">Запросить схему по VIN</button></div>';return;}
+  el.innerHTML=list.map(n=>'<button data-node="'+n.id+'" class="'+(n.id===CURNODE?'on':'')+'">'+
+    '<span class="sy">'+n.syst+'</span><span class="n">'+n.t+'</span><span class="q">'+n.c+' позиций</span></button>').join('');
+}
+function renderNode(id){
+  const d=NODEDATA[id]; if(!d)return; CURNODE=id;
+  document.getElementById('node-title').textContent=d.t;
+  document.getElementById('node-desc').textContent=d.d;
+  const c2=document.getElementById('node-cnt2'); if(c2)c2.textContent=d.parts.length+' позиций';
+  document.getElementById('scheme-box').innerHTML=buildScheme(d.parts);
+  document.getElementById('plist').innerHTML=d.parts.map((p,i)=>
+    '<div class="row" data-p="'+(i+1)+'"><span class="num">'+(i+1)+'</span>'+
+    '<span class="t"><b>'+p.n+'</b><small>'+p.a+'</small></span>'+
+    '<span class="p"><span class="price">'+p.p+'</span></span></div>').join('');
+  document.querySelectorAll('#vcat .hot').forEach(h=>{h.addEventListener('click',()=>pick(h.dataset.p));
+    h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(h.dataset.p);}});});
+  document.querySelectorAll('#plist .row').forEach(r=>r.addEventListener('click',()=>pick(r.dataset.p)));
+  pick('1'); drawGrid();
+}
+function pick(n){
+  document.querySelectorAll('#vcat .hot').forEach(h=>h.classList.toggle('on',h.dataset.p===n));
+  document.querySelectorAll('#plist .row').forEach(r=>r.classList.toggle('on',r.dataset.p===n));
+  const d=NODEDATA[CURNODE], p=d.parts[+n-1];
+  if(p){document.getElementById('sel-title').textContent='Позиция '+n+' — '+p.n.toLowerCase();
+        document.getElementById('sel-sub').textContent=p.a+' · оригинал и проверенные аналоги · '+p.p;}
+}
+(function initVcat(){
+  const sl=document.getElementById('sysline'), gr=document.getElementById('nodegrid'), q=document.getElementById('nodeq');
+  if(!sl)return;
+  drawSysLine(); drawGrid(); renderNode('brake-front');
+  sl.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+    CURSYS=b.dataset.sys;drawSysLine();drawGrid();});
+  gr.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||!b.dataset.node)return;
+    renderNode(b.dataset.node);
+    document.getElementById('node-title').scrollIntoView({behavior:'smooth',block:'start'});});
+  q.addEventListener('input',()=>{CURQ=q.value.trim();drawGrid();});
+})();
+
+// ===== наценка: живой пересчёт =====
+const mkR=document.getElementById('mk-range'),mkV=document.getElementById('mk-val');
+function mkRecalc(){
+  const m=+mkR.value; mkV.textContent=m+'%';
+  document.querySelectorAll('[data-base]').forEach(el=>{
+    const r=Math.ceil(+el.dataset.base*(1+m/100)/10)*10;
+    el.textContent=r.toLocaleString('ru-RU')+' ₽';
+  });
+  document.querySelectorAll('.mk-presets button').forEach(b=>b.classList.toggle('on',+b.dataset.mk===m));
+}
+if(mkR){
+  mkR.addEventListener('input',mkRecalc);
+  document.querySelectorAll('.mk-presets button').forEach(b=>b.addEventListener('click',()=>{mkR.value=b.dataset.mk;mkRecalc();}));
+  mkRecalc();
+}
+
+</script>
+</body>
+</html>
